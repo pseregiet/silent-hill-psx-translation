@@ -1,0 +1,100 @@
+Where's Cheryl?
+Hope she's safe. ~E 
+-------
+My car...
+too banged up to drive. 
+-------
+Can't get out of town
+through here. ~E 
+-------
+The street is blocked.
+-------
+What the..?
+What is it? ~E 
+-------
+A broken wheelchair?
+What's this doing here? ~E 
+-------
+Blocked by a fence? ~E 
+-------
+What?
+What's this doing here? ~E 
+-------
+......better than nothing,
+I guess. ~E 
+-------
+What's this? ~E 
+-------
+~J0(2.5)	What's going on here!? ~E 
+-------
+~J0(1.6)	What is this? 
+-------
+A dead end?
+What the hell!? ~E 
+-------
+That's strange,
+it's getting darker. ~E 
+-------
+I'd better follow Cheryl... ~E 
+-------
+~J0(1.8)	Hey wait...stop! ~E 
+-------
+~J0(1.2)	Where are you going? ~E 
+-------
+~J0(2.8)	Cheryl?
+Is that Cheryl!? ~E 
+-------
+~J0(1.5)	Footsteps? ~E 
+-------
+~J0(3.0)	Cheryl. ~E 
+-------
+~J0(3.0)	This place is
+like a ghost town. ~E 
+-------
+~J0(2.0)	It's quiet.  Too quiet. 
+-------
+~J0(1.5)	It's strange... 
+-------
+~J0(2.5)	Cheryl.  Where could you be? ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

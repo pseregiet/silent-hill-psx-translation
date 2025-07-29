@@ -1,0 +1,45 @@
+~C3Alchemilla Hospital ~E 
+-------
+~C3green lion ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

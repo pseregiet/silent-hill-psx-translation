@@ -1,0 +1,282 @@
+There's a botanical
+reference book.
+Don't need to read it now. ~E 
+-------
+A body is laid out on the bed.
+Don't feel like checking this out. ~E 
+-------
+Looks like an altar.
+Wonder what they worship? ~E 
+-------
+Nothing helpful. ~E 
+-------
+There is a diary on the floor. ~E 
+-------
+Just a wall. ~E 
+-------
+None of this stuff is of any use. ~E 
+-------
+There's a clock
+with a broken face. ~E 
+-------
+The elevator doesn't
+appear to be working. ~E 
+-------
+A steel plate
+is screwed to the wall. ~E 
+-------
+The word, [Phaleg]
+is carved on the door. ~E 
+-------
+The word, [Hagith]
+is carved on the door. ~E 
+-------
+The word, [Ophiel]
+is carved on the door. ~E 
+-------
+It's locked. 
+-------
+Bird cage. It's empty. ~E 
+-------
+Used the  ~C2 Bird cage key ~C7 . ~E 
+-------
+The bird cage is locked. ~E 
+-------
+~C3The light illuminating
+the darkness. ~E 
+-------
+~C3The light to the future. ~E 
+-------
+Electricity is flowing to the key.
+I'll get shocked if I grab it now. ~E 
+-------
+There is a key. 
+-------
+~C3Then, the pathway opens
+Awaiting them, the frenzied
+Uproar, the feast of death! ~E 
+-------
+~C3Yes, the headcount is set
+Young and old lined up
+In order of age. 
+-------
+~C3Names engraved
+On a lithograph.
+The Grim Reaper's list. 
+-------
+There is a slate. ~E 
+-------
+but I can't get it out no matter
+how much I pull. ~E 
+-------
+There is a key in the faucet, 
+-------
+I can't get to it because
+of the glass cover. ~E 
+-------
+The hands of the clock
+...it's a key. 
+-------
+Old clock.
+There is a square hole
+in the center of the clock. 
+-------
+~C3Drop dead. ~E 
+-------
+~C3Thief. 
+-------
+~C3Go home. 
+-------
+There is a  ~C2 Crest of Mercury ~C7 .
+Take it? ~S4 
+-------
+There is an  ~C2 Amulet of Solomon ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Key of [Phaleg] ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Key of [Hagith] ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Key of [Ophiel] ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Stone of time ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Camera ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Bird cage key ~C7 .
+Take it? ~S4 
+-------
+There is a  ~C2 Screwdriver ~C7 .
+Take it? ~S4 
+-------
+There are  ~C2 Pliers ~C7 .
+Take them? ~S4 
+-------
+There is a  ~C2 Ring of contract ~C7 .
+Take it? ~S4 
+-------
+Used the  ~C2 Key of [Phaleg] ~C7 . ~E 
+-------
+Used the  ~C2 Key of [Hagith] ~C7 . ~E 
+-------
+Used the  ~C2 Key of [Ophiel] ~C7 . ~E 
+-------
+~L4 ~C3Help me... ~E 
+-------
+~L4 ~C3 Told the doctor I quit.
+Won't work at that
+hospital anymore. ~E 
+-------
+~L4 ~C3Need drug. ~E 
+-------
+~L4 ~C3 Feeling bad.
+Need to throw up.
+But nothing comes out.
+Vomiting only bile. ~E 
+-------
+~L4 ~C3 Blood and pus flow from
+the bathroom faucet.
+~NI try to stop it,
+but it won't turn off. ~E 
+-------
+~L4 ~C3 Still alive,
+but with wounds that won't heal. ~E 
+-------
+~L4 ~C3 The room is filled with insects.
+~NEven with doors
+and windows shut
+they get in to spite me.
+~NTo the hospital... ~E 
+-------
+~L4 ~C3 Ask doctor to let me quit being
+in charge of that patient.
+~NIt's too weird. ~E 
+-------
+~L4 ~C3 Seeds contain hallucinogen.
+Ancient records show it was
+used for religious ceremonies.
+The hallucinogenic effect
+was key. ~E 
+-------
+~L4 ~C3 WHITE CLAUDIA.
+~NPerennial herb found near water.
+Reaches height of 10 to 15 in.
+Oblong leaves, white blossoms. 
+-------
+There's a place mark
+in the book... ~E 
+-------
+it's the same day
+we found Cheryl! ~E 
+-------
+The date of the blaze... 
+-------
+~L4 ~C3 Investigations show source
+as basement of Gillespie home.
+Blaze now believed caused by
+malfunction of antiquated
+boiler. ~E 
+-------
+~L4 ~C3 Fire broke out in town.
+6 homes destroyed.
+~NCharred body
+of Alessa Gillespie(7)
+found in aftermath.
+~NCause of fire currently under
+investigation. 
+-------
+Are there others?
+It's pretty old... 
+-------
+~L4 ~C3 Investigation stalled.
+[PTV] dealers still at large.
+~NSuspicious deaths continue.
+Like the anti-drug mayor,
+a narcotics officer dies of
+a sudden heart failure of
+unknown origin. ~E 
+-------
+Same thing... ~E 
+-------
+~J0(8.9)	~E 
+-------
+~J0(4.0)	Please...  Harry... ~E 
+-------
+~J0(2.4)	Save me from them. 
+-------
+~J1(3.3)	I'm so scared.
+Help me... ~E 
+-------
+~J1(3.6)	Stay by me, Harry.
+Please. 
+-------
+~J1(1.3)	Lisa? 
+-------
+~J1(2.8)	I just hadn't noticed it before. ~E 
+-------
+~J1(1.7)	I'm the same as them. 
+-------
+~J1(4.0)	I'm not the only one
+who's still walking around. 
+-------
+~J1(4.0)	Why I'm still alive even
+though everyone else's dead. 
+-------
+~J1(1.8)	I get it now... 
+-------
+~J1(2.6)	Lisa...
+What's the matter with you? 
+-------
+~J0(1.2)	Harry? ~E 
+-------
+~J0(2.8)	Damn!
+What's that? ~E 
+-------
+~J0(5.5)	
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

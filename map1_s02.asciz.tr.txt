@@ -1,0 +1,137 @@
+A headless doll is stuck
+to the wall. ~E 
+-------
+A doll is on the floor. ~E 
+-------
+A hanging body...
+Why would somebody... ~E 
+-------
+There is a  ~C2 Classroom key ~C7 .
+Take it? ~S4 
+-------
+Can't use the phone. ~E 
+-------
+If approached carelessly,
+I may be sucked in. ~E 
+-------
+A huge fan is rotating. 
+-------
+Locker is locked. ~E 
+-------
+A wheelchair?
+At an elementary school? ~E 
+-------
+Cards are scattered... ~E 
+-------
+Stop turning the valve. 
+-------
+Turn the valve right. 
+-------
+Turn the valve left. 
+-------
+  ~S3 
+-------
+There is a  ~C2 Shotgun ~C7 .
+Take it? ~S4 
+-------
+The monster lurks...
+What's that supposed to mean? ~E 
+-------
+~C5 Leonard Rhine
+The Monster Lurks ~C7 
+-------
+There is a  ~C2 Rubber ball ~C7 .
+Take it? ~S4 
+-------
+~J1(2.0)Where is she?
+Cheryl... ~E 
+-------
+~J1(2.4)That was Cheryl's voice.
+I know it. 
+-------
+~D ~J0(2.0)Cheryl! ~E 
+-------
+~J0(3.0)	==Daddy==where are you==? 
+-------
+~J0(3.0)	Daddy== help me=== 
+-------
+~J0(0.9)	  
+-------
+Slid the  ~C2 Picture card ~C7
+into the slot. ~E 
+-------
+There is a  ~C2 Picture card ~C7 .
+Take it? ~S4 
+-------
+What is it for? ~E 
+-------
+In the center of the door is
+a horizontal slot. 
+-------
+What's this? ~E 
+-------
+If I push it, it moves a bit,
+but it certainly won't open. ~E 
+-------
+If it is, there's no keyhole,
+or even a knob... 
+-------
+What?
+Is this a door? 
+-------
+~C5 A Silver Moon ~C7 ~E 
+-------
+~C5 A Golden Sun ~C7 ~E 
+-------
+
+-------
+The tower door is locked. ~E 
+-------
+~J0(3.8)	I don't remember
+this being here before... ~E 
+-------
+~J0(2.0)	Have I been here before? ~E 
+-------
+~J0(1.2)	Where am I? ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

@@ -1,0 +1,112 @@
+Nothing inside. ~E 
+-------
+Moore, Ranaldo, Gordon...
+This must be the list of teachers. ~E 
+-------
+~HThere is a  ~C5 School map ~C7 .
+Take it? ~S4 
+-------
+Nothing useful
+in the desk drawer. ~E 
+-------
+Nothing special is written. ~E 
+-------
+Don't know what it is for,
+better leave it alone. ~E 
+-------
+The valve is tightly shut.
+Can't move it. 
+-------
+It appears to be broken. ~E 
+-------
+The boiler is working. ~E 
+-------
+Nothing appears to happen. ~E 
+-------
+There is a switch.
+Do you want to press the switch? ~S4 
+-------
+I don't know who drew it,
+but it is certainly in bad taste. ~E 
+-------
+A picture of a door. 
+-------
+Cheryl might be here.
+I should search for her. ~E 
+-------
+It's written in blood. ~E 
+-------
+~L4 ~M ~C3 5:00
+[Darkness that brings
+the choking heat]
+~NFlames render the silence,
+awakening the hungry beast.
+Open time's door to beckon prey. ~E 
+-------
+~L4 ~M ~C3 12:00
+[A place with songs and sound]
+~NA silver guidepost is
+untapped in lost tongues.
+Awakening at the ordained order. ~E 
+-------
+~L4 ~M ~C3 10:00
+[Alchemy laboratory]
+~NGold in an old man's palm.
+The future hidden in his fist.
+Exchange for sage's water. ~E 
+-------
+The door won't open. ~E 
+-------
+~C3 A Silver Moon ~E 
+-------
+~C3 A Golden Sun ~E 
+-------
+The hands are stopped at 5:00. ~E 
+-------
+The hands are stopped at 12:00. ~E 
+-------
+The hands are stopped at 10:00. ~E 
+-------
+The tower door is locked. ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

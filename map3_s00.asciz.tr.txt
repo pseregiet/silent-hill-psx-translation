@@ -1,0 +1,139 @@
+Nothing helpful. ~E 
+-------
+Nothing unusual. ~E 
+-------
+These are phones and phonebooks.
+No need to examine this. ~E 
+-------
+~HThere is a  ~C5 Hospital map ~C7 .
+Take it? ~S4 
+-------
+I should search the hospital. ~E 
+-------
+~J0(2.8)	So long.
+Good luck out there. ~E 
+-------
+~J0(2.7)	I can't just sit
+around here doing nothing. 
+-------
+~J0(2.3)	Well, I'd better be going. 
+-------
+~J0(2.6)	I see...
+I'm sorry. ~E 
+-------
+~J0(5.0)	She died four years ago.
+Now, it's just me and my daughter. 
+-------
+~J0(2.6)	Your wife, she's here with you? 
+-------
+~J1(2.8)	Sorry,
+I didn't mean to alarm you. ~E 
+-------
+~J1(1.7)	
+-------
+~J1(4.0)	But with all those
+monsters around,
+I highly doubt that she's... 
+-------
+~J1(2.8)	She's missing?
+I'm sorry. 
+-------
+~J1(3.0)	She's only seven.
+Short, black hair. 
+-------
+~J1(1.6)	I'm looking for my daughter. 
+-------
+~J1(2.4)	Have you seen
+a little girl anywhere? 
+-------
+~J1(1.5)	Yeah... ~E 
+-------
+~J1(3.5)	You and I both know,
+creatures like that don't exist! 
+-------
+~J1(2.0)	Ever even heard of such things? 
+-------
+~J1(2.4)	Have you ever seen
+such aberrations? 
+-------
+~J1(2.2)	Did you see those monsters? 
+-------
+~J1(2.6)	Something's gone
+seriously wrong. 
+-------
+~J1(3.0)	And it's snowing out.
+This time of year. 
+-------
+~J1(2.3)	Everyone seems to
+have disappeared. 
+-------
+~J1(4.5)	I was taking a nap
+in the staff room.
+When I woke up, it was like this. 
+-------
+~J1(1.5)	I really can't say. 
+-------
+~J1(2.5)	So maybe you can tell me
+what's going on? 
+-------
+~J1(3.6)	I'm Dr. Michael Kaufmann.
+I work at this hospital. ~E 
+-------
+~J1(1.5)	Do you work here? 
+-------
+~J1(2.8)	Thank God.
+Another human being. 
+-------
+~J0(3.4)	My name is Harry Mason.
+I'm in town on vacation. ~E 
+-------
+~J0(2.4)	Wait... I'm not here to fight. 
+-------
+~J0(1.7)	Stop!
+Don't shoot! 
+-------
+~J0(0.6)	~E 
+-------
+~J0(1.0)	Hold it... ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

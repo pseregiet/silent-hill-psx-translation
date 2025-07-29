@@ -1,0 +1,296 @@
+Looks like an altar.
+Wonder what they worship? ~E 
+-------
+None of this stuff is of any use. ~E 
+-------
+No need to go back. ~E 
+-------
+There is a clock.
+Nothing special. ~E 
+-------
+There is an  ~C2 Axe ~C7 .
+Take it? ~S4 
+-------
+~J0(2.0)	Lisa would probably know... ~E 
+-------
+~J0(2.0)	Aren't there any other roads? 
+-------
+~J0(2.2)	But, the road to the lake
+is blocked... 
+-------
+~J0(3.0)	Cybil said Cheryl was heading
+towards the lake. 
+-------
+~J0(1.0)	  
+-------
+~J0(2.0)	I don't know
+what's real anymore... ~E 
+-------
+~J0(4.0)	I could have had a car accident,
+and now I'm lying unconscious
+in a hospital bed...
+-------
+~J0(3.0)	but maybe this is all just
+going on in my head. 
+-------
+~J0(2.0)	I don't want to think so, 
+-------
+~J0(2.0)	Did I pass out again? ~E 
+-------
+~J0(2.0)	Was that another dream? ~E 
+-------
+Do you want to push
+the cabinet? ~S4 
+-------
+There is a trace on the floor
+that somebody moved the cabinet. 
+-------
+~J0(2.3)	Harry? ~E 
+-------
+~J0(1.0)	Harry? ~E 
+-------
+~J0(4.2)	Harry?
+Are you OK? ~E 
+-------
+~J2(1.5)	What the...!? ~E 
+-------
+~J0(1.5)	
+-------
+Some kind of powder
+is left in the chalice. ~E 
+-------
+~J1(2.5)	Maybe this is
+[the other church.] ~E 
+-------
+~J1(2.6)	Never seen anything
+like this before. 
+-------
+~J1(4.1)	What's this...?
+Some kind of altar...? 
+-------
+~J0(2.4)	Yeah, maybe... ~E 
+-------
+~J1(2.5)	You're tired. ~E 
+-------
+~J1(1.0)	Harry. 
+-------
+~J1(4.5)	I was just wondering.
+Never mind. 
+-------
+~J1(1.8)	Oh... 
+-------
+~J1(3.0)	I have no idea what
+you're talking about, Harry. ~E 
+-------
+~J1(4.2)	It's all a blur.
+Like some kind of hallucination,
+you know? 
+-------
+~J1(3.7)	It's like I was there,
+but not really. 
+-------
+~J1(2.7)	I met this nurse... Lisa. 
+-------
+~J1(4.0)	Everything's dark there,
+and I hear sirens in the distance. 
+-------
+~J1(3.7)	I try to make sense of it,
+but then my mind goes blank. 
+-------
+~J1(1.7)	I'm not quite sure. 
+-------
+~J1(1.9)	What are you talking about? 
+-------
+~J1(6.2)	Well...like some other world...
+It's like some kind of bad dream...? 
+-------
+~J1(2.2)	Do you know anything about... 
+-------
+~J0(0.9)	Yes? ~E 
+-------
+~J0(1.0)	Cybil. 
+-------
+~J0(0.8)  Okay. ~E 
+-------
+~J1(3.6)	If anything looks fishy,
+get back here on the double. ~E 
+-------
+~J1(1.7)	Be careful. 
+-------
+~J1(1.5)	I'll cover you from here. 
+-------
+~J1(0.9)	Alright. 
+-------
+~J1(3.0)	No.  I'm going. 
+-------
+~J1(2.2)	I'm a cop.  I should go. 
+-------
+~J1(4.0)	We don't know what's back there.
+I'd better check it out first. 
+-------
+~J1(1.0)	Wait. 
+-------
+~J1(1.4)	Let's have a look. 
+-------
+~J1(1.8)	Maybe there's something
+back there. 
+-------
+~J1(1.5)	Just discovered it. 
+-------
+~J1(1.2)	What's this? 
+-------
+~J1(1.8)	That's all I can think of. 
+-------
+~J1(3.6)	But, maybe that's the darkness
+she was talking about. 
+-------
+~J1(3.2)	I really don't know. 
+-------
+~J1(3.5)	What could drug trafficking
+have to do with all this? 
+-------
+~J1(2.5)	and the investigation is stalled. 
+-------
+~J1(2.2)	None of our leads
+have panned out, 
+-------
+~J1(2.8)	The force still can't figure out
+who's behind it. 
+-------
+~J1(2.0)	They sell 'em to the tourists. 
+-------
+~J1(1.6)	Must be on drugs. 
+-------
+~J1(2.9)	Darkness devouring the town? 
+-------
+~J1(2.0)	Any idea what it means? ~E 
+-------
+~J1(1.8)	Gibberish like that. 
+-------
+~J1(4.0)	She said something about
+the town being devoured
+by darkness.
+-------
+~J1(1.2)	And? ~E 
+-------
+~J1(1.0)	No. 
+-------
+~J1(1.8)	Dahlia Gillespie? 
+-------
+~J1(4.0)	Her name's Dahlia Gillespie.
+Do you know her? 
+-------
+~J1(3.0)	Yeah...
+I met this bizarre woman. 
+-------
+~J1(3.0)	What about you?  Anything? 
+-------
+~J1(2.0)	~E 
+-------
+~J1(3.6)	It was like she was walking
+on thin air. 
+-------
+~J1(3.0)	What!?
+ So then Cheryl... 
+-------
+~J1(4.8)	There was no place for her to go.
+The road has been obliterated. ~E 
+-------
+~J1(2.5)	It wasn't like she ran off
+exactly. 
+-------
+~J1(2.0)	Now don't get excited. 
+-------
+~J1(3.4)	On Bachman Road.
+She was heading towards the lake. 
+-------
+~J1(3.5)	And you just let her go!?
+Where was it? 
+-------
+~J1(2.7)	I don't know about
+your daughter, but... ~E 
+-------
+~J1(2.4)	I went after her,
+but she vanished. 
+-------
+~J1(2.6)	I only caught a glimpse of her
+through the fog. 
+-------
+~J1(1.4)	Was it Cheryl? 
+-------
+~J1(1.9)	I did see a girl. 
+-------
+~J1(2.7)	What about my daughter?
+Did you see her? 
+-------
+~J1(2.4)	The phones and radios
+are still out, too. ~E 
+-------
+~J1(2.2)	Cars have completely
+stopped running. 
+-------
+~J1(2.0)	All the roads out of town
+are blocked. 
+-------
+~J1(1.8)	I couldn't get out. 
+-------
+~J1(2.8)	I saw you go in here,
+so I followed you. 
+-------
+~J1(3.0)	What are you doing here?
+I thought you left town. 
+-------
+~J1(1.4)	It's nuts! ~E 
+-------
+~J1(4.0)	I shouldn't have left you.
+Things are worse than I thought. 
+-------
+~J0(2.8)	I'm glad you're OK. 
+-------
+~J0(1.0)	Cybil? ~E 
+-------
+~J0(1.0)	Harry! 
+-------
+~J0(1.6)	What's this? ~E 
+-------
+~C6Now Making!~C7~E
+-------
+It's unlocked.~E 
+-------
+It's locked.~E 
+-------
+The lock is jammed.
+ This door can't be opened. ~E 
+-------
+There are some  ~C2 Shotgun shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Rifle shells ~C7 .
+ Take it? ~S4 
+-------
+There are some  ~C2 Handgun bullets ~C7 .
+ Take it? ~S4 
+-------
+There is an  ~C2 Ampoule ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 Health drink ~C7 .
+ Take it? ~S4 
+-------
+There is a  ~C2 First aid kit ~C7 .
+ Take it? ~S4 
+-------
+~D Too dark to look
+ at the map here. ~E 
+-------
+~D I don't have the map
+for this place.~E 
+-------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+-------
+No
+-------
+Yes
+-------

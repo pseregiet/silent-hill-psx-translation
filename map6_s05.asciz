@@ -1,4 +1,3 @@
-    /* 10B4 800CA62C */ .asciz "\tNO_STAGE! ~E "
     /* 10C4 800CA63C */ .asciz "~C6Now_Making!~C7~E"
     /* 10D8 800CA650 */ .asciz "It's_unlocked.~E "
     /* 10EC 800CA664 */ .asciz "It's_locked.~E "

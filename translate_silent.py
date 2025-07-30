@@ -2,6 +2,7 @@
 
 import sys
 import struct
+import traceback
 
 def print_hex(blob):
     hex_string = ' '.join(f'{byte:02X}' for byte in blob)
@@ -22,9 +23,6 @@ def find_blob_in_bin(blob, data, name):
     r = data.find(blob)
     if r == -1:
         raise Exception(f"can't find a blob {name}")
-        #print(f"can't find a blob {name}")
-        #print_hex(blob)
-        #sys.exit(1)
 
     return r
 
@@ -40,16 +38,27 @@ def read_asciz(text_file):
                 q1 = rest.index('"') + 1
                 q2 = rest.rindex('"')
                 text = rest[q1:q2]
-                asciz_entries[addr] = text
+                asciz_entries[addr] = {'asciz': text, 'new-ptr': 0}
             except:
                 continue
     return asciz_entries
+
+
+def read_pointers(text_file):
+    pointers = []
+    with open(text_file, encoding='utf-8') as f:
+        for line in f:
+            if not '.word' in line:
+                continue
+            value = int(line.split('.word')[1].strip(), 16)
+            pointers.append(value)
+    return pointers
 
 def build_old_text_blob(asciz_entries, base):
     blob = b''
     ptr = base
     for k, v in asciz_entries.items():
-        decoded = bytes(v, 'utf-8').decode('unicode_escape')
+        decoded = bytes(v['asciz'], 'utf-8').decode('unicode_escape')
         encoded = decoded.encode('utf-8') + b'\x00'
 
         blob += encoded
@@ -61,15 +70,14 @@ def build_old_text_blob(asciz_entries, base):
 
     return blob
 
-def build_new_ptr_blob(table):
+def build_new_ptr_blob(asciz_entries, pointers):
     blob = b''
-    for i, ptr in enumerate(reversed(table)):
-        blob += struct.pack('<I', ptr)
+    for ptr in pointers:
+        blob += struct.pack('<I', asciz_entries[ptr]['new-ptr'])
     return blob
 
-def build_new_txt_and_ptr_blob(asciz_entries, txt_base, filename):
+def build_new_txt_blob(asciz_entries, txt_base, filename):
     txt_blob = b''
-    table = []
     translated_index = 0
     translated_lines = read_translated_lines(filename + ".tr.txt")
     for k, v in asciz_entries.items():
@@ -78,10 +86,9 @@ def build_new_txt_and_ptr_blob(asciz_entries, txt_base, filename):
 
         offset = len(txt_blob)
         txt_blob += new_text.encode('ascii') + b'\x00'
-        table.append(txt_base + offset)
+        v['new-ptr'] = txt_base + offset
 
-    ptr_blob = build_new_ptr_blob(table)
-    return txt_blob, ptr_blob
+    return txt_blob
 
 def patch_blob(game, blob, offset):
     bloblen = len(blob)
@@ -92,16 +99,15 @@ def patch_overlay(game, filename):
     asciz_entries = read_asciz(filename)
     txt_base = next(iter(asciz_entries))
 
-    ptr_blob = b''.join(struct.pack('<I', k) for k, v in reversed(asciz_entries.items()))
-    #for k, v in reversed(asciz_entries.items()):
-    #    print(f"{k:x}")
-
+    pointers = read_pointers(filename)
+    ptr_blob = b''.join(struct.pack('<I', ptr) for ptr in pointers)
     ptr_data_offset = find_blob_in_bin(ptr_blob, game, "ptr")
 
     txt_blob = build_old_text_blob(asciz_entries, txt_base)
     txt_data_offset = find_blob_in_bin(txt_blob, game, "txt")
 
-    new_txt_blob, new_ptr_blob = build_new_txt_and_ptr_blob(asciz_entries, txt_base, filename)
+    new_txt_blob = build_new_txt_blob(asciz_entries, txt_base, filename)
+    new_ptr_blob = build_new_ptr_blob(asciz_entries, pointers)
     patch_blob(game, new_txt_blob, txt_data_offset)
     patch_blob(game, new_ptr_blob, ptr_data_offset)
 
@@ -127,8 +133,9 @@ def main():
     for ov in overlays:
         try:
             patch_overlay(game, ov)
-        except:
-            print(f"error with {ov}")
+        except Exception as e:
+            print(f"error with {ov}, {e}")
+            traceback.print_exc()
             continue
 
     with open(game_out, 'wb') as f:

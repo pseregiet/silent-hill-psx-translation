@@ -13,3 +13,19 @@
     /* 1304 800CA87C */ .asciz "Someday,_someone_may_experience ~N\t\t\t\t\t\t\t\t\t\t\tthese_bizarre_events._Hopefully, ~N\t\t\t\t\t\t\t\t\t\t\tthey_will_find_my_notes_useful. ~E "
     /* 1384 800CA8FC */ .asciz "No"
     /* 1388 800CA900 */ .asciz "Yes"
+    /* 375C 800CCCD4 00A90C80 */ .word 0x800CA900
+    /* 3760 800CCCD8 FCA80C80 */ .word 0x800CA8FC
+    /* 3764 800CCCDC 7CA80C80 */ .word 0x800CA87C
+    /* 3768 800CCCE0 40A80C80 */ .word 0x800CA840
+    /* 376C 800CCCE4 14A80C80 */ .word 0x800CA814
+    /* 3770 800CCCE8 DCA70C80 */ .word 0x800CA7DC
+    /* 3774 800CCCEC A8A70C80 */ .word 0x800CA7A8
+    /* 3778 800CCCF0 78A70C80 */ .word 0x800CA778
+    /* 377C 800CCCF4 3CA70C80 */ .word 0x800CA73C
+    /* 3780 800CCCF8 04A70C80 */ .word 0x800CA704
+    /* 3784 800CCCFC C8A60C80 */ .word 0x800CA6C8
+    /* 3788 800CCD00 90A60C80 */ .word 0x800CA690
+    /* 378C 800CCD04 80A60C80 */ .word 0x800CA680
+    /* 3790 800CCD08 6CA60C80 */ .word 0x800CA66C
+    /* 3794 800CCD0C 58A60C80 */ .word 0x800CA658
+    /* 3798 800CCD10 48A60C80 */ .word D_800CA648

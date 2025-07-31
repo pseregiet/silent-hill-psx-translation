@@ -1,61 +1,59 @@
-Where's Cheryl?
-Hope she's safe. ~E 
+Gdzie jest Cheryl?
+Mam nadzieje, że nic jej nie jest ~E 
 -------
-My car...
-too banged up to drive. 
+Mój samochód...
+w tym stanie nigdzie nie pojedzie. 
 -------
-Can't get out of town
-through here. ~E 
+Tędy się nie wydostane
+z miasta. ~E 
 -------
-The street is blocked.
+Droga jest zablokowana.
 -------
-What the..?
-What is it? ~E 
+Co...?
+Co to jest? ~E 
 -------
-A broken wheelchair?
-What's this doing here? ~E 
+Wózek inwalidzki?
+Skąd on się tutaj wziął? ~E 
 -------
-Blocked by a fence? ~E 
+Płot !? Co do cholery!? ~E 
 -------
-What?
-What's this doing here? ~E 
+Co?
+Co się tu wyprawia? ~E 
 -------
-......better than nothing,
-I guess. ~E 
+......lepsze to niż nic. ~E 
 -------
-What's this? ~E 
+Co to jest? ~E 
 -------
-~J0(2.5)	What's going on here!? ~E 
+~J0(2.5)	Co się tu dzieje!? ~E 
 -------
-~J0(1.6)	What is this? 
+~J0(1.6)	Co to jest? 
 -------
 A dead end?
 What the hell!? ~E 
 -------
-That's strange,
-it's getting darker. ~E 
+Dziwne, zaczeło się ściemniać. ~E 
 -------
-I'd better follow Cheryl... ~E 
+Lepiej pójde za Cheryl... ~E 
 -------
-~J0(1.8)	Hey wait...stop! ~E 
+~J0(1.8)	Hej zaczekaj... stój! ~E 
 -------
-~J0(1.2)	Where are you going? ~E 
+~J0(1.2)	Dokąd idziesz? ~E 
 -------
 ~J0(2.8)	Cheryl?
-Is that Cheryl!? ~E 
+To ty Cheryl !? ~E 
 -------
-~J0(1.5)	Footsteps? ~E 
+~J0(1.5)	Chyba słyszę kroki? ~E 
 -------
 ~J0(3.0)	Cheryl. ~E 
 -------
-~J0(3.0)	This place is
-like a ghost town. ~E 
+~J0(3.0)	To miejsce wygląda jak
+miasto duchów. ~E 
 -------
-~J0(2.0)	It's quiet.  Too quiet. 
+~J0(2.0)	Strasznie cicho... zbyt cicho. 
 -------
-~J0(1.5)	It's strange... 
+~J0(1.5)	Dziwne... 
 -------
-~J0(2.5)	Cheryl.  Where could you be? ~E 
+~J0(2.5)	Cheryl. Gdzie się podziałaś? ~E 
 -------
 ~C6Now Making!~C7~E
 -------
@@ -94,7 +92,7 @@ Someday, someone may experience
 these bizarre events. Hopefully,
 they will find my notes useful. ~E 
 -------
-No
+Nie
 -------
-Yes
+Tak
 -------

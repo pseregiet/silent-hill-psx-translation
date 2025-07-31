@@ -4,6 +4,10 @@ import sys
 import struct
 import traceback
 
+def read_c_string(data, offset):
+    end = data.find(b'\x00', offset)
+    return data[offset:end].decode('ascii')
+
 def print_hex(blob):
     hex_string = ' '.join(f'{byte:02X}' for byte in blob)
     print(hex_string)
@@ -16,7 +20,7 @@ def read_translated_lines(infile):
 
 def fix_encoding(txt):
     txt = txt.replace('ł', ';').replace('ó', '*').replace('ę', '>').replace('ą', '^')
-    txt = txt.replace('ż', '=').replace('ć', '<').replace('ń', '+')
+    txt = txt.replace('ż', '=').replace('ć', '<').replace('ń', '+').replace('ś', '/').replace('ź', 'Q')
     return txt.replace(' ', '@@@').replace('_', ' ').replace('@@@', '_').replace('\n', ' ~N ')
 
 def find_blob_in_bin(blob, data, name):
@@ -110,6 +114,9 @@ def patch_overlay(game, filename):
     new_ptr_blob = build_new_ptr_blob(asciz_entries, pointers)
     patch_blob(game, new_txt_blob, txt_data_offset)
     patch_blob(game, new_ptr_blob, ptr_data_offset)
+    for k, v in asciz_entries.items():
+        ns = read_c_string(new_txt_blob, (v['new-ptr'] - txt_base))
+        print(f"org: {k:x}  new: {v['new-ptr']:x}  val: {v['asciz']}  new: {ns}")
 
 def main():
     game_in = sys.argv[1]
@@ -117,7 +124,6 @@ def main():
     game = None
     with open(game_in, 'rb') as f:
         game = bytearray(f.read())
-
     overlays = [ "map0_s00.asciz", "map0_s01.asciz", "map0_s02.asciz", "map1_s00.asciz",
                  "map1_s01.asciz", "map1_s02.asciz", "map1_s03.asciz", "map1_s04.asciz",
                  "map1_s05.asciz", "map1_s06.asciz", "map2_s00.asciz", "map2_s01.asciz",

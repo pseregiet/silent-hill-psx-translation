@@ -53,101 +53,95 @@ There are three locks. ~E
 Something is written on the map
 hanging on the wall. ~E 
 -------
-Copied it to the map. ~E 
+Skopiowałem oznaczenia na swoją mapę. ~E 
 -------
-Something is written on the map
-hanging on the wall. 
+Coś jest napisane na tej mapie. 
 -------
-I may be able to break it
-if I hit it hard. ~E 
+Może go rozwale, jeżeli go mocno uderze.~E 
 -------
-Hmm... the lock is worn out. 
+Hmm... zamek jest zardzewiały.
 -------
 ~C3Reservoir.
-Authorized Personnel only. ~E 
+Wejście dla personelu.~E 
 -------
-Where's Cheryl?
-Hope she's safe. ~E 
+Gdzie jest Cheryl?
+Mam nadzieje, że nic jej nie jest ~E 
 -------
-My car...
-too banged up to drive. 
+Mój samochód...
+w tym stanie nigdzie nie pojedzie. 
 -------
-The street is blocked.
-Can't get out of town through here. ~E 
+Droga jest zablokowana.
+Tędy się nie wydostane z miasta. ~E 
 -------
-The machinery is running.
-Do you want to press the switch? ~S4 
+Sprzęt jest uruchomiony.
+Czy chcesz wcisnąć przycisk? ~S4 
 -------
-There's a keyhole
-on the control panel. ~E 
+Panel kontrolny ma dziurkę na klucz.~E
 -------
-~C3Orridge Bridge Control Room ~E 
+~C3Budka kontrolna mostu Orridge~E
 -------
-No reason to search
-the school anymore. ~E 
+Nie mam już czego szukać w szkole~E 
 -------
-~C3Midwich Elementary School ~E 
+~C3Szkoła podstawowa Midwich~E 
 -------
-Used the  ~C2 K. Gordon key ~C7 . ~E 
+Użyłeś  ~C2 Klucz K. Gordona ~C7 .~E 
 -------
-A dog's head... ~E 
+Głowa psa... ~E 
 -------
-What's going on!? ~E 
+Co się tu dzieje!? ~E 
 -------
-It's getting dark again? 
+Znowu robi się ciemno? 
 -------
-~J0(20)	What? ~E 
+~J0(20)	Co? ~E 
 -------
-Used the  ~C2 Key of [Scarecrow] ~C7 . ~E 
+Użyłeś  ~C2 Klucza [Straszaka] ~C7 . ~E 
 -------
-Used the  ~C2 Key of [Woodman] ~C7 . ~E 
+Użyłeś  ~C2 Klucza [Drwala] ~C7 . ~E 
 -------
-Used the  ~C2 Key of [Lion] ~C7 . ~E 
+Użyłeś  ~C2 Klucza [Lwa] ~C7 . ~E 
 -------
-Used the  ~C2 House key ~C7 . ~E 
+Uzyłeś  ~C2 Klucza do domu ~C7 . ~E 
 -------
-There is a  ~C2 Key of [Scarecrow] ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz [Straszaka] ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Key of [Woodman] ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz [Drwala] ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Key of [Lion] ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz [Lwa] ~C7 .
+Zabrać? ~S4 
 -------
-~C2 House key ~C7  was hidden
-in the dog house. Take it? ~S4 
+~C2 Klucz do domu ~C7  schowany
+w budzie dla psa. Zabrać? ~S4 
 -------
-Nothing in particular around. ~E 
+Nie ma nic ciekawego. ~E 
 -------
-Probably a doghouse,
-though I'm not sure
-since there's no dog around. 
+Prawdopodobnie buda dla psa,
+chociaż nie jestem pewien,
+ponieważ w pobliżu nie ma żadnego psa.
 -------
-Nothing unusual. ~E 
+Nic nadzwyczajnego.~E 
 -------
-~M ~C3Doghouse
-Levin st. ~E 
+~M ~C3Psia buda
+Ul. Levin ~E 
 -------
-The first picture that Cheryl
-drew in the sketchbook that I
-gave on her 5th birthday. ~E 
+Pierwszy rysunek, który Cheryl
+narysowała w szkicowniku, który
+podarowałem jej na jej piąte urodziny.~E
 -------
-Sketchbook cover.
-This picture... it's me. 
+Okładka szkicownika.
+Ten rysunek... to ja. 
 -------
-~J1(3.8)Hmm...
-She's at the school... ~E 
+~J1(3.8)	Hmm...
+Jest w szkole... ~E 
 -------
-~J1(2.5)Isn't this
-Cheryl's sketchbook? 
+~J1(2.5)	To nie szkicownik Cheryl? 
 -------
-~C3To school ~E 
+~C3Do szkoły~E 
 -------
-I guess I'll check
-that alley again. ~E 
+Chyba znowu sprawdzę tą alejke~E 
 -------
-Where could Cheryl have gone? 
+Gdzie ona mogła pójść? 
 -------
 There is a  ~C2 Steel pipe ~C7 .
 Take it? ~S4 

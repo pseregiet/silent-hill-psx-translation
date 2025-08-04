@@ -1,22 +1,22 @@
-There is a  ~C2 Channeling stone ~C7 .
+Znalazłeś  ~C2 Kamień Przywołania ~C7 .
 Take it? ~S4 
 -------
-There is a  ~C2 Katana ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Katane ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Gasoline tank ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Karnister Paliwa ~C7 .
+Zabrać? ~S4 
 -------
-There's a TV set.
-It doesn't turn on. ~E 
+Telewizor. Nie chcę
+się włączyć. ~E 
 -------
-A car engine.
-No problem there. ~E 
+Silnik samochodowy.
+Wygląda normalnie. ~E 
 -------
-Some oil cans are on the shelf. ~E 
+Kilka puszek oleju. ~E 
 -------
-There is a  ~C2 Chain saw ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Piłe mechaniczną ~C7 .
+Zabrać? ~S4 
 -------
 ~C6Now Making!~C7~E
 -------

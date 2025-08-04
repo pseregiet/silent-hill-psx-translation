@@ -1,98 +1,97 @@
-A headless doll is stuck
-to the wall. ~E 
+Lalka bez głowy
+przybita do ściany. ~E 
 -------
-A doll is on the floor. ~E 
+Lalka na podłodze. ~E 
 -------
-A hanging body...
-Why would somebody... ~E 
+Powieszone ciało...
+Kto mógłby to... ~E 
 -------
-There is a  ~C2 Classroom key ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz do klasy ~C7 .
+Zabrać? ~S4 
 -------
-Can't use the phone. ~E 
+Telefon nie działa. ~E 
 -------
-If approached carelessly,
-I may be sucked in. ~E 
+Jeżeli nie będę uważać,
+to może mnie wciągnąć. ~E
 -------
-A huge fan is rotating. 
+Wielki wiatrak. 
 -------
-Locker is locked. ~E 
+Szafka jest zamknięta. ~E 
 -------
-A wheelchair?
-At an elementary school? ~E 
+Wózek inwalidzki?
+Co on robi w szkole? ~E 
 -------
-Cards are scattered... ~E 
+Porozrzucane karty... ~E 
 -------
-Stop turning the valve. 
+Przestań obracać zawór. 
 -------
-Turn the valve right. 
+Obróć zawór w prawo. 
 -------
-Turn the valve left. 
+Obróć zawór w lewo. 
 -------
   ~S3 
 -------
-There is a  ~C2 Shotgun ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Strzelbę ~C7 .
+Zabrać? ~S4 
 -------
-The monster lurks...
-What's that supposed to mean? ~E 
+Potwór czycha...
+Co to ma niby znaczyć? ~E 
 -------
 ~C5 Leonard Rhine
-The Monster Lurks ~C7 
+Potwór czycha ~C7 
 -------
-There is a  ~C2 Rubber ball ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Gumową piłkę ~C7 .
+Zabrać? ~S4 
 -------
-~J1(2.0)Where is she?
+~J1(2.0)	Gdzie ona jest?
 Cheryl... ~E 
 -------
-~J1(2.4)That was Cheryl's voice.
-I know it. 
+~J1(2.4)	To głos Cheryl.
+Znam go. 
 -------
-~D ~J0(2.0)Cheryl! ~E 
+~D ~J0(2.0)	Cheryl! ~E 
 -------
-~J0(3.0)	==Daddy==where are you==? 
+~J0(3.0)	Tato  Gdzie jesteś  ? 
 -------
-~J0(3.0)	Daddy== help me=== 
+~J0(3.0)	Tato pomóz mi    
 -------
 ~J0(0.9)	  
 -------
-Slid the  ~C2 Picture card ~C7
-into the slot. ~E 
+Wsunąłeś  ~C2 Obrazek ~C7
+w slot. ~E 
 -------
-There is a  ~C2 Picture card ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Obrazek ~C7 .
+Zabrać? ~S4 
 -------
-What is it for? ~E 
+Do czego on służy? ~E 
 -------
-In the center of the door is
-a horizontal slot. 
+Na środku drzwi jest
+pionowy slot.
 -------
-What's this? ~E 
+Co to jest? ~E 
 -------
-If I push it, it moves a bit,
-but it certainly won't open. ~E 
+Gdy napieram, to trochę się rusza,
+ale otworzyć się nie chcę. ~E
 -------
-If it is, there's no keyhole,
-or even a knob... 
+Nawet jeżeli, nie ma zamka
+ani nawet klamki...
 -------
-What?
-Is this a door? 
+Co?
+Czy to są drzwi? 
 -------
-~C5 A Silver Moon ~C7 ~E 
+~C5 Srebrny Księżyc ~C7 ~E 
 -------
-~C5 A Golden Sun ~C7 ~E 
+~C5 Złote słońce ~C7 ~E 
 -------
 
 -------
-The tower door is locked. ~E 
+Drzwi wierzy są zamknięte. ~E 
 -------
-~J0(3.8)	I don't remember
-this being here before... ~E 
+~J0(3.8)	Nie pamiętam tego... ~E 
 -------
-~J0(2.0)	Have I been here before? ~E 
+~J0(2.0)	Czy ja już tutaj byłem? ~E 
 -------
-~J0(1.2)	Where am I? ~E 
+~J0(1.2)	Gdzie ja jestem? ~E 
 -------
 ~C6Now Making!~C7~E
 -------

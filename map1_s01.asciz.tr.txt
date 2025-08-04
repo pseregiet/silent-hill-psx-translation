@@ -1,101 +1,104 @@
-There's some blood
-on some of the keys..... ~E 
+Kilka klawiszy
+jest zakrwawionych..... ~E 
 -------
-No need to read
-any of these books. ~E 
+Zwykłe książki. Nic ciekawego. ~E 
 -------
-No special book here. ~E 
+Zwykłe książki. ~E 
 -------
-No useful books. ~E 
+Nie potrzebuje tych książek. ~E 
 -------
-Nothing useful in the locker. ~E 
+Nie ma tutaj nic przydatnego. ~E 
 -------
-~C3 ~M NO
-RUNNING OR PLAYING
-IN THE LOCKER ROOM ~E 
+~C3 ~M ZAKAZ
+BIEGANIA W PRZEBIERALNI ~E 
 -------
-Normal elementary school
-bulletin board.
-Nothing in particular here. ~E 
+Zwykła szkolna tablica
+korkowa z ogłoszeniami. ~E
 -------
-~C3 Warning. Don't forget to
-take all of your possessions
- after using the lockers. 
+~C3 Uwaga. Nie zapomnij
+zabrać wszystkich rzeczy
+z szafki przy wyjsciu z szatni.
 -------
-Glucose.
-No reason to take it. ~E 
+Glukoza.
+Nie jest mi potrzebna. ~E 
 -------
-Nothing helpful. ~E 
+Nic przydatnego. ~E 
 -------
-Nothing useful
-in the desk drawer. ~E 
+Nie ma nic przydatnego
+w tej szufladzie. ~E 
 -------
-Nothing useful on the shelf. ~E 
+Nie ma nic przydatnego
+na tej półce. ~E 
 -------
-Distilled water.
-No reason to take it. ~E 
+Woda utleniona.
+Nie potrzebuje jej. ~E 
 -------
-~J0(2.0)	Just a cat... ~E 
+~J0(2.0)	To tylko kot... ~E 
 -------
-Nothing inside. ~E 
+Pusto. ~E 
 -------
-It's written in blood. ~E 
+Napisane krwią. ~E 
 -------
-There is a  ~C2 Silver medallion ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Srebrny medalion ~C7 .
+Zabrać? ~S4 
 -------
-Check the piano? ~S4 
+Sprawdzić pianino? ~S4 
 -------
-Does this mean anything? ~E 
+Czy to ma jakieś znaczenie? ~E 
 -------
-There's some blood
-on some of the keys..... 
+Kilka klawiszy
+jest zakrawionych..... 
 -------
-It won't open. Odd,
-doesn't look locked, though. ~E 
+Nie chce się otworzyć.
+Dziwne, nie wygląda na zamknięte. ~E 
 -------
-~L4 ~M ~C3 Finally out comes a Crow,
-Coming quickly to a stop,
-Yawning and then napping.
-~NWho will show the way,
-Who will be the key,
-Who will lead to
-The silver reward. ~E 
+~L4 ~M ~C3 W końcu pojawia się Kruk,
+Szybko zatrzymuje się w locie,
+Ziewa, potem drzemiąc,
+
+Kto pokaże drogę,
+Kto będzie kluczem,
+Kto poprowadzi do
+Srebrnej nagrody. ~E
 -------
-~L4 ~M ~C3 A Raven flies in,
-Flying higher than the Dove,
-Just to show that he can.
-~NA Swan glides in,
-To find a peaceful spot,
-Next to another bird. 
+~L4 ~M ~C3 Leci czarna wrona,
+Wyżej niż gołębica,
+By pokazać, że potrafi.
+
+A łabędź odleciał,
+Szuka spokojnego miejsca,
+Obok innego ptaka.
 -------
-~L4 ~M ~C3 [A Tale of Birds Without a Voice]
-~NFirst flew the greedy Pelican,
-Eager for the reward,
-White wings flailing.
-~NThen came a silent Dove,
-Flying beyond the Pelican,
-As far as he could. 
+~L4 ~M ~C3 [Opowieść o ptakach bez głosu]
+
+Najpierw leciał chciwy Pelikan,
+Po nagrodę sięgał,
+Białe skrzydła trzepotały.
+
+Potem przyleciała Cicha Gołębica,
+Przed Pelikanem odleciała,
+Jak najdalej, daleko, w dal.
 -------
 
 -------
-Nothing to worry about. ~E 
+Nie ma się czym przejmować. ~E 
 -------
-Just the melted remains of
-a statue of a hand. 
+Resztki rozpuszczonego
+posągu ręki. 
 -------
-Nothing unusual.~E 
+Nic nadzwyczajnego.~E 
 -------
-There is a  ~C2 Chemical ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Rozpuszczalnik ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Gold medallion ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Złoty medalion ~C7 .
+Zebrać? ~S4 
 -------
-The fist shut tight,
-as if never to let go. ~E 
+Pięść kompletnie zaciśnięta,
+jak gdyby nigdy
+nie chciała puścić. ~E 
 -------
-Statue of an old man's hand.
+Posąg ręki starego człowieka.
 -------
 ~C6Now Making!~C7~E
 -------

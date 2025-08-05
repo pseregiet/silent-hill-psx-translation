@@ -1,39 +1,38 @@
-~J1(3.5)	What is going on here? ~E 
+~J1(3.5)	Co się tu stało? ~E 
 -------
-~J1(3.0)	This is... a boiler room!? 
+~J1(3.0)	Czy to... Kotłownia!? 
 -------
-~J1(3.5)	Where am I? 
+~J1(3.5)	Gdzie ja jestem? 
 -------
-~HThere is a  ~C5 School map ~C7 .
-Take it? ~S4 
+~HZnalazłeś  ~C5 Mape szkoły ~C7 .
+Zabrać? ~S4 
 -------
-K. Gordon... that's it.
-I'll note the address down
-on the map. ~E 
+K. Gordon...
+Zaznaczę adres na mapie. ~E
 -------
-List of teachers. 
+Lista nauczycieli. 
 -------
 Moore, Ranaldo, Gordon...
-This must be the list of teachers. ~E 
+To musi być lista nauczycieli. ~E 
 -------
-~J0(3.0)	A church bell, maybe?
-Who is ringing the bell? ~E 
+~J0(3.0)	To chyba dzwony kościelne.
+Kto nimi dzwoni? ~E 
 -------
-~J0(2.0)	I hear a ... 
+~J0(2.0)	Słyszę ... 
 -------
-The valve is tightly shut.
-Can't move it. ~E 
+Zawór jest mocno zakręcony.
+Nie mogę go ruszyć. ~E 
 -------
-It appears to be broken. ~E 
+Chyba zepsute. ~E 
 -------
-The boiler is off. ~E 
+Bojler jest wyłączony. ~E 
 -------
-There is a  ~C2 K. Gordon key ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz K. Gordon ~C7 .
+Zabrać? ~S4 
 -------
-~J0(2.4)	Who in the hell was that? ~E 
+~J0(2.4)	Kto to był do cholery? ~E 
 -------
-~J2(1.5)	What was that...? ~E 
+~J2(1.5)	Co to było...? ~E 
 -------
 ~J0(1.3)	
 -------

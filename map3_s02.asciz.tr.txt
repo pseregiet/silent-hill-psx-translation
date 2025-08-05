@@ -1,7 +1,7 @@
-It's locked! ~E 
+Zamknięte! ~E 
 -------
-Nothing happens when the
-elevator button is pressed. ~E 
+Wciskam przycisk od windy
+ale nic się nie dzieje. ~E
 -------
 ~C6Now Making!~C7~E
 -------

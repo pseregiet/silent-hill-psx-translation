@@ -1,124 +1,117 @@
-Nothing special in the box.
-Nothing to worry about. ~E 
+Nic specjalnego w tych pudełkach. ~E
 -------
-There are some empty bottles. ~E 
+Jakieś puste butelki. ~E
 -------
-There's a bottle filled
-with some kind of drug.
-Better leave it. ~E 
+Butelka wypełniona jakimś lekarstwem.
+Lepiej to zostawie. ~E
 -------
-Nothing useful in the boxes. ~E 
+Nic przydatnego w tych pudełkach. ~E
 -------
-Nothing helpful. ~E 
+Nic przydatnego. ~E
 -------
-Here are some dryers.
-Useless now. ~E 
+Coś do suszenia. Nie potrzebne mi. ~E
 -------
-Nothing unusual. ~E 
+Nic nadzwyczajnego. ~E
 -------
-A steel plate
-is screwed to the wall. ~E 
+Stalowa płytka przykręconwa
+do ściany. ~E
 -------
-VCR. It's old but usable. ~E 
+Odwarzacz kaset. Stary, ale działa.~E 
 -------
-Bird cage. It's empty. ~E 
+Klatka dla ptaków. Pusta. ~E
 -------
-
+     
 -------
-There are 4 square indentations
-on the door. ~E 
+Cztery wgłębienia na drzwiach. ~E
 -------
-Can't remove that plate. ~E 
+Nie mogę wyciągnąć tej tabliczki. ~E
 -------
-Which plate do you
-want to remove? ~E 
+Którą tabliczke chcesz wyciągnąć? ~E
 -------
-Can't set the plate there. ~E 
+Nie mogę jej tam wsadzić. ~E
 -------
-Where do you want to
-set the plate? ~E 
+Gdzie chcesz włożyć tabliczkę? ~E
 -------
-Alcohol bottle.
-Looks empty. ~E 
+Butelka po alkoholu. Pusta. ~E
 -------
-Slate. Nothing more than that. ~E 
+Tabliczka. Nic więcej. ~E 
 -------
   ~E 
 -------
-There is a
- ~C2 Basement storeroom key ~C7 .
-Take it? ~S4 
+Znalazłeś
+ ~C2 Klucz do schowka w piwnicy ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Lighter ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Zapalniczkę ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Disinfecting alcohol ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Alkohol dezynfekujący ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Blood pack ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Paczkę krwi ~C7 .
+Zabrać? ~S4 
 -------
 ~J2(0.5)	  ~E 
 -------
-~J2(2.0)	==please... 
+~J2(2.0)	==Proszę... 
 -------
-~J2(3.3)	==won't tell ====
+~J2(3.3)	==nikomu nie powi ====
 ======= 
 -------
 ~J2(2.8)	============
 ========= 
 -------
-~J2(5.9)	Why=
-================ chil===== 
+~J2(5.9)	Dlaczego=
+================ dzieck===== 
 -------
 ~J2(3.8)	=====================
-==zing thro=== 
+==ączy=== 
 -------
-~J2(1.2)	Even when I ch===
+~J2(1.2)	Nawet gdy zmie===
 ======== 
 -------
-~J2(2.3)	=== skin is ======== 
+~J2(2.3)	=== skóra kom ======== 
 -------
-~J2(2.8)	=== just bare========= 
+~J2(2.8)	=== ledwo od========= 
 -------
-~J2(2.6)	=== don't =====
-get==== puls== 
+~J2(2.6)	=== Nie otw== =====
+ma==== puls== 
 -------
-~J2(2.7)	Still ===== unusua==
-====fever... 
+~J2(2.7)	Wciąż ===== straszn==
+====gorączke... 
 -------
 ~J2(1.5)	======= 
 -------
 ~J0(0.7)	  
 -------
-The VCR seems broken.
-It doesn't play. ~E 
+Odwarzacz kaset jest zepusty.
+Nie chę się włączyć. ~E
 -------
-~D ~C3 Liquid flowing
-from a slashed wrist. ~E 
+~D ~C3 Ciecz cieknie z
+rozciętej żyły. ~E
 -------
-~D ~C3 Unavoidable sleeping time. 
+~D ~C3 Nieunikniony czas snu.
 -------
-~D ~C3 Dandelions along a path. 
+~D ~C3 Słoneczniki przy ścieżce.
 -------
-~D ~C3 Violets in the garden. 
+~D ~C3 Fiołki w ogrodzie.
 -------
-~D ~C3 Lucky four-leaf-clover. 
+~D ~C3 Czterolistna koniczyna. 
 -------
-~D ~C3 Tangerines that are bitter. 
+~D ~C3 Gorzkie mandarynki. 
 -------
-~D ~C3 Sky on a sunny day. 
+~D ~C3 Niebo w słoneczny dzień. 
 -------
-~D ~C3 Clouds flowing over a hill. 
+~D ~C3 Chmury nad wzgórzem. 
 -------
-There is a  ~C2 Plate of [Turtle] ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Tabliczke [Zółwia] ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Plate of [Cat] ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Tabliczke [Kota] ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Plate of [Hatter] ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Tabliczke [Kapelusznika] ~C7 .
+Zabrać? ~S4 
 -------
 ~C6Now Making!~C7~E
 -------

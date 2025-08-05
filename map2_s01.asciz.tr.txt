@@ -1,77 +1,76 @@
-There's a candle stand.
-Nothing special. ~E 
+Stojak na świece.
+Nic niezwykłego. ~E
 -------
-There's a picture on the wall.
-Nothing special. ~E 
+Obraz na ścianie.
+Nic niezwykłego. ~E
 -------
-There's a newspaper.
-Nothing special. ~E 
+Zwykła gazeta. ~E
 -------
-There's a collection box.
-Nothing inside. ~E 
+Puszka na datki.
+Pusta. ~E
 -------
-It must be locked
-from the other side. ~E 
+Musi być zamknięte
+z drugiej strony. ~E
 -------
-It won't open. 
+Nie chcę się otworzyć. 
 -------
-Bible. ~E 
+Biblia. ~E 
 -------
-There is a  ~C2 Drawbridge key ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Klucz do mostu zwodzonego ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 [Flauros] ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 [Flauros] ~C7 .
+Zabrać? ~S4 
 -------
-~J0(2.4)	Wait!
-Don't go yet! ~E 
+~J0(2.4)	Czekaj!
+Nie odchodź! ~E 
 -------
-~J0(4.2)	Make haste to the hospital
-before it's too late. ~E 
+~J0(4.2)	Udaj się szybko do szpitala
+zanim będzie za późno. ~E
 -------
-~J0(3.0)	These will help you. ~E 
+~J0(3.0)	Pomogą ci. ~E 
 -------
-~J0(3.8)	and counteract the wrath of
-the underworld. 
+~J0(3.8)	zwalczyć gniew Innego-świata.
 -------
-~J0(3.3)	It can break through
-the walls of darkness, 
+~J0(3.3)	Może przebić się
+przez ściane ciemności, 
 -------
-~J0(4.0)	Here, the Flauros,
-a cage of peace. 
+~J0(4.0)	Spójrz, Flauros,
+klatka pokoju.
 -------
-~J1(3.6)	What?
-What are you talking about? ~E 
+~J1(3.6)	Co?
+O czym ty mówisz ? ~E
 -------
-~J1(4.0)	The path of the hermit,
-concealed by Flauros... 
+~J1(4.0)	ścieżką pustelknika,
+schowaną w Flaurosie... 
 -------
-~J1(2.3)	You must follow the path. 
+~J1(2.3)	Musisz pójść za ścieżką. 
 -------
-~J1(4.0)	Nothing is to be gained from
-floundering about at random.  
+~J1(4.0)	Niczego nie wskórasz rzucając
+się bez namysłu.
 -------
-~J0(1.1)	Stay back! ~E 
+~J0(1.1)	Stój! ~E 
 -------
-~J0(2.1)	You know something!?
-Tell me! ~E 
+~J0(2.1)	Wiesz coś czego ja nie wiem!?
+Mów! ~E 
 -------
-~J1(2.8)	I see everything. ~E 
+~J1(2.8)	Ja widzę wszystko. ~E 
 -------
-~J1(1.7)	You're talking about Cheryl? 
+~J1(1.7)	Mówisz o Cheryl? 
 -------
-~J1(0.9)	The girl? 
+~J1(0.9)	Dziewczynki? 
 -------
-~J1(2.4)	You want the girl, right? 
+~J1(2.4)	Szukasz dziewczynki, prawda ?
 -------
-~J1(2.2)	I knew you'd come. 
+~J1(2.2)	Wiedziałam, że przyjdziesz. 
 -------
-~J1(1.8)	What are you talking about? ~E 
+~J1(1.8)	O czym ty mówisz? ~E 
 -------
-~J1(5.3)	I've been expecting you.
-It was foretold by Gyromancy. 
+~J1(5.3)	Spodziewałam się ciebie.
+Zostało to przepowiedziane
+przez żyromancję.
 -------
-~J1(1.9)	Were you ringing that bell? 
+~J1(1.9)	Czemu dzwonisz tym dzwonem?
 -------
 ~C6Now Making!~C7~E
 -------

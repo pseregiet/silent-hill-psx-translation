@@ -1,8 +1,8 @@
-~C3green lion ~E 
+~C3Zielony lew ~E 
 -------
-~C3Alchemilla Hospital ~E 
+~C3Szpital Alchemilla ~E 
 -------
-Used the  ~C2 Antique shop key ~C7 . ~E 
+Użyłeś ~C2 Klucza do sklepu z antykami ~C7. ~E 
 -------
 ~C6Now Making!~C7~E
 -------

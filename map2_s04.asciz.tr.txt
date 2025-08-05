@@ -1,35 +1,35 @@
-There is a  ~C2 Shotgun ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Dubeltówke ~C7 .
+Zabrać? ~S4 
 -------
-The desk is messy. ~E 
+Niezły bałagan na biurku. ~E 
 -------
-Nothing helpful. ~E 
+Nic użytecznego. ~E 
 -------
-~HThere is a  ~C5 Shopping district map ~C7 .
-Take it? ~S4 
+~HZnalazłeś ~C5 Mapę dzielnicy handlowej ~C7 .
+Zabrać? ~S4 
 -------
-~C3Manufactured here?
-Dealer * manufacturer? ~E 
+~C3Wyprodukowano tutaj?
+Dystrybutor * producent? ~E 
 -------
-~C3Raw material is White Claudia,
-a plant peculiar to the region. 
+~C3Surowiec to Biała Claudia,
+roślina charakterystyczna dla
+tego regionu.
 -------
-~C3Product only available in
-selected areas of Silent Hill. 
+~C3Produkt dostępny tylko w wybranych
+regionach Silent Hill.
 -------
-There's something on it. 
+Jest coś jeszcze. 
 -------
-~C3But, medical records show
-Officer Gucci had no prior
-symptoms of heart disease. ~E 
+~C3Ale, jego kartoteka nie wskazuję
+żadnych symptomów choroby serca. ~E
 -------
-~C3Officer Gucci is unlikely to
-be murdered. He apparently
-died naturally. 
+~C3Funkcjonariusz Gucci prawdpodobnie
+nie został zamordowany. Podobno
+zmarł śmiercią naturalną.
 -------
-~C3Coroner Seals called. 
+~C3Dzwonił Koroner Seals.
 -------
-There's a memo on the desk. 
+Na biurku leży notatka.
 -------
 ~C6Now Making!~C7~E
 -------

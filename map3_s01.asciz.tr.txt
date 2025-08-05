@@ -1,72 +1,69 @@
-Nothing helpful. ~E 
+Nic użytecznego. ~E 
 -------
-Nothing unusual. ~E 
+Nic nadzwyczajnego. ~E 
 -------
-The refrigerator is empty. ~E 
+Lodówka jest pusta. ~E 
 -------
-This article's been
-clipped out... ~E 
+Kawałek strony został wycięty... ~E 
 -------
-There is a newspaper. 
+Gazeta. 
 -------
-There's a white board.
-Nothing special written here. ~E 
+Biała tablica.
+Nie ma na niej nic ciekawego. ~E
 -------
-The phone's out.
-Can't get a dial tone. ~E 
+Telefon nie działa.
+Nie ma sygnału. ~E
 -------
-Books are scattered
-around the desk.
-Nothing else special here. ~E 
+Książki porozrzucane po biurku.
+Nic szczególnego. ~E
 -------
-The shelves are all messed up.
-Who did this? ~E 
+Wszystkie pułki są porozwalane.
+Kto to zrobił? ~E
 -------
-There's a vending machine.
-It doesn't work. ~E 
+Maszyna z przekąskami.
+Nie działa. ~E
 -------
-These are phones and phonebooks.
-No need to examine this. ~E 
+Telefony i książki telefoniczne.
+Nic ciekawego. ~E
 -------
-I should search the hospital. ~E 
+Powinienem przeszukać szpital. ~E
 -------
-Used the  ~C2 Basement key ~C7  . ~E 
+Uzyłeś  ~C2 Klucza do piwnicy ~C7 . ~E 
 -------
-The generator is on. ~E 
+Agregator został uruchomiony. ~E 
 -------
-Do you want to press the switch? ~S4 
+Wcisnąć przycisk? ~S4 
 -------
-~C3The in-house generator
-powers elevators, ICUs
-and operating rooms only. 
+~C3Agregator wewnętrzny zasila
+jedynie windy, OIOM i sale
+operacyjne.
 -------
-There is a  ~C2 Basement key ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Klucz do piwnicy ~C7 .
+Zabrać? ~S4 
 -------
-~HThere is a
-~C5 Hospital basement map ~C7 .
-Take it? ~S4 
+~HZnalazłeś
+~C5 Mape piwnicy szpitala ~C7 .
+Zabrać? ~S4 
 -------
-~HThere is a  ~C5 Hospital map ~C7 .
-Take it? ~S4 
+~HZnalazłeś  ~C5 Mape szpitala ~C7 .
+Zabrać? ~S4 
 -------
-There is a  ~C2 Plastic bottle ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Plastikową butelke ~C7 .
+Zabrać? ~S4 
 -------
-A glass vial lies shattered. ~E 
+Na ziemi leży rozbita fiolka. ~E
 -------
-Now what have we here? ~E 
+Co my tu mamy? ~E 
 -------
-The remaining liquid is emptied
-into the  ~C2 Plastic bottle ~C7 . 
+Przelałeś ciecz do
+~C2 Plastikowej butelki ~C7 .
 -------
-It's not just broken.
-It looks smashed on purpose. ~E 
+Wygląda jakby ją ktoś rozbił celowo. ~E
 -------
-A glass vial lies shattered. 
+Na ziemi leży rozbita fiolka.
 -------
-The elevator doesn't
-appear to be working. ~E 
+Wygląda na to, że
+winda nie działa. ~E
 -------
 ~C6Now Making!~C7~E
 -------

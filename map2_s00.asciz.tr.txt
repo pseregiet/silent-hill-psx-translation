@@ -1,57 +1,56 @@
-This must be that water works
-Lisa was talking about. ~E 
+To musi być ten zakład wodociągowy
+o którym mówiłą Lisa. ~E
 -------
-Used the gasoline. ~E 
+Wlałeś paliwo. ~E 
 -------
-There is a  ~C2 Chainsaw ~C7 .
-Take it? ~S4 
+Znalazłeś  ~C2 Piłę mechaniczną ~C7 . 
+Zabrać? ~S4 
 -------
-There is a  ~C2 Chainsaw ~C7 . 
+Znalazłeś  ~C2 Piłę mechaniczną ~C7 . 
 -------
-There is a  ~C2 Rock drill ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Wiertarke do skał ~C7 . 
+Zabrać? ~S4 
 -------
-There is no gasoline.
-Can't use it. ~E 
+Nie mam paliwa.
+Nie mogę jej użyć. ~E 
 -------
-There is a  ~C2 Rock drill ~C7 . 
+Znalazłeś ~C2 Wiertarke do skał ~C7 . 
 -------
-~C3Balkan Church ~E 
+~C3 Kościół Balkan ~E 
 -------
 ~C3K. Gordon ~E 
 -------
-The garage door is smeared
-with blood. ~E 
+Drzwi garażowe wysmarowane
+krwią. ~E
 -------
-The refrigerator is empty. ~E 
+Lodówka jest pusta. ~E 
 -------
-Nothing useful. ~E 
+Nic użytecznego. ~E 
 -------
-There's a TV set.
-The power must be out.
-It doesn't work. ~E 
+Telewizor. Chyba nie ma prądu.
+Nie chcę się włączyć. ~E
 -------
-The drawbridge is stopped. ~E 
+Most zwodzony stanął. ~E 
 -------
-The drawbridge is operating. ~E 
+Most zwodzony podnosi się. ~E 
 -------
-Nothing special. ~E 
+Nic specjalnego. ~E 
 -------
-~HThere is a  ~C5 Shopping district map ~C7 .
-Take it? ~S4 
+~H ~C5 Mapa dzielnicy handlowej ~C7 .
+Zabrać? ~S4 
 -------
-It's unlocked. ~E 
+Otwarte. ~E 
 -------
-There is one lock. ~E 
+Jeden zamek. ~E 
 -------
-There are two locks. ~E 
+Dwa zamki. ~E 
 -------
-There are three locks. ~E 
+Trzy zamki. ~E 
 -------
  
 -------
-Something is written on the map
-hanging on the wall. ~E 
+Coś jest napisane na
+mapie która wisi na ścianie. ~E 
 -------
 Skopiowałem oznaczenia na swoją mapę. ~E 
 -------
@@ -135,7 +134,7 @@ Ten rysunek... to ja.
 ~J1(3.8)	Hmm...
 Jest w szkole... ~E 
 -------
-~J1(2.5)	To nie szkicownik Cheryl? 
+~J1(2.5)	To chyba szkicownik Cheryl. 
 -------
 ~C3Do szkoły~E 
 -------

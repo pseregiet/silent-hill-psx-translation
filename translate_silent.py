@@ -3,6 +3,8 @@
 import sys
 import struct
 import traceback
+import json
+import re
 
 def read_c_string(data, offset):
     end = data.find(b'\x00', offset)
@@ -109,6 +111,44 @@ def patch_overlay(game, filename):
 
     txt_blob = build_old_text_blob(asciz_entries, txt_base)
     txt_data_offset = find_blob_in_bin(txt_blob, game, "txt")
+
+    with open("info."+filename, 'w') as f:
+        data = {
+            "text-ptr": f"0x{txt_data_offset:x}",
+            "text-len": f"0x{len(txt_blob):x}",
+            "text-off": f"0x{txt_base:x}",
+            "pointers": f"0x{ptr_data_offset:x}",
+            "lines-no": f"0x{len(pointers):x}"
+        }
+        strings = []
+        for p in pointers:
+            pointer = (p - txt_base) + txt_data_offset 
+            strings.append(read_c_string(game, pointer))
+            
+
+        data["messages"]= strings
+        json.dump(data, f, indent=4)
+
+    with open("translate."+filename, 'w') as f:
+        for p in pointers:
+            pointer = (p - txt_base) + txt_data_offset 
+            msg = read_c_string(game, pointer)
+            msg = msg.replace('_', '@@@').replace(' ', '').replace('@@@', ' ')
+            msg = msg.replace(')\t', ')\\t').replace('\t', '').replace(')\\t', ')\t')
+            msg = msg.replace('\n', '').replace('~N', '\n')
+            # Make the code stand out a bit more
+            msg =  re.sub(r'\s*~C\d\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'\s*~S\d\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'\s*~L\d\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            #msg = re.sub(r'(~[A-Z]\d)(\d+)', r'\1 \2', msg)
+            msg =  re.sub(r'\s*~D\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'\s*~H\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'\s*~E\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'\s*~M\s*', lambda m: f' {m.group(0).strip()} ', msg)
+            msg =  re.sub(r'^ ~', '~', msg)
+            f.write(f"{msg}\n------\n")
+
+    return
 
     new_txt_blob = build_new_txt_blob(asciz_entries, txt_base, filename)
     new_ptr_blob = build_new_ptr_blob(asciz_entries, pointers)

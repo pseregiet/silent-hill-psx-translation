@@ -1,0 +1,116 @@
+Yes
+------
+No
+------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+------
+~D I don't have the map
+for this place. ~E 
+------
+~D Too dark to look
+at the map here. ~E 
+------
+There is a ~C2 First aid kit ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Health drink ~C7 .
+Take it? ~S4 
+------
+There is an ~C2 Ampoule ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Handgun bullets ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Rifle shells ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Shotgun shells ~C7 .
+Take it? ~S4 
+------
+The lock is jammed.
+This door can't be opened. ~E 
+------
+It's locked. ~E 
+------
+It's unlocked. ~E 
+------
+~C6 Now Making! ~C7 ~E 
+------
+~J1(1.9)	Were you ringing that bell?
+------
+~J1(5.3)	I've been expecting you.
+It was foretold by Gyromancy.
+------
+~J1(1.8)	What are you talking about? ~E 
+------
+~J1(2.2)	I knew you'd come.
+------
+~J1(2.4)	You want the girl, right?
+------
+~J1(0.9)	The girl?
+------
+~J1(1.7)	You're talking about Cheryl?
+------
+~J1(2.8)	I see everything. ~E 
+------
+~J0(2.1)	You know something!?
+Tell me! ~E 
+------
+~J0(1.1)	Stay back! ~E 
+------
+~J1(4.0)	Nothing is to be gained from
+floundering about at random.
+------
+~J1(2.3)	You must follow the path.
+------
+~J1(4.0)	The path of the hermit,
+concealed by Flauros...
+------
+~J1(3.6)	What?
+What are you talking about? ~E 
+------
+~J0(4.0)	Here, the Flauros,
+a cage of peace.
+------
+~J0(3.3)	It can break through
+the walls of darkness,
+------
+~J0(3.8)	and counteract the wrath of
+the underworld.
+------
+~J0(3.0)	These will help you. ~E 
+------
+~J0(4.2)	Make haste to the hospital
+before it's too late. ~E 
+------
+~J0(2.4)	Wait!
+Don't go yet! ~E 
+------
+There is a ~C2 [Flauros] ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Drawbridge key ~C7 .
+Take it? ~S4 
+------
+Bible. ~E 
+------
+It won't open.
+------
+It must be locked
+from the other side. ~E 
+------
+There's a collection box.
+Nothing inside. ~E 
+------
+There's a newspaper.
+Nothing special. ~E 
+------
+There's a picture on the wall.
+Nothing special. ~E 
+------
+There's a candle stand.
+Nothing special. ~E 
+------

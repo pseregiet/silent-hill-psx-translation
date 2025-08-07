@@ -1,0 +1,138 @@
+Yes
+------
+No
+------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+------
+~D I don't have the map
+for this place. ~E 
+------
+~D Too dark to look
+at the map here. ~E 
+------
+There is a ~C2 First aid kit ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Health drink ~C7 .
+Take it? ~S4 
+------
+There is an ~C2 Ampoule ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Handgun bullets ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Rifle shells ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Shotgun shells ~C7 .
+Take it? ~S4 
+------
+The lock is jammed.
+This door can't be opened. ~E 
+------
+It's locked. ~E 
+------
+It's unlocked. ~E 
+------
+~C6 Now Making! ~C7 ~E 
+------
+~J0(1.2)	Where am I? ~E 
+------
+~J0(2.0)	Have I been here before? ~E 
+------
+~J0(3.8)	I don't remember
+this being here before... ~E 
+------
+The tower door is locked. ~E 
+------
+
+------
+
+------
+~C5 A Golden Sun ~C7 ~E 
+------
+~C5 A Silver Moon ~C7 ~E 
+------
+What?
+Is this a door?
+------
+If it is, there's no keyhole,
+or even a knob...
+------
+If I push it, it moves a bit,
+but it certainly won't open. ~E 
+------
+What's this? ~E 
+------
+In the center of the door is
+a horizontal slot.
+------
+What is it for? ~E 
+------
+There is a ~C2 Picture card ~C7 .
+Take it? ~S4 
+------
+Slid the ~C2 Picture card ~C7 into the slot. ~E 
+------
+~J0(0.9)	 
+------
+~J0(3.0)	Daddy== help me===
+------
+~J0(3.0)	==Daddy==where are you==?
+------
+~D ~J0(2.0)Cheryl! ~E 
+------
+~J1(2.4)That was Cheryl's voice.
+I know it.
+------
+~J1(2.0)Where is she?
+Cheryl... ~E 
+------
+There is a ~C2 Rubber ball ~C7 .
+Take it? ~S4 
+------
+~C5 Leonard Rhine
+The Monster Lurks ~C7 
+------
+The monster lurks...
+What's that supposed to mean? ~E 
+------
+There is a ~C2 Shotgun ~C7 .
+Take it? ~S4 
+------
+~S3 
+------
+Turn the valve left.
+------
+Turn the valve right.
+------
+Stop turning the valve.
+------
+Cards are scattered... ~E 
+------
+A wheelchair?
+At an elementary school? ~E 
+------
+Locker is locked. ~E 
+------
+A huge fan is rotating.
+------
+If approached carelessly,
+I may be sucked in. ~E 
+------
+Can't use the phone. ~E 
+------
+There is a ~C2 Classroom key ~C7 .
+Take it? ~S4 
+------
+A hanging body...
+Why would somebody... ~E 
+------
+A doll is on the floor. ~E 
+------
+A headless doll is stuck
+to the wall. ~E 
+------

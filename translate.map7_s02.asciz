@@ -1,0 +1,461 @@
+Yes
+------
+No
+------
+Someday, someone may experience
+these bizarre events. Hopefully,
+they will find my notes useful. ~E 
+------
+~D I don't have the map
+for this place. ~E 
+------
+~D Too dark to look
+at the map here. ~E 
+------
+There is a ~C2 First aid kit ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Health drink ~C7 .
+Take it? ~S4 
+------
+There is an ~C2 Ampoule ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Handgun bullets ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Rifle shells ~C7 .
+Take it? ~S4 
+------
+There are some ~C2 Shotgun shells ~C7 .
+Take it? ~S4 
+------
+The lock is jammed.
+This door can't be opened. ~E 
+------
+It's locked. ~E 
+------
+It's unlocked. ~E 
+------
+~C6 Now Making! ~C7 ~E 
+------
+Same thing... ~E 
+------
+~L4 ~C3 Investigation stalled.
+[PTV] dealers still at large.
+
+Suspicious deaths continue.
+Like anti-drug Mayor,
+narcotics officer dies of
+sudden heart failure of
+unknown origin. ~E 
+------
+Are there others?
+It's pretty old...
+------
+~L4 ~C3 Fire broke out in town.
+6 homes destroyed.
+
+Charred body
+of Alessa Gillespie(7)
+found in aftermath.
+
+Cause of fire currently under
+investigation.
+------
+~L4 ~C3 Investigations show source
+as basement of Gillespie home.
+Blaze now believed caused by
+malfunction of antiquated
+boiler. ~E 
+------
+The date of the blaze...
+------
+it's the same day
+we found Cheryl! ~E 
+------
+There's a place mark
+in the book.. ~E 
+------
+~L4 ~C3 WHITE CLAUDIA.
+
+Perennial herb found near water.
+Reaches height of 10 to 15 in.
+Oblong leaves, white blossoms.
+------
+~L4 ~C3 Seeds contain hallucinogen.
+Ancient records show it was
+used for religious ceremonies.
+The hallucinogenic effect
+was key. ~E 
+------
+~L4 ~C3 Ask doctor to let me quit being
+in charge of that patient.
+
+It's too weird. ~E 
+------
+~L4 ~C3 The room is filled with insects.
+
+Even with doors
+and windows shut
+they get in to spite me.
+
+To the hospital... ~E 
+------
+~L4 ~C3 Still alive,
+but with wounds that won't heal. ~E 
+------
+~L4 ~C3 Blood and pus flow from
+the bathroom faucet.
+
+I try to stop it,
+but it won't turn off. ~E 
+------
+~L4 ~C3 Feeling bad.
+Need to throw up.
+But nothing comes out.
+Vomiting only bile. ~E 
+------
+~L4 ~C3 Need drug. ~E 
+------
+~L4 ~C3 Told the doctor I quit.
+Won't work at that
+hospital anymore. ~E 
+------
+~J0(0.7)	 
+------
+~J2(1.5)	What is it?
+------
+~J2(2.7)	Still has an unusually
+high fever...
+------
+~J2(2.6)	Eyes don't open...
+getting a pulse...
+------
+~J2(2.8)	But just barely breathing.
+------
+~J2(2.3)	Her skin is all charred!
+------
+~J2(1.2)	Even when I change
+the bandages,
+------
+~J2(3.8)	the blood and pus just start
+oozing through!
+------
+~J2(5.9)	Why...
+What is keeping that child alive?
+------
+~J2(2.8)	I... can't stand it
+any longer...
+------
+~J2(3.3)	I won't tell a soul
+...promise.
+------
+~J2(2.0)	So please...
+------
+~J2(1.0) ~E 
+------
+~J0(1.3)	
+------
+~J0(3.3) ~E 
+------
+~J1(6.4)	Everything is going
+according to plan.
+Sheltered in the womb.
+------
+~J1(1.8)	But it's not done yet.
+------
+~J1(4.5)	Half the soul is lost.
+That is why the seed
+lies dormant.
+------
+~J1(3.6)	And what soul remains
+captured in that husk,
+------
+~J1(3.7)	is buried deep down
+in the subconscious.
+------
+~J1(2.6)	Are you trying to say
+it won't work!?
+------
+~J1(2.0)	That wasn't our agreement!
+------
+~J1(4.0)	No, no.
+These are just stalling tactics.
+------
+~J1(4.4)	If we lend a hand,
+we will be able to get power.
+------
+~J1(5.4)	Never fear.
+The promise shall not be broken.
+------
+~J1(5.0)	But the power we could
+draw now would be
+very weak; almost nothing.
+------
+~J1(3.2)	Unless we get the other
+half of the soul...
+------
+~J1(3.1)	We'll use a magical spell.
+------
+~J1(6.0)	Feeling this child's pain,
+it's sure to come.
+------
+~J1(2.8)	But that will take time... ~E 
+------
+~J0(2.9)	
+------
+~J0(3.0)	No!
+I don't want to!
+------
+~J0(2.7)	Do what mommy tells you, now.
+------
+~J0(6.3)	I just want you to lend me
+a teeny bit of your power.
+That's all.
+------
+~J2(1.2)	No! ~E 
+------
+~J0(2.0)	I don't want to do it! ~E 
+------
+~J1(5.8)	It will make everyone happy...
+and it's for your own good, too.
+------
+~J1(4.3)	Oh, but mommy.
+I just want to be with you.
+------
+~J1(4.3)	Just two of us.
+Please understand. ~E 
+------
+~J1(7.1)	Oh, yes, I see...
+Maybe mommy has been wrong.
+------
+~J1(1.3)	Mommy...
+------
+~J1(5.3)	Why didn't I see this before?
+There's no reason to wait...
+------
+~J1(7.2)	Herein lies the mother's womb,
+containing the power
+to create life.
+------
+~J1(4.2)	I could have done it all myself.
+------
+~J1(1.6)	Mommy? ~E 
+------
+Used the ~C2 Key of [Bethor] ~C7 . ~E 
+------
+Used the ~C2 Key of [Aratron] ~C7 . ~E 
+------
+There is a ~C2 Key of [Bethor] ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Key of [Aratron] ~C7 .
+Take it? ~S4 
+------
+There is an ~C2 Ankh ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Dagger of Melchior ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Disk of Ouroboros ~C7 .
+Take it? ~S4 
+------
+The generator is working.
+Do you want to press the switch? ~S4 
+------
+The generator is stopped.
+Do you want to press the switch? ~S4 
+------
+It's locked.
+------
+The word, [Bethor]
+is carved on the door. ~E 
+------
+It's locked.
+------
+The word, [Aratron]
+is carved on the door. ~E 
+------
+Jelly beans.
+Do you want to open the bag? ~S4 
+------
+The chain is missing a link. ~E 
+------
+The chain is fixed
+with the ring. ~E 
+------
+There is a ~C2 Ring of contract ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Screwdriver ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Camera ~C7 .
+Take it? ~S4 
+------
+There is an ~C2 Amulet of Solomon ~C7 .
+Take it? ~S4 
+------
+There is a ~C2 Crest of Mercury ~C7 .
+Take it? ~S4 
+------
+~C3 Go home.
+------
+~C3 Thief.
+------
+~C3 Drop dead. ~E 
+------
+~E 
+------
+~C3 Names engraved
+On a lithograph.
+The Grim Reaper's list.
+------
+~C3 Yes, the headcount is set
+Young and old lined up
+In order of age.
+------
+~C3 Then, the pathway opens
+Awaiting them, the frenzied
+Uproar, the feast of death! ~E 
+------
+There is a key.
+------
+Electricity is flowing to the key.
+I'll get shocked if I grab it now. ~E 
+------
+~C3 The light to the future. ~E 
+------
+~C3 The light illuminating
+ the darkness. ~E 
+------
+Bird cage. It's empty. ~E 
+------
+A steel plate
+is screwed to the wall. ~E 
+------
+~J0(1.2)	Harry? ~E 
+------
+~J1(2.6)	Lisa...
+What's the matter with you?
+------
+~J1(1.8)	I get it now...
+------
+~J1(4.0)	Why I'm still alive even
+though everyone else's dead.
+------
+~J1(4.0)	I'm not the only one
+who's still walking around.
+------
+~J1(1.7)	I'm the same as them.
+------
+~J1(2.8)	I just hadn't noticed it before. ~E 
+------
+~J1(1.3)	Lisa?
+------
+~J1(3.6)	Stay by me, Harry.
+Please.
+------
+~J1(3.3)	I'm so scared.
+Help me... ~E 
+------
+~J0(2.4)	Save me from them.
+------
+~J0(4.0)	Please...  Harry... ~E 
+------
+~J0(8.9) ~E 
+------
+[Alessa] ~E 
+------
+Used the ~C2 Amulet of Solomon ~C7 . ~E 
+------
+Used the ~C2 Crest of Mercury ~C7 . ~E 
+------
+Used the ~C2 Ankh ~C7 . ~E 
+------
+Used the ~C2 Dagger of Melchior ~C7 . ~E 
+------
+Used the ~C2 Disk of Ouroboros ~C7 . ~E 
+------
+~C3 thou possess them
+to guard thy spirit
+evoke five rites
+unveil thy fate ~E 
+------
+There's a severed power line.
+Nothing special here either. ~E 
+------
+The elevator doesn't
+appear to be working. ~E 
+------
+There's a clock
+with a brokenface. ~E 
+------
+Used the ~C2 Ring of contract ~C7 . ~E 
+------
+None of this stuff is of any use. ~E 
+------
+Just a wall. ~E 
+------
+There are specimen of
+butterflies and moths
+hanging on the wall. ~E 
+------
+A girl's clothing hangs
+on the wall.
+------
+Six, maybe seven...
+Must be a kid about that age. ~E 
+------
+Cards are scattered
+on the floor. ~E 
+------
+There are dolls on the floor. ~E 
+------
+A child's drawings are scattered
+on the floor. ~E 
+------
+Nothing unusual. ~E 
+------
+There are old fairy tales,
+picture books of animals,
+and plants on the shelf. ~E 
+------
+None of this stuff is of any use. ~E 
+------
+~L4 ~C3 Help me... ~E 
+------
+There is a diary on the floor. ~E 
+------
+Nothing helpful. ~E 
+------
+Looks like an altar.
+Wonder what they worship? ~E 
+------
+The floors and walls are covered
+with graffiti. ~E 
+------
+VCR. It's old but usable. ~E 
+------
+A body is laid out on the bed.
+Don't feel like checking this out. ~E 
+------
+There's a bottle filled
+with some kind of drug.
+Better leave it. ~E 
+------
+There are some empty bottles. ~E 
+------
+Nothing special in the box.
+Nothing to worry about. ~E 
+------
+Nothing inside. ~E 
+------
+Nothing useful in the boxes. ~E 
+------
+There's a botanical
+reference book.
+Don't need to read it now. ~E 
+------

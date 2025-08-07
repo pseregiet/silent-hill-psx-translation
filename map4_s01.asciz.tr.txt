@@ -1,257 +1,261 @@
-Looks like an altar.
-Wonder what they worship? ~E 
+Wygląda jak ołtarz
+Ciekawe co tutaj czczą? ~E 
 -------
-None of this stuff is of any use. ~E 
+Nic z tych rzeczy mi się nie przyda. ~E 
 -------
-No need to go back. ~E 
+Nie muszę wracać. ~E 
 -------
-There is a clock.
-Nothing special. ~E 
+Zegar. Nic specjalnego. ~E
 -------
-There is an  ~C2 Axe ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Siekiere ~C7 .
+Zabrać? ~S4 
 -------
-~J0(2.0)	Lisa would probably know... ~E 
+~J0(2.0)	Lisa pewnie wie... ~E 
 -------
-~J0(2.0)	Aren't there any other roads? 
+~J0(2.0)	Jest jakaś inna droga?
 -------
-~J0(2.2)	But, the road to the lake
-is blocked... 
+~J0(2.2)	Ale, droga do jeziora jest
+zablokowana...
 -------
-~J0(3.0)	Cybil said Cheryl was heading
-towards the lake. 
+~J0(3.0)	Cybil powiedziała, że Cheryl
+szła w kierunku jeziora.
 -------
 ~J0(1.0)	  
 -------
-~J0(2.0)	I don't know
-what's real anymore... ~E 
+~J0(2.0)	Już nie wiem co jest
+rzeczywistością...~E
 -------
-~J0(4.0)	I could have had a car accident,
-and now I'm lying unconscious
-in a hospital bed...
+~J0(4.0)	Mogłem mieć wypadek,
+a teraz leże nieprzytomny
+w szpitalu...
 -------
-~J0(3.0)	but maybe this is all just
-going on in my head. 
+~J0(3.0)	ale może to wszystko
+to urojenia w mojej głowie.
 -------
-~J0(2.0)	I don't want to think so, 
+~J0(2.0)	Nawet nie chce o tym myśleć, 
 -------
-~J0(2.0)	Did I pass out again? ~E 
+~J0(2.0)	Straciłem przytomność? ~E 
 -------
-~J0(2.0)	Was that another dream? ~E 
+~J0(2.0)	Kolejny sen? ~E 
 -------
-Do you want to push
-the cabinet? ~S4 
+Czy chcesz popchać szafę? ~S4
 -------
-There is a trace on the floor
-that somebody moved the cabinet. 
+Na podłdze są mocne rysy
+od przesuwania tej szafy.
 -------
 ~J0(2.3)	Harry? ~E 
 -------
 ~J0(1.0)	Harry? ~E 
 -------
 ~J0(4.2)	Harry?
-Are you OK? ~E 
+Wszystko w porządkuK? ~E 
 -------
-~J2(1.5)	What the...!? ~E 
+~J2(1.5)	Co do...!? ~E 
 -------
 ~J0(1.5)	
 -------
 Some kind of powder
 is left in the chalice. ~E 
 -------
-~J1(2.5)	Maybe this is
-[the other church.] ~E 
+~J1(2.5)	Może to jest ten
+[drugi kościół.] ~E 
 -------
-~J1(2.6)	Never seen anything
-like this before. 
+~J1(2.6)	Nigdy nie widziałem
+czegoś takiego.
 -------
-~J1(4.1)	What's this...?
-Some kind of altar...? 
+~J1(4.1)	Co to jest...?
+Jakiś ołtarz...? 
 -------
-~J0(2.4)	Yeah, maybe... ~E 
+~J0(2.4)	Taa, może... ~E 
 -------
-~J1(2.5)	You're tired. ~E 
+~J1(2.5)	Jesteś zmęczony. ~E 
 -------
 ~J1(1.0)	Harry. 
 -------
-~J1(4.5)	I was just wondering.
-Never mind. 
+~J1(4.5)	Po prostu myślałem...
+Nie ważne.
 -------
 ~J1(1.8)	Oh... 
 -------
-~J1(3.0)	I have no idea what
-you're talking about, Harry. ~E 
+~J1(3.0)	Nie wiem o czym do mnie
+mówisz, Harry. ~E
 -------
-~J1(4.2)	It's all a blur.
-Like some kind of hallucination,
-you know? 
+~J1(4.2)	Jak jakaś zjawa.
+Jakaś halucynacja.
+Rozumiesz?
 -------
-~J1(3.7)	It's like I was there,
-but not really. 
+~J1(3.7)	Sam nie jestem pewien, czy
+tam byłem czy nie.
 -------
-~J1(2.7)	I met this nurse... Lisa. 
+~J1(2.7)	Spotkałem pewną
+pielegniarke... Lise.
 -------
-~J1(4.0)	Everything's dark there,
-and I hear sirens in the distance. 
+~J1(4.0)	Wszystko robi się ciemne
+i słysze syreny w oddali.
 -------
-~J1(3.7)	I try to make sense of it,
-but then my mind goes blank. 
+~J1(3.7)	Próbuje to zrozumieć,
+ale mój mózg kompletnie
+przestaje działać.
 -------
-~J1(1.7)	I'm not quite sure. 
+~J1(1.7)	Sam nie wiem. 
 -------
-~J1(1.9)	What are you talking about? 
+~J1(1.9)	O czym ty mówisz? 
 -------
-~J1(6.2)	Well...like some other world...
-It's like some kind of bad dream...? 
+~J1(6.2)	O...jakby innym świecie...
+Jak jakiś koszmar...? 
 -------
-~J1(2.2)	Do you know anything about... 
+~J1(2.2)	Wiesz coś o... 
 -------
-~J0(0.9)	Yes? ~E 
+~J0(0.9)	Tak? ~E 
 -------
 ~J0(1.0)	Cybil. 
 -------
-~J0(0.8)  Okay. ~E 
+~J0(0.8)  Okej. ~E 
 -------
-~J1(3.6)	If anything looks fishy,
-get back here on the double. ~E 
+~J1(3.6)	Jak będzie coś nie tak,
+to wracaj od razu. ~E
 -------
-~J1(1.7)	Be careful. 
+~J1(1.7)	Uważaj na siebie.
 -------
-~J1(1.5)	I'll cover you from here. 
+~J1(1.5)	Będe cie osłaniać. 
 -------
-~J1(0.9)	Alright. 
+~J1(0.9)	W porządku.
 -------
-~J1(3.0)	No.  I'm going. 
+~J1(3.0)	Nie, ja pójdę. 
 -------
-~J1(2.2)	I'm a cop.  I should go. 
+~J1(2.2)	Jestem policjantką. To ja
+powinnam pójść.
 -------
-~J1(4.0)	We don't know what's back there.
-I'd better check it out first. 
+~J1(4.0)	Nie wiemy co tam może być.
+Lepiej pójde pierwszy
+i to sprawdzę.
 -------
-~J1(1.0)	Wait. 
+~J1(1.0)	Czekaj.
 -------
-~J1(1.4)	Let's have a look. 
+~J1(1.4)	Zobaczmy.
 -------
-~J1(1.8)	Maybe there's something
-back there. 
+~J1(1.8)	Może coś tam jest. 
 -------
-~J1(1.5)	Just discovered it. 
+~J1(1.5)	Dopiero co to znalazłem. 
 -------
-~J1(1.2)	What's this? 
+~J1(1.2)	A to co ?? 
 -------
-~J1(1.8)	That's all I can think of. 
+~J1(1.8)	To jedyne co mi
+przychodzi na myśl.
 -------
-~J1(3.6)	But, maybe that's the darkness
-she was talking about. 
+~J1(3.6)	Ale może mówiła o
+tej ciemności.
 -------
-~J1(3.2)	I really don't know. 
+~J1(3.2)	Naprawde nie wiem.
 -------
-~J1(3.5)	What could drug trafficking
-have to do with all this? 
+~J1(3.5)	Przemyt narkotyków? Co to
+ma wspólnego z tą sytuacją?
 -------
-~J1(2.5)	and the investigation is stalled. 
+~J1(2.5)	śledztwo zostało wstrzymane. 
 -------
-~J1(2.2)	None of our leads
-have panned out, 
+~J1(2.2)	Wszystkie nasze tropy
+skończy się na niczym,
 -------
-~J1(2.8)	The force still can't figure out
-who's behind it. 
+~J1(2.8)	Policja wciąż nie może
+znaleźć źródła tych
+narkotyków.
 -------
-~J1(2.0)	They sell 'em to the tourists. 
+~J1(2.0)	Sprzedają prochy turystom. 
 -------
-~J1(1.6)	Must be on drugs. 
+~J1(1.6)	Pewnie naćpana.
 -------
-~J1(2.9)	Darkness devouring the town? 
+~J1(2.9)	Ciemność która pochłonie miasto? 
 -------
-~J1(2.0)	Any idea what it means? ~E 
+~J1(2.0)	Wiesz o co mogło jej chodzić? ~E 
 -------
-~J1(1.8)	Gibberish like that. 
+~J1(1.8)	Jakieś bzdety w tym stylu.
 -------
-~J1(4.0)	She said something about
-the town being devoured
-by darkness.
+~J1(4.0)	Mówiła coś o ciemności
+która pochłonie to miasto.
 -------
-~J1(1.2)	And? ~E 
+~J1(1.2)	Co z nią? ~E 
 -------
-~J1(1.0)	No. 
+~J1(1.0)	Nie. 
 -------
 ~J1(1.8)	Dahlia Gillespie? 
 -------
-~J1(4.0)	Her name's Dahlia Gillespie.
-Do you know her? 
+~J1(4.0)	Nazywa się Dahlia Gillespie.
+Znasz ją? 
 -------
-~J1(3.0)	Yeah...
-I met this bizarre woman. 
+~J1(3.0)	Taa...
+Spotkałem tą
+dziwaczną kobiete. 
 -------
-~J1(3.0)	What about you?  Anything? 
+~J1(3.0)	A co u ciebie?
+Znalazłeś coś?
 -------
 ~J1(2.0)	~E 
 -------
-~J1(3.6)	It was like she was walking
-on thin air. 
+~J1(3.6)	Jakby chodziła w powietrzu.
 -------
-~J1(3.0)	What!?
- So then Cheryl... 
+~J1(3.0)	Co!?
+ A więc Cheryl... 
 -------
-~J1(4.8)	There was no place for her to go.
-The road has been obliterated. ~E 
+~J1(4.8)	Droga była kompletnie zniszczona,
+nie miała dokąd pójść. ~E
 -------
-~J1(2.5)	It wasn't like she ran off
-exactly. 
+~J1(2.5)	To nie tak, że miała gdzie pobiec
+a ja ją zostawiłam.
 -------
-~J1(2.0)	Now don't get excited. 
+~J1(2.0)	Ale nie ekscytuj się.
 -------
-~J1(3.4)	On Bachman Road.
-She was heading towards the lake. 
+~J1(3.4)	Na ulicy Bachman.
+Szła w kierunku jeziora.
 -------
-~J1(3.5)	And you just let her go!?
-Where was it? 
+~J1(3.5)	Zotawiłaś ją? tak po prostu?
+Gdzie to było?
 -------
-~J1(2.7)	I don't know about
-your daughter, but... ~E 
+~J1(2.7)	Nie wiem gdzie jest
+twoja córka, ale...~E
 -------
-~J1(2.4)	I went after her,
-but she vanished. 
+~J1(2.4)	Pobiegłam za nią.
+Ale znikneła.
 -------
-~J1(2.6)	I only caught a glimpse of her
-through the fog. 
+~J1(2.6)	Ledwo ją widziałam w tej mgle.
 -------
-~J1(1.4)	Was it Cheryl? 
+~J1(1.4)	Widziałaś Cheryl? 
 -------
-~J1(1.9)	I did see a girl. 
+~J1(1.9)	Widziałam dziewczynkę.
 -------
-~J1(2.7)	What about my daughter?
-Did you see her? 
+~J1(2.7)	A moja córka?
+Widziałaś ją?
 -------
-~J1(2.4)	The phones and radios
-are still out, too. ~E 
+~J1(2.4)	Telefony i radio też nadal
+nie działa. ~E
 -------
-~J1(2.2)	Cars have completely
-stopped running. 
+~J1(2.2)	Samochody przestały
+kompletnie działać.
 -------
-~J1(2.0)	All the roads out of town
-are blocked. 
+~J1(2.0)	Wszystkie drogi z miasta
+są zablokowane.
 -------
-~J1(1.8)	I couldn't get out. 
+~J1(1.8)	Nie mogłam wyjechać.
 -------
-~J1(2.8)	I saw you go in here,
-so I followed you. 
+~J1(2.8)	Widziałam jak tutaj wchodzisz,
+więc poszłam za tobą.
 -------
-~J1(3.0)	What are you doing here?
-I thought you left town. 
+~J1(3.0)	Co tutaj robisz?
+Myślałam, że wyjechałaś
+z miasta.
 -------
-~J1(1.4)	It's nuts! ~E 
+~J1(1.4)	Szaleństwo! ~E 
 -------
-~J1(4.0)	I shouldn't have left you.
-Things are worse than I thought. 
+~J1(4.0)	Nie powinnam była cię zostawiać.
+Jest gorzej, niż myślałam.
 -------
-~J0(2.8)	I'm glad you're OK. 
+~J0(2.8)	Ciesze się, że nic
+ci nie jest. 
 -------
 ~J0(1.0)	Cybil? ~E 
 -------
 ~J0(1.0)	Harry! 
 -------
-~J0(1.6)	What's this? ~E 
+~J0(1.6)	Co to? ~E 
 -------
 ~C6Now Making!~C7~E
 -------

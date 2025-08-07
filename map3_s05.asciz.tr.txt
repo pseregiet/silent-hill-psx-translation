@@ -1,60 +1,61 @@
-Nothing inside. ~E 
+Pusto. ~E 
 -------
-Nothing special in the box.
-Nothing to worry about. ~E 
+Nie ma nic specjalnego
+w tych pudłach. ~E
 -------
-There are some empty bottles. ~E 
+Puste butelki. ~E
 -------
-There's a bottle filled
-with some kind of drug.
-Better leave it. ~E 
+Butelki z lekami.
+Lepiej ich nie ruszać. ~E
 -------
-Nothing useful in the boxes. ~E 
+Nie ma nic ciekawego
+w tych pudłach. ~E
 -------
-Nothing helpful. ~E 
+Nic przydatnego. ~E 
 -------
-A body is laid out on the bed.
-Don't feel like checking this out. ~E 
+Na łóżku leży ciało.
+Nie chce na nie patrzeć. ~E
 -------
-A bed? What's it doing here?
-Who would... ~E 
+Co tutaj robi to łóżko?
+Kto by je... ~E
 -------
-There is a  ~C2 Hammer ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Młot ~C7 .
+Zabrać? ~S4 
 -------
-There are skid marks from
-the cabinet being moved. ~E 
+Zarysowana podłoga, pewnie od
+przesuwania tej szafy. ~E
 -------
-The generator is on. ~E 
+Agregator pracuje. ~E
 -------
-Do you want to push
-the cabinet? ~S4 
+Chcesz popchnąć szafkę? ~S4
 -------
-Used the  ~C2 Basement storeroom key ~C7 . ~E 
+Użyłeś ~C2
+Klucza do schowka w piwnicy ~C7 . ~E 
 -------
-The vines absorbed the alcohol. ~E 
+Plącza są nasiąkniete alkoholem. ~E
 -------
-Poured  ~C2 Disinfecting alcohol ~C7 
-on the vines. ~E 
+Wylałeś ~C2 Alkohol ~C7 
+na plącza. ~E 
 -------
-No.
-The fire goes out right away
-when I light the vines. ~E 
+To nie zadziała.
+Ogień gaśnie zbyt szybko,
+nie spale tych plączy
+w ten sposób. ~E
 -------
-Can't move it since the vines
-have grown around it. ~E 
+Nie mogę jej ruszyć,
+Plącza kompletnie ją zarosły. ~E
 -------
-Looks like a hallway
-under the grate. 
+Wygląda jak korytarz
+pod kratką.
 -------
-There is an  ~C2 Examination room key ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Klucz do pokoju badań ~C7 .
+Zabrać? ~S4 
 -------
 ~J0(0.4) ~E 
 -------
-~J0(2.6)	Looks like someone's been here... ~E 
+~J0(2.6)	Wygląda jakby ktoś tutaj był... ~E 
 -------
-~J0(1.2)	What's this? ~E 
+~J0(1.2)	Co to? ~E 
 -------
 Alessa...? ~E 
 -------

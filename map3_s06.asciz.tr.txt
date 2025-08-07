@@ -1,86 +1,87 @@
-The phone's out.
-Can't get a dial tone. ~E 
+Telefon nie działa.
+Nie ma sygnału. ~E
 -------
-Nothing helpful. ~E 
+Nic użytecznego. ~E
 -------
-There's a white board.
-Nothing special written here. ~E 
+Biała tablica. Nie ma na
+niej nic interesującego. ~E
 -------
-Nothing unusual. ~E 
+Nic ciekawego. ~E 
 -------
+Kawałek strony
+został wycięty... ~E
 This article's been
 clipped out... ~E 
 -------
-There is a newspaper. 
+Gazeta.
 -------
-There's a vending machine.
-It doesn't work. ~E 
+Zepsuta maszyna z batonikiami. ~E
 -------
-I'll copy the location of
-the antique shop to the map. ~E 
+Skopiuje lokacje sklepu
+na swoją mapie. ~E
 -------
-These are phones and phonebooks. 
+Telefony i książki telefoniczne.
 -------
-These are phones and phonebooks.
-No need to examine this. ~E 
+Telefony i książki telefoniczne.
+Nic specjalnego. ~E
 -------
-There is an  ~C2 Antique shop key ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2
+Klucz do sklepu z antykami ~C7 .
+Zabrać? ~S4 
 -------
-~HThere is a  ~C5 Hospital map ~C7 .
-Take it? ~S4 
+~H Znalazłeś ~C5 Mape szpitala ~C7 .
+Zabrać? ~S4 
 -------
-The elevator doesn't
-appear to be working. ~E 
+Winda chyba nie działa. ~E
 -------
-~J0(1.8)	Hey!  Wait! ~E 
+~J0(1.8)	Hej!  Czekaj! ~E 
 -------
-~J0(2.8)	Don't let it be completed. ~E 
+~J0(2.8)	Nie pozwól, by się wypełnił. ~E 
 -------
-~J0(3.1)	It is the mark of Samael... 
+~J0(3.1)	To znamie Samaela... 
 -------
-~J0(1.2)	What does it mean? 
+~J0(1.2)	Co to oznacza?
 -------
-~J0(3.2)	So that's what I saw
-in the schoolyard. 
+~J0(3.2)	A więc to widziałem
+na podwórku szkolnym.
 -------
-~J0(5.0)	Have you not seen
-the crest marked
-on the ground all over town? 
+~J0(5.0)	Czy nie widziałeś
+herbu zaznaczonego
+na ziemi w całym mieście?
 -------
-~J0(6.5)	This is beyond my abilities.
-Only you can stop it now. ~E 
+~J0(6.5)	To przekacza moje możliwości.
+Tylko ty możesz to teraz
+powstrzymać. ~E
 -------
-~J0(5.3)	The other church in this town.
-That is your destination. 
+~J0(5.3)	Drugi kościół w tym mieście.
+To jest twój kolejny cel.
 -------
-~J0(3.8)	Believe the evidence
-of your eyes. 
+~J0(3.8)	Uwierz własnym oczom.
 -------
-~J1(4.0)	What are you talking about?
-I don't understand a word of this. ~E 
+~J1(4.0)	O czym ty mówisz?
+Nie rozumiem ani słowa. ~E
 -------
-~J1(3.4)	I knew this day would come. 
+~J1(3.4)	Wiedziałam,
+że ten dzień nadejdzie.
 -------
-~J1(5.8)	Strength must overcome
-petty desire.
-Childish sleep talk. 
+~J1(5.8)	Siła musi przezwyciężyć
+błache pragnienia.
+Dziecięce bajania.
 -------
-~J1(3.9)	The town is being devoured
-by darkness. 
+~J1(3.9)	Ciemność pochłania to miasto.
 -------
-~J1(1.5)	Darkness. 
+~J1(1.5)	Ciemność. 
 -------
-~J1(3.0)	Tell me everything you know.
-What's going on? 
+~J1(3.0)	Powiedz mi wszystko co wiesz.
+Co się tu dzieje?
 -------
-~J0(3.4)	Yes.  Dahlia Gillespie. ~E 
+~J0(3.4)	Tak.  Dahlia Gillespie. ~E 
 -------
-~J0(1.2)	It's you... ~E 
+~J0(1.2)	To ty... ~E 
 -------
-~J0(2.6)	You were too late. ~E 
+~J0(2.6)	Spóźniłeś się. ~E 
 -------
-~J0(1.5)	Was I dreaming? ~E 
+~J0(1.5)	Czy ja śniłem? ~E 
 -------
 ~C6Now Making!~C7~E
 -------

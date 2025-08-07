@@ -1,189 +1,179 @@
-Nothing helpful. ~E 
+Nothing użytecznego. ~E 
 -------
-Nothing unusual. ~E 
+Nothing ciekawego. ~E 
 -------
 ~J0(1.5)	Harry... ~E 
 -------
-~J1(3.0)	I'll be back as soon as
-I find my daughter. ~E 
+~J1(3.0)	Wróce tutaj jak tylko znajdę
+swoją córke. ~E
 -------
-~J1(3.8)	Look, just wait here
-a little longer. 
+~J1(3.8)	Po prostu poczekaj tutaj
+jeszcze trochę.
 -------
-~J1(4.0)	Oh, Harry, I'm so scared...
-I'm cold. 
+~J1(4.0)	Oh, Harry, Tak bardzo się boje..
+Zimno mi. 
 -------
-~J1(4.2)	No...
-somehow I feel I'm not supposed
-to leave this place. 
+~J1(4.2)	Nie...
+Coś mi mówi, że nie powinnam
+opuszczać tego miejsca.
 -------
-~J1(3.6)	I can't promise you anything,
-but I'll do my best
-to protect you. 
+~J1(3.6)	Nie mogę ci nic obiecać,
+ale postaram się cie ochronić.
 -------
-~J1(2.6)	This may not be the safest place
-in the world either. 
+~J1(2.6)	Tutaj nie jest zbyt bezpiecznie.
 -------
-~J1(1.6)	How about coming with me? 
+~J1(1.6)	To może chodź ze mną?
 -------
-~J1(4.2)	I don't want to be alone.
-It's so scary. I can't stand it. 
+~J1(4.2)	Nie chcę zostać sama.
+Strasznie się boje.
+Nie daje rady.
 -------
-~J1(2.0)	Harry, don't go! 
+~J1(2.0)	Harry, nie odchodź!
 -------
-~J1(2.3)	If there's a chance,
-I've got to try. ~E  
+~J1(2.3)	Muszę spróbować. ~E
 -------
-~J1(2.8)	Besides, it's all fenced off
-to keep people out. 
+~J1(3.1)	Nigdy tam nie byłam,
+więc nie jestem pewna.
 -------
-~J1(3.1)	I've never been down
-in there myself,
-so I'm not positive. 
+~J1(2.3)	Myślisz, że dojde do jeziora
+przez ten tunel?
 -------
-~J1(2.3)	You think I can get to the lake
-from there? 
+~J1(0.9)	Serio?! 
 -------
-~J1(0.9)	Really?! 
+~J1(3.2)	Podobno ciągnie się
+do samego jeziora! ~E
 -------
-~J1(3.2)	I remember hearing it runs
-all the way to the lake! ~E 
+~J1(4.2)	Tam jest podziemny tunel,
+używany do inspekcji
+albo coś takiego!
 -------
-~J1(4.2)	There's an underground tunnel
-out there used for inspections,
-or something! 
+~J1(2.3)	Opuszczona lata temu.
 -------
-~J1(2.3)	It's been abandoned for years. 
+~J1(3.3)	Przy starej szkole jest
+stacja wodociągowa.
 -------
-~J1(3.3)	There's a water works over by
-my old elementary school. 
+~J1(0.6)	Co?
 -------
-~J1(0.6)	What? 
+~J1(3.0)	Czekaj,
+Coś sobie przypomniałam. 
 -------
-~J1(3.0)	Wait,
-I just remembered something. 
+~J1(2.7)	Musi być jakaś inna droga. ~E 
 -------
-~J1(2.7)	There's gotta be another way. ~E 
+~J1(1.3)	Na pewno? 
 -------
-~J1(1.3)	Are you sure? 
+~J1(2.3)	Cóż, to jest jedyna droga.
 -------
-~J1(2.3)	Well, that's
-the only way out there. 
+~J1(1.5)	Droga jest zablokowana. 
 -------
-~J1(1.5)	The road's blocked. 
+~J1(3.0)	Do jeziora?
+Idź ulicą Bachmana. 
 -------
-~J1(3.0)	The lake?
-You take Bachman Road. 
+~J1(3.3)	Lisa, powiesz mi jak
+dojść do jeziora?
 -------
-~J1(3.3)	Lisa, can you tell me
-how to get to the lake? 
+~J0(1.6)	Naprawde ciesze się, że cie widzę. ~E
 -------
-~J0(1.6)	I'm real happy to see you. ~E 
+~J0(2.5)	Już jestem.
+Też się martwiłem.
 -------
-~J0(2.5)	I'm here now.
-I was worried, too. 
+~J0(4.6)	Dzięki Bogu, że wróciłeś.
+Bałam się zostać tu sama.
 -------
-~J0(4.6)	Thank God you came back.
-I was scared to be here all alone. 
--------
-~J0(1.6)	Glad you're OK. ~E 
+~J0(1.6)	Jesteś cały. ~E 
 -------
 ~J0(1.1)	Harry! ~E 
 -------
-~J1(4.2)	I'm sorry, I'm rambling...
-I'll shut up. ~E 
+~J1(4.2)	Przepraszam, bredzę...
+Skończe już. ~E
 -------
-~J1(2.0)	People said it was a curse. 
+~J1(2.0)	Ludzie gadali, że to klątwa.
 -------
-~J1(4.4)	When several people connected
-with developing the town
-died in accidents. 
+~J1(4.4)	Kiedy kilka osób związanych
+z rozwojem miasta
+zginęło w wypadkach.
 -------
-~J0(4.8)	Last time I heard anything
-about it was, gosh, years ago... 
+~J0(4.8)	Ostatni raz słyszałam o tym...
+Boże, kilka lat temu...
 -------
-~J0(1.8)	A cult... ~E 
+~J0(1.8)	Kult... ~E 
 -------
-~J1(3.8)	Then a lot of new people
-came in and everybody
-clammed up about it. 
+~J1(3.8)	Potem przybyło mnóstwo nowych
+osób i wszyscy zamilkli
+na ten temat.
 -------
-~J1(4.5)	Everyone was so flipped out.
-Gotta blame it on something. 
+~J1(4.5)	Wszyscy byli tak wściekli.
+Trzeba zwalić winę na coś.
 -------
-~J1(3.5)	Before the resort,
-there really wasn't
-anything else out here. 
+~J1(3.5)	Przed założeniem resortu
+nie było tutaj w sumie nic.
 -------
-~J1(3.7)	Evidently, things like that
-used to happen around here
-all the time. 
+~J1(3.7)	Takie rzeczy działy się
+tutaj cały czas.
 -------
-~J1(5.0)	As young people moved away,
-the people figured they'd been
-summoned by the gods. 
+~J1(5.0)	Młodzi zaczeli wyjeżdzać,
+pozostali myśleli, że wzywa ich bóg.
 -------
-~J1(4.8)	Weird occult stuff...
-Black magic, that kind of thing. 
+~J1(4.8)	Jakiś kult czy coś...
+Czarna magia, tego typu rzeczy. 
 -------
-~J1(4.1)	Everybody followed
-some kind of queer religion. ~E 
+~J1(4.1)	Wszyscy wyznawali
+jakąś dziwaczną religię. ~E
 -------
-~J1(3.4)	the townspeople here were
-on the quiet side. 
+~J1(3.4)	tubylcy starali się nie
+zwracać na siebie uwagi.
 -------
-~J1(2.9)	Before this place was turned
-into a resort, 
+~J1(2.9)	Zanim to miasto stało się
+atrakcją turystyczną,
 -------
-~J1(2.1)	Yes, I think I do. 
+~J1(2.1)	Tak, chyba wiem.
 -------
-~J1(3.5)	The town... devoured
-by the darkness. 
+~J1(3.5)	Miasto...
+pochłonie ciemność.
 -------
-~J1(2.7)	Do you have any idea
-what she's talking about? 
+~J1(2.7)	Wiesz o co mogło jej chodzić?
 -------
-~J1(5.1)	Well, she says the town is being
-devoured by the darkness. 
+~J1(5.1)	Mówiła, ciemność pochłonie
+to miasto.
 -------
-~J1(5.2)	I heard her kid died in a fire,
-and supposedly she's been crazy
-ever since. ~E 
+~J1(5.2)	Słyszałam, że jej dziecko
+zmarło podczas pożaru w jej domu.
+Podobno od tamtej pory kompletnie
+jej odbiło. ~E
 -------
-~J1(4.0)	She never sees anybody,
-so I don't know
-that much about her. 
+~J1(4.0)	Ale nikgo nigdy nie
+odwiedza, więc nie wiem o niej
+zbyt wiele.
 -------
-~J1(2.3)	She's kinda' famous around here. 
+~J1(2.3)	Jest trochę sławna w tej okolicy.
 -------
-~J1(3.2)	Oh yeah,
-that crazy Gillespie lady. 
+~J1(3.2)	O tak,
+ta szalona baba Gillespie. 
 -------
 ~J1(4.3)	Lisa...
-Do you know a woman
-named Dahlia Gillespie? 
+Znasz kobiete o imieniu
+Dahlia Gillespie? 
 -------
-~J1(2.2)	Well, if you're sure... ~E 
+~J1(2.2)	Cóż, skoro tak mówisz... ~E
 -------
-~J1(2.2)	Nothing you need to
-worry about. 
+~J1(2.2)	Nie musisz się o nic
+martwić.
 -------
-~J1(1.3)	I'm fine. 
+~J1(1.3)	Nic mi nie jest.
 -------
-~J1(4.2)	Hey, you don't look too good.
-Are you OK? 
+~J1(4.2)	Hej, nie wyglądasz za dobrze.
+Wszystko wporządku?
 -------
-~J1(0.8)	Was I? 
+~J1(0.8)	Tak?
 -------
-~J1(2.4)	You were having a bad dream. 
+~J1(2.4)	Miałeś zły sen. 
 -------
-~J1(1.5)	Then I'm in the hospital. 
+~J1(1.5)	A więc jestem w szpitalu.
 -------
-~J1(1.2)	Lisa... 
+~J1(1.2)	Lisa...
 -------
-~J1(1.0)	Harry. 
+~J1(1.0)	Harry.
 -------
-~J0(1.8)	Where am I? ~E 
+~J0(1.8)	Gdzie ja jestem? ~E 
 -------
 ~C6Now Making!~C7~E
 -------

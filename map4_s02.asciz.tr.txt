@@ -1,6 +1,6 @@
-~C3Alchemilla Hospital ~E 
+~C3 Szpital Alchemilla ~E 
 -------
-~C3green lion ~E 
+~C3 Zielony Lew ~E
 -------
 ~C6Now Making!~C7~E
 -------

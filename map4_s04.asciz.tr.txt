@@ -32,6 +32,9 @@ Nie daje rady.
 -------
 ~J1(2.3)	Muszę spróbować. ~E
 -------
+~J1(2.8)	Besides, it's all fenced off
+to keep people out.
+-------
 ~J1(3.1)	Nigdy tam nie byłam,
 więc nie jestem pewna.
 -------

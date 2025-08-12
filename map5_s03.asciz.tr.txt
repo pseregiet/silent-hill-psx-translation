@@ -1,149 +1,141 @@
-An old motorcycle. ~E 
+Stary motocykl. ~E 
 -------
-Do you want to push
-the shelf? ~S4 
+Chcesz popchać szafę? ~S4
 -------
-Nobody inside. ~E 
+Nie ma nikogo w środku. ~E 
 -------
-There's a vending machine.
-It doesn't work. ~E 
+Maszyna z napojami. Zepsuta. ~E
 -------
-Nothing special. ~E 
+Nic specjalnego. ~E 
 -------
-There's a guest register.
-Nothing special written here. ~E 
+Spis gości.
+Nie ma tutaj nic specjalnego. ~E
 -------
-The power must be out.
-It doesn't work. ~E 
+Chyba nie ma prądu.
+Nie chcę się włączyć. ~E
 -------
-There's a TV set. 
+Telewizor.
 -------
-A poster is on the wall.
-Don't look at that now, though. ~E 
+Plakat na ścianie.
+Nie mam czasu na to patrzeć. ~E
 -------
-It's completely dead.
-Maybe it's broken. ~E 
+Nic nie słychać. Może jest zepsute. ~E
 -------
-There's a radio
-on top of the cabinet. 
+Radio na szafce.
 -------
-A fine layer of
-dust covers everything,
-as if long abandoned. ~E 
+Wszystko jest pokryte grubą
+warstwą kurzu. Jakby nikt
+tego nie ruszał od lat. ~E
 -------
-Batteries, oil cans,
-and other items line the shelves. 
+Akumulator, olej,
+normalne garażowe rzeczy.
 -------
-Used the  ~C2 Motorcycle key ~C7 . ~E 
+Użyleś ~C2 Klucza Motocyklu ~C7. ~E 
 -------
-There is a  ~C2 Magnet ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Magnet ~C7.
+Zabrać? ~S4 
 -------
-~C3He's probably linked to the death
-of the mayor and others. ~E 
+~C3Pewnie jest powiązany ze śmiercią
+burmistrza i innych. ~E
 -------
-~C3Don't want to get involved,
-but can't disobey... 
+~C3Nie chce się w to plątać,
+ale nie mogę się sprzeciwić...
 -------
-~C3Took package.
-Told to sit on it awhile. 
+~C3 Zabrałem paczke.
+Miałem z nią trochę poczekać.
 -------
-~C3September 10 
+~C3 Wrzesień 10 
 -------
-~L4 ~C3 Investigation stalled.
-[PTV] dealers still at large.
-~NSuspicious deaths continue.
-Like the anti-drug mayor,
-a narcotics officer dies of
-a sudden heart failure of
-unknown origin. ~E 
+~L4 ~C3 Wstrzymane śledztwo.
+[PTV] Dealerzy wciąż na wolności.
+
+Nadal dochodzi do podejrzanych zgonów.
+Funkcjonariusz policji z odziału
+antynarkotykowego zmarł z powodu
+nagłego ataku serca, podobnie jak
+burmistrz. Przyczyna ataku serca
+jest nieznana.
 -------
-It's the same date as
-the one in the hospital... ~E 
+Taka sama data jak
+ta ze szpitala... ~E
 -------
-Newspaper. 
+Gazeta. 
 -------
-There is a newspaper. ~E 
+Gazeta. ~E 
 -------
-~J1(3.1)	Man, was he pissed.
-And in such a rush, too. ~E 
+~J1(3.1)	Ale się wkurzył.
+I śpieszyło mu się dokądś. ~E
 -------
-~J1(2.0)	Better hurry....
-I'm worried about Cheryl. ~E 
+~J1(2.0)	Muszę się śpieszyć...
+Martwie się o Cheryl. ~E 
 -------
-~J1(2.0)	I guess I wasted my time. 
+~J1(2.0)	Chyba zmarnowałem tutaj czas.
 -------
-~J1(3.9)	Anyway, better let him do as he
-pleases. There's more than
-my life at stake. ~E 
+~J1(3.9)	No cóż, lepiej zrobię jak mówił.
+Nie mam zamiaru ryzykować
+swoim życiem. ~E
 -------
-~J1(1.8)	That was probably dope
-in the bottle. 
+~J1(1.8)	To pewnie były jakieś dragi.
 -------
-~J1(3.1)	Man, was he pissed.
-And in such a rush, too. 
+~J1(3.1)	Ale się wkurzył.
+I śpieszyło mu się dokądś. 
 -------
-~J1(3.3)	That guy's gotta be involved
-in the local drug racket. 
+~J1(3.3)	Ten koleś pewnie macza palce
+w lokalnej dystrybucji narkotyków.
 -------
-~J1(0.8)	Got it? ~E 
+~J1(0.8)	Jasne? ~E 
 -------
-~J1(3.2)	Unless you want to die,
-keep your mind on business. 
+~J1(3.2)	Jeżeli nie chcesz zginąć to
+zajmij się swoimi sprawami.
 -------
-~J1(1.9)	Okay, take it easy. ~E 
+~J1(1.9)	Okej, uspokój się. ~E 
 -------
-~J1(3.0)	You want to get yourself killed!?
-Get outta here! 
+~J1(3.0)	Chcesz zginąć? Wynoś się stąd!
 -------
-~J1(1.3)	What do you think
-you are doing? 
+~J1(1.3)	Co ty sobie myślisz?
 -------
-~J1(2.6)	You shouldn't be hanging
-around here goofing off! 
+~J1(2.6)	Nie powinieneś był tutaj być!
 -------
 ~J1(0.9)	Humph. ~E 
 -------
-~J1(3.3)	Instead of messing with that,
-how about coming up with a way
-to get out of here? 
+~J1(3.3)	Zamiast grzebać w czyiś rzeczach,
+może zajmij się czymś pożytecznym
+i sprój nas stąd wydostać.
 -------
-~J1(2.0)	That's none of your business! 
+~J1(2.0)	Nie twoja sprawa! 
 -------
-~J0(1.2)	What is this? ~E 
+~J0(1.2)	Co to jest? ~E 
 -------
-~J0(1.3)	Give me that! 
+~J0(1.3)	Oddawaj to! 
 -------
-It's like the busted vial
-I found in the director's office
-at the hospital. ~E 
+Wygląda jak ta zbita fiolka
+w biurze dyrektora szpitalu. ~E
 -------
-What's this? ~E 
+Co to jest? ~E 
 -------
-A small glass vial,
-wrapped in a plastic bag. 
+Mała szklana fiolka
+zawinięta w plastikową torbę.
 -------
-The dust is wiped away
-just around the gas tank cap. ~E 
+Cały zakurzony, oprócz korka
+od baku paliwa. ~E
 -------
-That's weird. 
+Dziwne. 
 -------
 ~J1(1.5) 
 -------
-Looks like it's been sitting
-here for years. 
+Wyglada jakby stał tutaj od lat.
 -------
-An old motorcycle. 
+Stary motocykl.
 -------
-The crack is too small
-to reach in. ~E 
+Dziura jest za mała
+żeby dosięgnąć. ~E
 -------
-There's a crack.
-Something glints inside. 
+Widzę dziurę.
+Coś błyszczy w środku.
 -------
-There's a crack. ~E 
+Dziura. ~E 
 -------
-I've got a  ~C2 Motorcycle key ~C7 . ~E 
+Mam ~C2 Klucz do Motocyklu ~C7. ~E 
 -------
 ~C6Now Making!~C7~E
 -------

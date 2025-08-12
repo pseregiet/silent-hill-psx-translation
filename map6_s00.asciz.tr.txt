@@ -1,29 +1,28 @@
-~C3LAKE SIDE AMUSEMENT PARK ~E 
+~C3 PARK ROZRYWKI LAKE SIDE ~E 
 -------
-Could Cybil have gotten
-to the Amusement Park from here? ~E 
+Może Cybil poszła do parku zabaw
+własnie stąd? ~E
 -------
-The cover has been removed... 
+Klapa została usunięta...
 -------
-~J1(4.0)	No doubt, something terrible
-is going on... ~E 
+~J1(4.0)	Bez wątpienia,
+dzieje się coś okropnego... ~E
 -------
-~J1(6.0)	I don't like this feeling.
-Like something bad
-will happen... 
+~J1(6.0)	Nie podoba mi się to uczucie.
+Jakby miało się wydarzyć
+coś złego...
 -------
-~J1(4.5)	this is more like reality
-becoming a nightmare. 
+~J1(4.5)	to wygląda, jakby rzeczywistość
+zamieniałą się w koszmar.
 -------
-~J1(4.5)	Rather than shifting
-from reality to a nightmare, 
+~J1(4.5)	Zamiast przechodzić w koszmar,
 -------
-~J1(4.0)	Not again...!?
-No, this time it feels different. 
+~J1(4.0)	Tylko nie to...!?
+Nie, tym razem dzieje się coś innego. 
 -------
 ~J0(0.1)	~E 
 -------
-~J0(1.5)	What's this! ~E 
+~J0(1.5)	Co się dzieje! ~E 
 -------
 ~C6Now Making!~C7~E
 -------

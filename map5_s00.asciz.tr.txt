@@ -1,19 +1,21 @@
-~HThere is a  ~C5 Sewer map
-(connecting to resort area) ~C7 .
-Take it? ~S4 
+~H Znalazłeś ~C5 Mape kanałów
+(łączy się ze strefą rezortu) ~C7.
+Zabrać? ~S4 
 -------
-Got to find Cheryl.
-No time to go back. ~E 
+Muszę znaleźć Cheryl.
+Nie mogę teraz zawrócić. ~E 
 -------
-There is a  ~C2 Sewer exit key ~C7
-in the water. Take it? ~S4 
+Znalazłeś w wodzie ~C2
+Klucz do wyjścia z kanałów ~C7
+Zabrać? ~S4 
 -------
-There is a  ~C2 Sewer key ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Klucz do kanałów ~C7 .
+Zabrać? ~S4 
 -------
-Used the  ~C2 Sewer exit key ~C7 . ~E 
+Użyłeś
+~C2 Klucza do wyjścia z kanałów ~C7. ~E 
 -------
-Used the  ~C2 Sewer key ~C7 . ~E 
+Użyłeś ~C2 Klucza do kanałów ~C7. ~E 
 -------
 ~C6Now Making!~C7~E
 -------

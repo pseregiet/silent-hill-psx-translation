@@ -1,92 +1,89 @@
-I've got a  ~C2 Kaufmann key ~C7 . ~E 
+Mam ~C2 Klucz Kaufmanna ~C7. ~E 
 -------
-I've got a  ~C2 Receipt ~C7 . ~E 
+Mam ~C2 Recepte ~C7. ~E 
 -------
-It's locked. ~E 
+Zamknięte. ~E 
 -------
-There is a  ~C2 Safe key ~C7 .
-Take it? ~S4 
+Znalazłeś ~C2 Klucz do sejfu ~C7 .
+Zabrać? ~S4 
 -------
-Used the  ~C2 Safe key ~C7 . ~E 
+Użyłeś ~C2 Klucza do sejfu ~C7. ~E 
 -------
-There is a drawer.
-Do you want to open it? ~S4 
+Otworzyć szufladę? ~S4
 -------
-~C3Norman's Grand Opening. ~E 
+~C3 Wielkie otwarcie Normana. ~E
 -------
-~C3Deliver to back door daily 8 a.m.
-Rear entrance code 0886
+~C3Dostarczaj na zaplecze codziennie
+o 8:00 rano. Kod wejściowy 0886 
                         Norman Young ~E 
 -------
-~C33 loaves of bread.
-3 cartons of milk.
-2 dozen eggs. 
+~C3 3 bochenki chleba.
+3 skrzynki mleka.
+2 kopy jajek. 
 -------
-~C3Thought of leaving town, but
-I'm afraid of what will happen
-if I do. ~E 
+~C3Myślałem o wyjechaniu z miasta,
+ale boje się co by mi zrobili,
+gdybym to zrobił. ~E
 -------
-~C3I'm getting creeped out
-even more than before. 
+~C3Boje się teraz jeszcze bardziej
+niż na początku.
 -------
-~C3Don't want to be involved with
-the likes of them anymore, but... 
+~C3Nie chcę się zadawać z
+takimi ludźmi, ale...
 -------
-~C3He showed up at Norman's, too. 
+~C3Przyszedł też do Normana.
 -------
-~C3September 12 
+~C3 Wrzesień 12 
 -------
-~C3He came by. I handed over the
-package that the woman left here. 
+~C3Przyszedł. Zostawił paczkę którą
+zostawiła ta kobieta.
 -------
-~C3August 20 
+~C3 Sierpień 20 
 -------
-What is this?
-Drugs? ~E 
+A to co?
+Narkotyki? ~E 
 -------
-Looks like it's full of stuff... ~E 
+Pełna jakiś rzeczy... ~E 
 -------
-Kaufmann must have dropped
-this. 
+Kaufmann musiał to upuścić. 
 -------
-~J0(1.0)	No. ~E 
+~J0(1.0)	Nie. ~E 
 -------
-~J0(2.0)	Do you know
-a girl called Alessa? ~E 
+~J0(2.0)	Znasz dziewczynkę
+o imieniu Alessa? ~E
 -------
-~J1(3.4)	This isn't the time to stand
-around flapping our gums. ~E 
+~J1(3.4)	To nie jest dobry
+moment na pogaduszki.
 -------
-~J1(1.4)	I better get going. 
+~J1(1.4)	Muszę iść. 
 -------
-~J1(1.7)	I hope so. 
+~J1(1.7)	Mam nadzieje. 
 -------
-~J1(2.8)	If they come through the town,
-we're home free. 
+~J1(2.8)	Jeżeli im się uda dotrzeć
+do miasta to będziemy uratowani.
 -------
-~J1(3.4)	A military rescue squad
-should be here any time now. 
+~J1(3.4)	Lada moment przyjedzie wojsko.
 -------
-~J1(2.8)	This craziness can't
-go on forever. 
+~J1(2.8)	To szaleństwo nie będzie
+trwać wiecznie.
 -------
-~J1(1.8)	But it's too soon to give up. 
+~J1(1.8)	Ale za wcześnie by się poddać.
 -------
-~J1(1.0)	Zip. 
+~J1(1.0)	Nic.
 -------
-~J1(1.1)	How about you? 
+~J1(1.1)	A ty?
 -------
-~J1(2.4)	No. Not yet. 
+~J1(2.4)	Nie. Jeszcze nie.
 -------
-~J1(3.0)	So, how'd it go?
-Did you find a way out? 
+~J1(3.0)	Jak poszło?
+Wiesz jak się stąd wydostać?
 -------
-~J0(3.0)	But I'm beat.
-I thought I was a goner there. ~E 
+~J0(3.0)	Ale jestem zmęczony.
+Myślałem, że mnie załatwi. ~E
 -------
-~J0(1.4)	Yeah, I guess so. 
+~J0(1.4)	Tak, chyba tak.
 -------
-~J0(1.2)	Are you OK? ~E 
+~J0(1.2)	Wszystko w porządku? ~E 
 -------
 ~J0(8.7)	~E 
 -------

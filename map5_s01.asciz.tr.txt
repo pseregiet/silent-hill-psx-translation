@@ -1,13 +1,13 @@
-~J0(2.5)	That light!? ~E 
+~J0(2.5)	To światło!? ~E 
 -------
-~J0(1.0)	What? ~E 
+~J0(1.0)	Co? ~E 
 -------
-Used the  ~C2 Kaufmann key ~C7 . ~E 
+Użyłeś ~C2 Klucza Kaufmanna ~C7. ~E 
 -------
-Nothing unusual. ~E 
+Nic ciekawego. ~E 
 -------
-~HThere is a  ~C5 Resort area map ~C7 .
-Take it? ~S4 
+~H Znalazłeś ~C5 Mape rezortu ~C7 .
+Zabrać? ~S4 
 -------
 ~C6Now Making!~C7~E
 -------

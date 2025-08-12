@@ -1,10 +1,10 @@
-~C3Alchemilla Hospital ~E 
+~C3 Szpital Alchemilla ~E 
 -------
-The stairs are wrecked! ~E 
+Schody są kompletnie zniszczone! ~E 
 -------
-~J0(2.5)	That light!? ~E 
+~J0(2.5)	To światło!? ~E 
 -------
-~J0(1.0)	What? ~E 
+~J0(1.0)	Co? ~E 
 -------
 ~C6Now Making!~C7~E
 -------

@@ -89,7 +89,12 @@ def build_new_txt_blob(asciz_entries, txt_base, filename):
         translated_index += 1
 
         offset = len(txt_blob)
-        txt_blob += new_text.encode('ascii') + b'\x00'
+        try:
+            txt_blob += new_text.encode('ascii') + b'\x00'
+        except Exception as e:
+            print(e)
+            print(new_text)
+
         v['new-ptr'] = txt_base + offset
 
     return txt_blob

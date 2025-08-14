@@ -73,13 +73,18 @@ def xorBodyprog(silent: memoryview):
         seed = (seed * 0x03a452f7) & 0xffffffff
         outArray[i] ^= seed
 
+    return bodyprog
+
 
 def read_uint32_le(buf, offset):
     return struct.unpack_from('<I', buf, offset)[0]
 
-def read_c_string(data, offset):
-    end = data.find(b'\x00', offset)
-    return data[offset:end].decode('ascii')
+def read_c_string(data: memoryview, offset: int) -> str:
+    # Manually search for null terminator
+    end = offset
+    while end < len(data) and data[end] != 0:
+        end += 1
+    return data[offset:end].tobytes().decode('ascii')
 
 def nice_encoding(line):
     pattern = re.compile(r'(~[CLS]\d|~[MDHETN])')
@@ -147,6 +152,31 @@ def extract_map_messages(silent: memoryview, ovi: OverlayInfo):
         #f = sys.stdout
         json.dump(output, f, indent=4)
 
+def extract_bodyprog_messages(silent: memoryview):
+    bodyprog = xorBodyprog(silent)
+    offset = 0x80024B60
+
+    item_names_ptr = 0x800ADB60
+    item_descs_ptr = 0x800ADE6C
+    data = {}
+    for i in range(200):
+        try:
+            in_ptr = read_uint32_le(bodyprog, item_names_ptr - offset) - offset
+            id_ptr = read_uint32_le(bodyprog, item_descs_ptr - offset) - offset
+            data[i] = {
+                "name": read_c_string(bodyprog, in_ptr),
+                "desc": read_c_string(bodyprog, id_ptr)
+            }
+        except:
+            pass
+        item_names_ptr += 4
+        item_descs_ptr += 4
+
+    with open("messages/inventory.json", 'w') as f:
+        #f = sys.stdout
+        json.dump(data, f, indent=4)
+    
+
 def patch_blob(dstblob, srcblob, offset):
     bloblen = len(srcblob)
     dstblob[offset: offset + bloblen] = srcblob
@@ -186,7 +216,8 @@ def main():
         #patch_map(silent, mi)
         #extract_map_messages(silent, mi)
 
-    patch_map(silent, OverlayInfos[1])
+    #patch_map(silent, OverlayInfos[1])
+    extract_bodyprog_messages(silent)
 
     with open(silent_path+".new", 'wb') as f:
         f.write(silent)

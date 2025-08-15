@@ -36,6 +36,22 @@ def extract_inventory_messages(bodyprog: memoryview):
     with open("messages/inventory.json", 'w') as f:
         json.dump(data, f, indent=4)
 
+def extract_font_width(bodyprog: memoryview):
+    font_widths_offset = 0x80025D6C - _offset
+    table = bodyprog[font_widths_offset: font_widths_offset + 84].cast('B')
+    data = {}
+    for i in range(84):
+        char = chr(i+0x27)
+        if char == '\\':
+            char = '!'
+        elif char == '^':
+            char = '&'
+        data[char] = table[i]
+
+    with open("messages/font_info.json", 'w') as f:
+        json.dump(data, f, indent=4)
+
+
 def patch_inventory(bodyprog: memoryview):
     text_offset = 0x1b1c
     text_max_size = 0x175c + text_offset
@@ -70,6 +86,10 @@ def patch_inventory(bodyprog: memoryview):
 
     with open("BODYPROG.BIN", 'wb') as f:
         f.write(bodyprog)
+
+def dump_bodyprog(silent: memoryview):
+    bodyprog = xorBodyprog(silent)
+    extract_font_width(bodyprog)
 
 def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)

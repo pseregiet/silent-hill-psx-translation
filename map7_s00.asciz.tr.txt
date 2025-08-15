@@ -4,80 +4,75 @@ Nothing unusual. ~E
 -------
 ~J0(1.5)	  ~E 
 -------
-~J0(4.3)	I have a feeling if I take
-the elevator down I'll find it. ~E 
+~J0(4.3)	Coś czuje, że muszę
+zjechać tą windą w dół
+żeby się dowiedzieć. ~E
 -------
-~J0(2.7)	What could be making things
-like this? 
+~J0(2.7)	Skąd się wziął ten koszmar?
 -------
-~J0(2.1)	What happened in this town? 
+~J0(2.1)	Co się stało w tym mieście? 
 -------
-~J0(2.4)	I'm being summoned... ~E 
+~J0(2.4)	Jestem przywoływany... ~E 
 -------
-~J0(4.0)	From down there...
-It's coming from the basement... ~E 
+~J0(4.0)	Z dołu...
+To musi być w piwnicy... ~E
 -------
-~J0(2.0)	That sound.... 
+~J0(2.0)	Ten dźwięk.... 
 -------
-~J0(3.0)	Damn!  What's that? ~E 
+~J0(3.0)	Cholera!  Co to? ~E 
 -------
 ~J0(2.0)	Lisa... 
 -------
-~J0(2.8)	Wait!
-Where do you think
-you're going? ~E 
+~J0(2.8)	Czekaj!
+Dokąd idziesz? ~E
 -------
-~J0(2.0)	You don't understand... ~E 
+~J0(2.0)	Nie rozumiesz... ~E 
 -------
-~J0(1.5)	No. 
+~J0(1.5)	Nie. 
 -------
-~J0(2.7)	Don't fret about it,
-you'll remember after a while... ~E 
+~J0(2.7)	Nie martw się,
+na pewno ci się przypomni... ~E
 -------
-~J0(2.7)	You're in shock from
-when you were knocked out. 
+~J0(2.7)	Jesteś w szoku po tym
+jak straciłaś przytomność.
 -------
-~J0(2.0)	It's only a temporary thing. 
+~J0(2.0)	To tylko tymczasowe.. 
 -------
-~J0(3.2)	I'm so scared.
-I can't take this. 
+~J0(3.2)	Strasznię się boje.
+Nie daje już rady.
 -------
-~J0(2.4)	Harry... help me... 
+~J0(2.4)	Harry... pomóż mi... 
 -------
-~J1(1.8)	What was it? ~E 
+~J1(1.8)	Co takiego? ~E 
 -------
-~J1(5.0)	Like something happened there,
-but I can't quite remember
-somehow. 
+~J1(5.0)	Jakby się tam coś wydarzyło,
+ale nie pamiętam co.
 -------
-~J1(2.2)	Like I'd been there before. 
+~J1(2.2)	Jakbym już tam kiedyś była.
 -------
-~J1(3.6)	But while I was down there,
-I got this weird feeling. 
+~J1(3.6)	Ale gdy tam byłam
+poczułam coś dziwnego.
 -------
-~J1(3.2) But nothing really unusual
-down there. 
+~J1(3.2)	Ale nic nadzwyczajnego.
 -------
-~J1(3.1)	Like you said,
-there were these creepy rooms. 
+~J1(3.1)	Tak jak mówiłeś,
+były tam te straszne pokoje.
 -------
-~J1(3.0)	Even though I was scared
-as hell. 
+~J1(3.0)	Mimo, że bałam się jak diabli.
 -------
-~J1(2.5)	So I went to look
-in the basement. 
+~J1(2.5)	Zeszłam do piwnicy.
 -------
-~J1(1.6)	What is it Lisa? 
+~J1(1.6)	Co takiego Lisa? 
 -------
-~J1(2.6)	I just can't get it out of my head. 
+~J1(2.6)	Nie mogę tego wyrzucić z głowy.
 -------
-~J1(2.8)	Something you said before
-has been bothering me. 
+~J1(2.8)	Powiedziałeś wcześniej coś
+co mnie trapi.
 -------
-~J1(1.6)	Harry, listen. 
+~J1(1.6)	Harry, posłuchaj.
 -------
-~J1(3.8)	What happened?
-Where's Alessa and Dahlia? 
+~J1(3.8)	Co się stało?
+Gdzie jest Alessa i Dahlia?
 -------
 ~J1(1.2)	Lisa? 
 -------

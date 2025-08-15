@@ -2,21 +2,21 @@
 -------
 ~J0(1.0)	What? ~E 
 -------
-~J0(2.8)	Short, black hair... ~E 
+~J0(2.8)	Niska, czarne włosy... ~E
 -------
-~J0(3.6)	Let me ask you, have you seen
-a little girl around here? ~E 
+~J0(3.6)	Widziałaś w okolicy małą
+dziewczynkę? ~E
 -------
 ~J0(1.5)	  
 -------
 ~J0(0.6)	Ah... 
 -------
-~J0(1.5)	Sorry... 
+~J0(1.5)	Przepraszam... 
 -------
-~J0(1.7)	Damn!
-I was too late? ~E 
+~J0(1.7)	Cholera!
+Spóźniłem się? ~E 
 -------
-~J0(1.0)	Wait! ~E 
+~J0(1.0)	Czekaj! ~E 
 -------
 ~J0(1.0)	...! ~E 
 -------

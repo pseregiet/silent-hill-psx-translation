@@ -1,146 +1,144 @@
 ~J0(1.2)	~E 
 -------
-~J0(1.7)	What's going on here!? ~E 
+~J0(1.7)	Co się tu dzieje!? ~E 
 -------
-~J0(5.1)	Everything is ready.
-Let's go home now. ~E 
+~J0(5.1)	Wszystko jest przygotowane.
+Wracajmy do domu. ~E
 -------
-~J0(1.8)	Bad girl. 
+~J0(1.8)	Zła dziewczynka.
 -------
-~J0(2.3)	No.
-Get away from me. 
+~J0(2.3)	Nie.
+Zostaw mnie.
 -------
-~J1(6.9)	Alessa. My dear little girl...
-There is one thing left
-I need you to do for me. ~E 
+~J1(6.9)	Alessa. moja droga...
+Musimy zrobić jedną
+ostatnią rzecz. ~E
 -------
-~J1(2.7)	Hey!
-What are you talking about? 
+~J1(2.7)	Hej!
+O czym ty mówisz?
 -------
-~J1(5.0)	Now you're half indebted
-to this man for his help. 
+~J1(5.0)	Teraz masz dług wdzięczności
+u tego pana.
 -------
-~J1(2.8)	But what a pity, yes? 
+~J1(2.8)	Co za szkoda.
 -------
-~J1(4.3)	That's why I couldn't catch you
-all by myself. 
+~J1(4.3)	Dlatego nie mogłam cię
+złapać sama.
 -------
-~J1(4.5)	But Mommy didn't know
-how much you'd grown. 
+~J1(4.5)	Mamusia nie wiedziała,
+jak szybko dorosłaś.
 -------
-~J1(3.5)	Thinking you couldn't escape
-from our spell. 
+~J1(3.5)	Myśląc, że nie uciekniesz
+spod naszego zaklęcia.
 -------
-~J1(2.0)	I was careless. 
+~J1(2.0)	Nie doceniałam cię. 
 -------
-~J1(4.6)	You've been a ghastly little pest,
-haven't you?  Alessa? 
+~J1(4.6)	Byłaś okropnym małym
+szkodnikiem, czyż nie, Alessa?
 -------
 ~J1(2.7)	Huh?
-Could she be...? ~E 
+Czy to naprawdę...? ~E 
 -------
 ~J1(1.2)	Mama... 
 -------
-~J1(4.0)	This is the end of
-your little game. 
+~J1(4.0)	To koniec twojej gierki.
 -------
 ~J1(1.2)	Alessa. 
 -------
-~J1(2.0)	Where's Cheryl?
-Where is she!? ~E 
+~J1(2.0)	Gdzie jest Cheryl?
+Gdzie ona jest!? ~E 
 -------
 ~J1(1.8)	Dahlia Gillespie...... 
 -------
 ~J0(1.2)	.......! ~E 
 -------
-~J0(3.2)	We meet at last, Alessa. 
+~J0(3.2)	W końcu się spotykamy, Alessa. 
 -------
-~J1(2.0)	Give me back my daughter. ~E 
+~J1(2.0)	Oddaj mi moją córkę. ~E 
 -------
-~J1(1.6)	Where's Cheryl? 
+~J1(1.6)	Gdzie jest Cheryl? 
 -------
 ~J0(1.4)	~E 
 -------
-~J0(1.5)	What is this? ~E 
+~J0(1.5)	A to co? ~E 
 -------
 ~J0(1.2)	Huh? ~E 
 -------
-~J0(1.0)	Damn! ~E 
+~J0(1.0)	Cholera! ~E 
 -------
-~J0(1.0)	What? ~E 
+~J0(1.0)	Co? ~E 
 -------
-~J1(3.1)	Let Cheryl go.
-That's all I ask. ~E 
+~J1(3.1)	Wypuść Cheryl.
+Tylko o to proszę. ~E 
 -------
-~J1(1.6)	Just one thing. 
+~J1(1.6)	Chcę tylko jednego.
 -------
-~J1(4.0)	I don't know who you are,
-what you are trying to do,
-and I don't care. 
+~J1(4.0)	Nie wiem kim jestes,
+co próbujesz zrobić.
+Nie obchodzi mnie to.
 -------
-~J1(1.6)	Hold it right there. 
+~J1(1.6)	Stój.
 -------
-~J1(1.7)	I figured you'd show. 
+~J1(1.7)	Spodziewałem się ciebie.
 -------
-~J0(6.0)	What in the hell...
-How could this have happened? ~E 
+~J0(6.0)	Cholera jasna...
+Jak to się mogło stać? ~E
 -------
 ~J0(7.0)	~E 
 -------
 ~J0(7.3)	~E 
 -------
-~J1(4.5)	No matter what. ~E 
+~J1(4.5)	Za wszelką cene. ~E 
 -------
-~J1(3.5)	Cheryl is my daughter.
-I will save her. 
+~J1(3.5)	Cheryl to moaj córka.
+Uratuję ją.
 -------
-~J1(3.4)	So what do you do now? 
+~J1(3.4)	Co teraz ?
 -------
-~J1(5.2)	There might be some connection
-between Cheryl and this town. ~E 
+~J1(5.2)	Może jest jakaś więź między
+Cheryl a tym miastem. ~E
 -------
-~J1(3.1)	So in that case... 
+~J1(3.1)	A więc... 
 -------
-~J1(2.7)	So we took Cheryl in. ~E 
+~J1(2.7)	Więc przygarneliśmy Cheryl. ~E 
 -------
-~J1(3.4)	and it didn't look like
-she was getting any better. 
+~J1(3.4)	i nie zapowiadało się
+na żadną poprawę.
 -------
-~J1(2.4)	My wife was sick, 
+~J1(2.4)	Moja żona była chora,
 -------
-~J1(3.3)	We didn't have any kids
-of our own. 
+~J1(3.3)	Nie mieliśmy własnych dzieci.
 -------
-~J1(3.3)	Nobody knew
-where she came from. 
+~J1(3.3)	Nikt nie wiedział,
+skąd się tam wzieła.
 -------
-~J1(3.9)	We found her abandoned
-on the side of the highway. 
+~J1(3.9)	Znaleźliśmy ją porzuconą
+przy autostradzie.
 -------
-~J1(3.3)	She probably already knows
-anyway, though. ~E 
+~J1(3.3)	Ale pewnie już sama
+się dowiedziała. ~E
 -------
-~J1(3.0)	I actually haven't told her yet. 
+~J1(3.0)	Jeszcze jej tego nie powiedziałem.
 -------
-~J1(4.3)	But you know, Cheryl isn't
-my biological daughter. 
+~J1(4.3)	Ale wiesz, Cheryl to nie jest
+moja biologiczna córka.
 -------
-~J1(3.0)	I'm not sure, myself. 
+~J1(3.0)	Nie jestem pewien. 
 -------
-~J1(2.3)	Why her? 
+~J1(2.3)	Dlaczego akurat ją? 
 -------
 ~J1(4.8)	Harry...
-Why did they take your daughter? 
+Dlaczego zabrali twoją córkę?
 -------
-~J0(3.3)	Don't talk.
-I'll take care of you. ~E 
+~J0(3.3)	Nic nie mów.
+Zajmę się tobą. ~E
 -------
 ~J0(4.7)	...Harry?
-...What...happened? 
+...Co... co się stało?
 -------
 ~J0(1.0)	Cybil! ~E 
 -------
-~J0(2.3)	Wake up! Snap out of it! ~E 
+~J0(2.3)	Obudź się! To ja! ~E 
 -------
 ~J0(10)	Cybil! ~E 
 -------

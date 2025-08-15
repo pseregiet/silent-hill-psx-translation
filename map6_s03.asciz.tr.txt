@@ -1,9 +1,9 @@
-Gotta' go find Cybil!
-No time to go back. ~E 
+Muszę znaleźć Cybil!
+Nie ma czasu do stracenia. ~E 
 -------
-~HThere is a  ~C5 Sewer map
-(connecting to amusement park) ~C7 .
-Take it? ~S4 
+~H Znalazłeś ~C5 Mape kanałów
+(łączy się z parkiem rozrywki) ~C7 .
+Zabrać? ~S4 
 -------
 ~C6Now Making!~C7~E
 -------

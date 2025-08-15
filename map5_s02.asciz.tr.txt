@@ -59,7 +59,7 @@ moment na pogaduszki.
 -------
 ~J1(1.7)	Mam nadzieje. 
 -------
-~J1(2.8)	Jeżeli im się uda dotrzeć
+~J1(2.8)	Jeżeli uda im się przebić
 do miasta to będziemy uratowani.
 -------
 ~J1(3.4)	Lada moment przyjedzie wojsko.
@@ -78,8 +78,8 @@ trwać wiecznie.
 ~J1(3.0)	Jak poszło?
 Wiesz jak się stąd wydostać?
 -------
-~J0(3.0)	Ale jestem zmęczony.
-Myślałem, że mnie załatwi. ~E
+~J0(3.0)	Ale mam już dość.
+Myślałem, że już po mnie. ~E
 -------
 ~J0(1.4)	Tak, chyba tak.
 -------

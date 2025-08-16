@@ -8,6 +8,8 @@ from collections import namedtuple
 from common import *
 
 _offset = 0x80024B60
+BodyProg = OverlayInfo(0x000cf, 2635, "bodyprog")
+
 def nice_encode(line):
     return line.replace('\t', '').replace('\n', '{~N}').replace('_', ' ')
 
@@ -90,6 +92,7 @@ def patch_inventory(bodyprog: memoryview):
 def dump_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
     extract_font_width(bodyprog)
+    extract_inventory_messages(bodyprog)
 
 def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)

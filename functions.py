@@ -6,6 +6,7 @@ import json
 import re
 from collections import namedtuple
 from bodyprog import *
+from textures import *
 
 def main():
     silent_path = sys.argv[1]
@@ -26,6 +27,13 @@ def main():
     #with open(silent_path+".new", 'wb') as f:
     #    f.write(silent)
 
+    #dump_bodyprog(silent)
+    dump_font(silent)
+    with open("/home/oxi/.wine/drive_c/users/oxi/AppData/Local/Temp/SILENT", 'wb') as f:
+        f.write(silent)
+
+def dump_data(memoryview: silent):
+    dump_font(silent)
     dump_bodyprog(silent)
 
 main()

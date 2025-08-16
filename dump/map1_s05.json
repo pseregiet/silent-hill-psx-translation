@@ -1,0 +1,23 @@
+{
+    "txt-offset": "0x125C",
+    "ptr-offset": "0xC734",
+    "txt-size": "0x2AB",
+    "ptr-size": "0xF",
+    "messages": [
+        "Yes",
+        "No",
+        "Someday, someone may experience{~N}these bizarre events. Hopefully,{~N}they will find my notes useful.{~E}",
+        "{~D}I don't have the map{~N}for this place.{~E}",
+        "{~D}Too dark to look{~N}at the map here.{~E}",
+        "There is a {~C2}First aid kit{~C7}.{~N}Take it?{~S4}",
+        "There is a {~C2}Health drink{~C7}.{~N}Take it?{~S4}",
+        "There is an {~C2}Ampoule{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Handgun bullets{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Rifle shells{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Shotgun shells{~C7}.{~N}Take it?{~S4}",
+        "The lock is jammed.{~N}This door can't be opened.{~E}",
+        "It's locked.{~E}",
+        "It's unlocked.{~E}",
+        "{~C6}Now Making!{~C7}{~E}"
+    ]
+}

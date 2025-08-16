@@ -1,0 +1,314 @@
+{
+    "0": {
+        "name": "Health drink(s)",
+        "desc": "Supplies nutrition to{~N}recover a small amount of{~N}stamina."
+    },
+    "1": {
+        "name": "First aid kit(s)",
+        "desc": "Heals injury to provide{~N}moderate stamina recovery."
+    },
+    "2": {
+        "name": "Ampoule(s)",
+        "desc": "Relieve pain to recover{~N}stamina to high.{~N}Effect lasts for a while."
+    },
+    "32": {
+        "name": "Lobby key",
+        "desc": "The key to open{~N}the door to the lobby.{~N}I found it in the locker room."
+    },
+    "33": {
+        "name": "House key",
+        "desc": "The house key{~N}hidden in the dog house."
+    },
+    "34": {
+        "name": "Key of ]Lion]",
+        "desc": "The key to the garden of{~N}the house. Found in patrol{~N}car's trunk."
+    },
+    "35": {
+        "name": "Key of ]Woodman]",
+        "desc": "The key to the garden of{~N}the house. Found in the{~N}basketball court."
+    },
+    "36": {
+        "name": "Key of ]Scarecrow]",
+        "desc": "The key to the garden of{~N}the house. Found in mailbox{~N}blocked by a fallen tree."
+    },
+    "37": {
+        "name": "Library reserve key",
+        "desc": "The key to the school's 2nd{~N}floor library reserves.{~N}Picked up in the locker room."
+    },
+    "38": {
+        "name": "Classroom key",
+        "desc": "The tagged classroom key{~N}found hanging in the drainpipe{~N}on the roof."
+    },
+    "39": {
+        "name": "K. Gordon key",
+        "desc": "The tag says, ]K. Gordon;]{~N}found in the school's{~N}boiler room."
+    },
+    "40": {
+        "name": "Drawbridge key",
+        "desc": "Key to operate the drawbridge.{~N}Found in the church."
+    },
+    "41": {
+        "name": "Basement key",
+        "desc": "The hospital basement{~N}door key, found on the table{~N}in 1st floor conference room."
+    },
+    "42": {
+        "name": "Basement storeroom key",
+        "desc": "The hospital basement{~N}storeroom key found{~N}in the operating room."
+    },
+    "43": {
+        "name": "Examination room key",
+        "desc": "Found in patient room{~N}in the 2nd floor basement."
+    },
+    "44": {
+        "name": "Antique shop key",
+        "desc": "The tagged key with a shop{~N}name on it that Dahlia left{~N}at the hospital."
+    },
+    "45": {
+        "name": "Sewer key",
+        "desc": "Sewer passageway door key."
+    },
+    "46": {
+        "name": "Key of ]Ophiel]",
+        "desc": "The word ]Ophiel] is{~N}engraved on the key."
+    },
+    "47": {
+        "name": "Key of ]Hagith]",
+        "desc": "The word ]Hagith] is{~N}engraved on the key."
+    },
+    "48": {
+        "name": "Key of ]Phaleg]",
+        "desc": "The word ]Phaleg] is{~N}engraved on the key."
+    },
+    "49": {
+        "name": "Key of ]Bethor]",
+        "desc": "The word ]Bethor] is{~N}engraved on the key."
+    },
+    "50": {
+        "name": "Key of ]Aratron]",
+        "desc": "The word ]Aratron] is{~N}engraved on the key."
+    },
+    "51": {
+        "name": "A note ]To school]",
+        "desc": "]To school] is written{~N}in Cheryl's handwriting."
+    },
+    "52": {
+        "name": "A note ]Doghouse]",
+        "desc": "]Doghouse] and ]Levin st.]{~N}are written in{~N}Cheryl's handwriting."
+    },
+    "53": {
+        "name": "Picture card",
+        "desc": "A rectangular card with{~N}a picture of a key. Found on{~N}a desk in a classroom."
+    },
+    "54": {
+        "name": " ",
+        "desc": " "
+    },
+    "55": {
+        "name": "Sewer exit key",
+        "desc": "Key to exit from the sewer{~N}to the resort area, which was{~N}dropped in the water."
+    },
+    "56": {
+        "name": "Channeling stone",
+        "desc": "A mystical stone possessing{~N}power. If used somewhere,{~N}the result will be...?"
+    },
+    "64": {
+        "name": "Chemical",
+        "desc": "The label reads, ]Concentrated{~N}hydrochloric acid.] Found in{~N}the lab equipment room."
+    },
+    "65": {
+        "name": "Gold medallion",
+        "desc": "A picture of a clock tower{~N}is engraved on the surface.{~N}Found in the chemistry lab."
+    },
+    "66": {
+        "name": "Silver medallion",
+        "desc": "A picture of a clock tower{~N}is engraved on the surface.{~N}Found in the music room."
+    },
+    "67": {
+        "name": "Rubber ball",
+        "desc": "Florescent pink rubber ball{~N}used by children."
+    },
+    "68": {
+        "name": "]Flauros]",
+        "desc": "Pyramid shaped object found{~N}in the church.{~N}Purpose and use unknown."
+    },
+    "69": {
+        "name": "Plastic bottle",
+        "desc": "Empty bottle found{~N}in the kitchen{~N}of the hospital."
+    },
+    "70": {
+        "name": "Unknown liquid",
+        "desc": "Red liquid found in{~N}a broken vial in the{~N}Hospital Director's room."
+    },
+    "71": {
+        "name": "Plate of ]Turtle]",
+        "desc": "Square, blue plate{~N}with a picture of{~N}a ]Mock Turtle.]"
+    },
+    "72": {
+        "name": "Plate of ]Hatter]",
+        "desc": "Square, green plate{~N}with a picture of{~N}a ]Mad Hatter.]"
+    },
+    "73": {
+        "name": "Plate of ]Cat]",
+        "desc": "Square, yellow plate{~N}with a picture of{~N}a ]Cheshire Cat.]"
+    },
+    "74": {
+        "name": "Plate of ]Queen]",
+        "desc": "Square, red plate{~N}with a picture of{~N}a ]Queen of Hearts.]"
+    },
+    "75": {
+        "name": "Blood pack",
+        "desc": "200ml blood pack.{~N}Found in the hospital{~N}storage room."
+    },
+    "76": {
+        "name": "Disinfecting alcohol",
+        "desc": "Isopropyl alcohol bottle,{~N}found in ICU at the hospital."
+    },
+    "77": {
+        "name": "Lighter",
+        "desc": "Oil lighter found in Room 201."
+    },
+    "78": {
+        "name": "Video tape",
+        "desc": "Nothing on the label.{~N}Found on 2nd floor{~N}hospital basement."
+    },
+    "79": {
+        "name": " ",
+        "desc": " "
+    },
+    "80": {
+        "name": "Kaufmann key",
+        "desc": "A ]3] is written on the tag.{~N}The key was thought to have{~N}been dropped by Kaufmann."
+    },
+    "81": {
+        "name": "Receipt",
+        "desc": "Receipt from General Store,{~N}thought to have been dropped{~N}by Kaufmann."
+    },
+    "82": {
+        "name": "Safe key",
+        "desc": "Key to the safe,{~N}found at Indian Runner{~N}General Store."
+    },
+    "83": {
+        "name": "Magnet",
+        "desc": "Long, thin magnetic rod{~N}with a string attached,{~N}in the motel office."
+    },
+    "84": {
+        "name": "Motorcycle key",
+        "desc": "Key to an old motorcycle,{~N}which was dropped between the{~N}floorboards in the motel room."
+    },
+    "85": {
+        "name": "Bird cage key",
+        "desc": "Bird cage key with{~N}engraved handle."
+    },
+    "86": {
+        "name": "Pliers",
+        "desc": "Tool to use on{~N}metal and wires.{~N}Rusted but usable."
+    },
+    "87": {
+        "name": "Screwdriver",
+        "desc": "Tool for screws.{~N}Rusted, but usable."
+    },
+    "88": {
+        "name": "Camera",
+        "desc": "Camera with flash."
+    },
+    "89": {
+        "name": "Ring of contract",
+        "desc": "Rustic, hefty-looking ring{~N}of unknown material."
+    },
+    "90": {
+        "name": "Stone of time",
+        "desc": "Large stone with clock-face{~N}design on pillar with astrology{~N}chart hanging from it."
+    },
+    "91": {
+        "name": "Amulet of Solomon",
+        "desc": "The amulet is a star shaped{~N}object with 6 corners named{~N}after the ancient magician."
+    },
+    "92": {
+        "name": "Crest of Mercury",
+        "desc": "Snake in the symbol of{~N}mercury signifies alchemy."
+    },
+    "93": {
+        "name": "Ankh",
+        "desc": "Elliptical talisman{~N}with a cross inside."
+    },
+    "94": {
+        "name": "Dagger of Melchior",
+        "desc": "The ancient dagger{~N}named after the Magi."
+    },
+    "95": {
+        "name": "Disk of Ouroboros",
+        "desc": "Ring of a snake biting{~N}it's own tail."
+    },
+    "96": {
+        "name": "Kitchen knife",
+        "desc": "Hard to use,{~N}but better than nothing."
+    },
+    "97": {
+        "name": "Steel pipe",
+        "desc": "3' long steel pipe.{~N}Long range but of limited use."
+    },
+    "98": {
+        "name": "Rock drill",
+        "desc": "A tool used in road construction{~N}to create holes in the road for{~N}poles."
+    },
+    "99": {
+        "name": " ",
+        "desc": " "
+    },
+    "100": {
+        "name": "Hammer",
+        "desc": "Emergency hammer.{~N}Highly damaging,{~N}but hard to use."
+    },
+    "101": {
+        "name": "Chainsaw",
+        "desc": "Power tool used for cutting{~N}down trees, etc., highly deadly."
+    },
+    "102": {
+        "name": "Katana",
+        "desc": "Traditional single edged{~N}Japanese blade."
+    },
+    "103": {
+        "name": "Axe",
+        "desc": "Small one hand axe.{~N}Moderately effective{~N}as a weapon."
+    },
+    "128": {
+        "name": "Handgun",
+        "desc": "Handgun received from Cybil.{~N}Holds up to 15 rounds."
+    },
+    "129": {
+        "name": "Hunting rifle",
+        "desc": "Holds up to 6 rounds."
+    },
+    "130": {
+        "name": "Shotgun",
+        "desc": "Fires in a wide radius.{~N}Holds up to 6 rounds."
+    },
+    "131": {
+        "name": "Hyper Blaster",
+        "desc": "High-powered handgun{~N}with infrared scope{~N}and unlimited bullets."
+    },
+    "160": {
+        "name": "Handgun bullets",
+        "desc": "Ammo for the handgun."
+    },
+    "161": {
+        "name": "Rifle shells",
+        "desc": "Ammo for the hunting rifle."
+    },
+    "162": {
+        "name": "Shotgun shells",
+        "desc": "Ammo for the shotgun."
+    },
+    "192": {
+        "name": "Flashlight",
+        "desc": "One touch on/off switch.{~N}In the chest pocket."
+    },
+    "193": {
+        "name": "Pocket radio",
+        "desc": "Portable radio that{~N}emits static{~N}when monsters are near."
+    },
+    "194": {
+        "name": "Gasoline tank",
+        "desc": "Fuel for chainsaws and{~N}rock drills."
+    }
+}

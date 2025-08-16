@@ -1,0 +1,25 @@
+{
+    "txt-offset": "0x1948",
+    "ptr-offset": "0x12868",
+    "txt-size": "0x337",
+    "ptr-size": "0x11",
+    "messages": [
+        "Yes",
+        "No",
+        "Someday, someone may experience{~N}these bizarre events. Hopefully,{~N}they will find my notes useful.{~E}",
+        "{~D}I don't have the map{~N}for this place.{~E}",
+        "{~D}Too dark to look{~N}at the map here.{~E}",
+        "There is a {~C2}First aid kit{~C7}.{~N}Take it?{~S4}",
+        "There is a {~C2}Health drink{~C7}.{~N}Take it?{~S4}",
+        "There is an {~C2}Ampoule{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Handgun bullets{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Rifle shells{~C7}.{~N}Take it?{~S4}",
+        "There are some {~C2}Shotgun shells{~C7}.{~N}Take it?{~S4}",
+        "The lock is jammed.{~N}This door can't be opened.{~E}",
+        "It's locked.{~E}",
+        "It's unlocked.{~E}",
+        "{~C6}Now Making!{~C7}{~E}",
+        "{~H}There is a {~C5}Sewer map{~N}(connecting to amusement park){~C7}.{~N}Take it?{~S4}",
+        "Gotta' go find Cybil!{~N}No time to go back.{~E}"
+    ]
+}

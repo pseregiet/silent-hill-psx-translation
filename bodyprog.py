@@ -10,6 +10,19 @@ from common import *
 _offset = 0x80024B60
 BodyProg = OverlayInfo(0x000cf, 2635, "bodyprog")
 
+#based on https://github.com/Vatuu/silent-hill-decomp/blob/master/tools/silentassets/extract.py
+def xorBodyprog(silent: memoryview):
+    bodyprog = extract_overlay(silent, BodyProg)
+    outArray = bodyprog.cast("I") # uint32_t
+    seed = 0
+
+    for i, value in enumerate(outArray):
+        seed = (seed + 0x01309125) & 0xffffffff
+        seed = (seed * 0x03a452f7) & 0xffffffff
+        outArray[i] ^= seed
+
+    return bodyprog
+
 def nice_encode(line):
     return line.replace('\t', '').replace('\n', '{~N}').replace('_', ' ')
 
@@ -21,21 +34,27 @@ def game_encode(line):
 def extract_inventory_messages(bodyprog: memoryview):
     item_names_ptr = 0x800ADB60 - _offset
     item_descs_ptr = 0x800ADE6C - _offset
+    print(f"{item_names_ptr:x}, {item_descs_ptr:x}")
     data = {}
     for i in range(200):
         try:
-            in_ptr = read_uint32_le(bodyprog, item_names_ptr) - _offset
-            id_ptr = read_uint32_le(bodyprog, item_descs_ptr) - _offset
+            in_ptr = read_uint32_le(bodyprog, item_names_ptr)# - _offset
+            id_ptr = read_uint32_le(bodyprog, item_descs_ptr)# - _offset
+            if (in_ptr == 0 || id_ptr == 0):
+                continue
+            in_ptr -= _offset
+            id_ptr -= _offset
+
             data[i] = {
-                "name": nice_encoding_for_bodyprog(read_c_string(bodyprog, in_ptr)),
-                "desc": nice_encoding_for_bodyprog(read_c_string(bodyprog, id_ptr))
+                "name": nice_encode(read_c_string(bodyprog, in_ptr)),
+                "desc": nice_encode(read_c_string(bodyprog, id_ptr))
             }
-        except:
+        except Exception as e:
             pass
         item_names_ptr += 4
         item_descs_ptr += 4
 
-    with open("messages/inventory.json", 'w') as f:
+    with open("dump/inventory.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 def extract_font_width(bodyprog: memoryview):
@@ -50,7 +69,7 @@ def extract_font_width(bodyprog: memoryview):
             char = '&'
         data[char] = table[i]
 
-    with open("messages/font_info.json", 'w') as f:
+    with open("dump/font_info.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 
@@ -60,7 +79,7 @@ def patch_inventory(bodyprog: memoryview):
     item_names_ptr = 0x800ADB60 - _offset
     item_descs_ptr = 0x800ADE6C - _offset
 
-    with open("messages/inventory.json", 'r', encoding="utf-8") as f:
+    with open("dump/inventory.json", 'r', encoding="utf-8") as f:
         data = json.load(f)
 
     for k, v in data.items():

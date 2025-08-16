@@ -14,19 +14,6 @@ def extract_overlay(silent: memoryview, ovi: OverlayInfo):
 
     return silent[start: start+size]
 
-#based on https://github.com/Vatuu/silent-hill-decomp/blob/master/tools/silentassets/extract.py
-def xorBodyprog(silent: memoryview):
-    bodyprog = extract_overlay(silent, BodyProg)
-    outArray = bodyprog.cast("I") # uint32_t
-    seed = 0
-
-    for i, value in enumerate(outArray):
-        seed = (seed + 0x01309125) & 0xffffffff
-        seed = (seed * 0x03a452f7) & 0xffffffff
-        outArray[i] ^= seed
-
-    return bodyprog
-
 def read_uint32_le(buf, offset):
     return struct.unpack_from('<I', buf, offset)[0]
 

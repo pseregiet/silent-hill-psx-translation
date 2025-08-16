@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 
 import sys
+import os
 import struct
 import json
 import re
 from collections import namedtuple
+from pathlib import Path
 from bodyprog import *
 from textures import *
+from maps import *
 
 def main():
     silent_path = sys.argv[1]
@@ -14,26 +17,25 @@ def main():
         data = bytearray(f.read())
         silent = memoryview(data)
 
-    #xorBodyprog(silent)
+    mode = sys.argv[2]
+    if (mode == "dump"):
+        dump_data(silent)
+    else:
+        output = sys.arv[3]
+        patch_data(silent)
+        with open("/home/oxi/.wine/drive_c/users/oxi/AppData/Local/Temp/SILENT", 'wb') as f:
+            f.write(silent)
 
-    #for mi in MapInfos:
-        #patch_map(silent, mi)
-        #extract_map_messages(silent, mi)
 
-    #patch_map(silent, OverlayInfos[1])
-    #extract_bodyprog_messages(silent)
-
-    #patch_bodyprog(silent)
-    #with open(silent_path+".new", 'wb') as f:
-    #    f.write(silent)
-
-    #dump_bodyprog(silent)
-    dump_font(silent)
-    with open("/home/oxi/.wine/drive_c/users/oxi/AppData/Local/Temp/SILENT", 'wb') as f:
-        f.write(silent)
-
-def dump_data(memoryview: silent):
+def dump_data(silent: memoryview):
+    Path("dump").mkdir(parents=True, exist_ok=True)
     dump_font(silent)
     dump_bodyprog(silent)
+    dump_maps(silent)
+
+def patch_data(silent: memoryview):
+    patch_font(silent)
+    patch_bodyprog(silent)
+    patch_maps(silent)
 
 main()

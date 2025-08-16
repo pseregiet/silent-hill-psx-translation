@@ -104,7 +104,7 @@ def dump_map_messages(silent: memoryview, ovi: OverlayInfo):
     }
 
     output["messages"] = msgs
-    with open("messages/" + mi.filename + ".json", 'w') as f:
+    with open("dump/" + ovi.filename + ".json", 'w') as f:
         json.dump(output, f, indent=4)
 
 def dump_maps(silent: memoryview):
@@ -112,7 +112,7 @@ def dump_maps(silent: memoryview):
         dump_map_messages(silent, ovi)
 
 def patch_map(silent: memoryview, ovi: OverlayInfo):
-    with open("messages/" + ovi.filename + ".json", 'r', encoding="utf-8") as f:
+    with open("dump/" + ovi.filename + ".json", 'r', encoding="utf-8") as f:
         data = json.load(f)
 
     mapdata = extract_overlay(silent, ovi)

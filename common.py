@@ -32,8 +32,8 @@ def patch_pointer(dstblob, pointer, offset):
     patch_blob(dstblob, srcblob, offset)
 
 def encode_local_text(line):
-    line = line.replace('ł', ';').replace('ó', '*').replace('ę', '>').replace('ą', '^')
-    line = line.replace('ż', '=').replace('ć', '<').replace('ń', '+').replace('ś', '/').replace('ź', 'Q')
+    line = line.replace('ą', '\'').replace('ż', '*').replace('ć', '+').replace('ę', '/')
+    line = line.replace('ł', ';').replace('ń', '<').replace('ó', '>').replace('ś', '[').replace('ź', '&')
     return line
 
 

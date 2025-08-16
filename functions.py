@@ -21,7 +21,7 @@ def main():
     if (mode == "dump"):
         dump_data(silent)
     else:
-        output = sys.arv[3]
+        output = sys.argv[3]
         patch_data(silent)
         with open("/home/oxi/.wine/drive_c/users/oxi/AppData/Local/Temp/SILENT", 'wb') as f:
             f.write(silent)

@@ -40,7 +40,7 @@ def extract_inventory_messages(bodyprog: memoryview):
         try:
             in_ptr = read_uint32_le(bodyprog, item_names_ptr)# - _offset
             id_ptr = read_uint32_le(bodyprog, item_descs_ptr)# - _offset
-            if (in_ptr == 0 || id_ptr == 0):
+            if (in_ptr == 0 or id_ptr == 0):
                 continue
             in_ptr -= _offset
             id_ptr -= _offset
@@ -71,6 +71,15 @@ def extract_font_width(bodyprog: memoryview):
 
     with open("dump/font_info.json", 'w') as f:
         json.dump(data, f, indent=4)
+
+def patch_font_width(bodyprog: memoryview):
+    font_widths_offset = 0x80025D6C - _offset
+    table = bodyprog[font_widths_offset: font_widths_offset + 84].cast('B')
+    with open("dump/font_info.json", 'r') as f:
+        data = json.load(f)
+
+    for i, (k, v) in enumerate(data.items()):
+        table[i] = v
 
 
 def patch_inventory(bodyprog: memoryview):
@@ -105,8 +114,8 @@ def patch_inventory(bodyprog: memoryview):
         if text_offset > text_max_size:
             raise MemoryError("Inventory text is too long")
 
-    with open("BODYPROG.BIN", 'wb') as f:
-        f.write(bodyprog)
+    #with open("BODYPROG.BIN", 'wb') as f:
+    #    f.write(bodyprog)
 
 def dump_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
@@ -116,5 +125,6 @@ def dump_bodyprog(silent: memoryview):
 def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
     patch_inventory(bodyprog)
+    patch_font_width(bodyprog)
     xorBodyprog(silent)
 

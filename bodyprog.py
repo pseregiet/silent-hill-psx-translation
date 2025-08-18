@@ -78,8 +78,20 @@ def patch_font_width(bodyprog: memoryview):
     with open("dump/font_info.json", 'r') as f:
         data = json.load(f)
 
-    for i, (k, v) in enumerate(data.items()):
-        table[i] = v
+    for k, v in data.items():
+        if k == '!':
+            k = '\\'
+        elif k == '&':
+            k = '^'
+        k = ord(k) - 0x27
+        table[k] = v
+
+
+def patch_left_quote(bodyprog: memoryview):
+    # If we use the left quote (") for another localized glyph
+    # we have to patch out few hardcoded uses of it from bodyprog
+    mainmenu_left_quote = 0x800254F4 - _offset
+    bodyprog[mainmenu_left_quote] = ord(']')
 
 
 def patch_inventory(bodyprog: memoryview):
@@ -126,5 +138,6 @@ def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
     patch_inventory(bodyprog)
     patch_font_width(bodyprog)
+    patch_left_quote(bodyprog)
     xorBodyprog(silent)
 

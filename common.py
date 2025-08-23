@@ -38,7 +38,7 @@ def encode_local_text(line):
     return line
 
 def read_font_widths():
-    with open("dump/font_info.json", 'r') as f:
+    with open("./dump/font_info.json", 'r') as f:
         data = json.load(f)
 
     for k, v in data.items():

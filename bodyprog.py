@@ -54,7 +54,7 @@ def extract_inventory_messages(bodyprog: memoryview):
         item_names_ptr += 4
         item_descs_ptr += 4
 
-    with open("dump/inventory.json", 'w') as f:
+    with open("./dump/inventory.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 def extract_font_width(bodyprog: memoryview):
@@ -69,13 +69,13 @@ def extract_font_width(bodyprog: memoryview):
             char = '&'
         data[char] = table[i]
 
-    with open("dump/font_info.json", 'w') as f:
+    with open("./dump/font_info.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 def patch_font_width(bodyprog: memoryview):
     font_widths_offset = 0x80025D6C - _offset
     table = bodyprog[font_widths_offset: font_widths_offset + 84].cast('B')
-    with open("dump/font_info.json", 'r') as f:
+    with open("./dump/font_info.json", 'r') as f:
         data = json.load(f)
 
     for k, v in data.items():
@@ -100,7 +100,7 @@ def patch_inventory(bodyprog: memoryview):
     item_names_ptr = 0x800ADB60 - _offset
     item_descs_ptr = 0x800ADE6C - _offset
 
-    with open("dump/inventory.json", 'r', encoding="utf-8") as f:
+    with open("./dump/inventory.json", 'r', encoding="utf-8") as f:
         data = json.load(f)
 
     for k, v in data.items():

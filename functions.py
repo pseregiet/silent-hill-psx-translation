@@ -23,12 +23,12 @@ def main():
     else:
         output = sys.argv[3]
         patch_data(silent)
-        with open("/home/oxi/.wine/drive_c/users/oxi/AppData/Local/Temp/SILENT", 'wb') as f:
+        with open("../patch-SILENT", 'wb') as f:
             f.write(silent)
 
 
 def dump_data(silent: memoryview):
-    Path("dump").mkdir(parents=True, exist_ok=True)
+    Path("./dump").mkdir(parents=True, exist_ok=True)
     dump_font(silent)
     dump_bodyprog(silent)
     dump_maps(silent)

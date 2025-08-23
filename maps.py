@@ -122,10 +122,14 @@ def patch_map(silent: memoryview, ovi: OverlayInfo):
     max_txt_size += txt_offset
     for line in data['messages']:
         txt_pointer = _offset + txt_offset
-        line = game_encode(line)
+        game_line = game_encode(line)
+        width = accumulate_widths(game_line)
+        if width > 320:
+            raise RuntimeError(f"line '{line}' is too long ({width} pixels)")
+
         patch_pointer(mapdata, txt_pointer, ptr_offset)
-        patch_blob(mapdata, line, txt_offset)
-        txt_offset += len(line)
+        patch_blob(mapdata, game_line, txt_offset)
+        txt_offset += len(game_line)
         ptr_offset += 4
         if txt_offset > max_txt_size:
             raise MemoryError("Not enough room for the new text")

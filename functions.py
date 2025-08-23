@@ -36,6 +36,8 @@ def dump_data(silent: memoryview):
 def patch_data(silent: memoryview):
     patch_font(silent)
     patch_bodyprog(silent)
+
+    read_font_widths()
     patch_maps(silent)
 
 main()

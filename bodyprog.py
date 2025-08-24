@@ -40,6 +40,8 @@ def extract_inventory_messages(bodyprog: memoryview):
         try:
             in_ptr = read_uint32_le(bodyprog, item_names_ptr)# - _offset
             id_ptr = read_uint32_le(bodyprog, item_descs_ptr)# - _offset
+            item_names_ptr += 4
+            item_descs_ptr += 4
             if (in_ptr == 0 or id_ptr == 0):
                 continue
             in_ptr -= _offset
@@ -50,9 +52,8 @@ def extract_inventory_messages(bodyprog: memoryview):
                 "desc": nice_encode(read_c_string(bodyprog, id_ptr))
             }
         except Exception as e:
+            print(e)
             pass
-        item_names_ptr += 4
-        item_descs_ptr += 4
 
     with open("./dump/inventory.json", 'w') as f:
         json.dump(data, f, indent=4)

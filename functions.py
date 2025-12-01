@@ -23,7 +23,7 @@ def main():
     else:
         output = sys.argv[3]
         patch_data(silent)
-        with open("../patch-SILENT", 'wb') as f:
+        with open(output, 'wb') as f:
             f.write(silent)
 
 

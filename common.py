@@ -9,6 +9,11 @@ from collections import namedtuple
 OverlayInfo = namedtuple("OverlayInfo", ["sector_start", "block_size", "filename"])
 font_widths = {}
 
+def to_signed(val, bits=32):
+    if val & (1 << (bits - 1)):
+        val -= 1 << bits
+    return val
+
 def extract_overlay(silent: memoryview, ovi: OverlayInfo):
     start = (ovi.sector_start - 0x40) * 0x800
     size  = ovi.block_size * 0x100
@@ -24,8 +29,10 @@ def read_c_string(data: memoryview, offset: int) -> str:
         end += 1
     return data[offset:end].tobytes().decode('ascii')
 
+
 def patch_blob(dstblob, srcblob, offset):
     bloblen = len(srcblob)
+    print(f"{offset}: {offset + bloblen}")
     dstblob[offset: offset + bloblen] = srcblob
 
 def patch_pointer(dstblob, pointer, offset):

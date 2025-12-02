@@ -34,10 +34,10 @@ def dump_data(silent: memoryview):
     dump_maps(silent)
 
 def patch_data(silent: memoryview):
+    read_font_widths()
     patch_font(silent)
     patch_bodyprog(silent)
 
-    read_font_widths()
     patch_maps(silent)
 
 main()

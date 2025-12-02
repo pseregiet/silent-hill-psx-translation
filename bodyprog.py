@@ -11,8 +11,6 @@ from common import *
 _offset = 0x80024B60
 BodyProg = OverlayInfo(0x000cf, 2635, "bodyprog")
 
-# pointer to a table of string pos in inventory menu 80027DD8
-
 # Memory occupied by the strings. We can place our strings anywhere in these
 # regions as we will patch out the pointers.
 data_banks = [
@@ -31,6 +29,31 @@ misc_ptr_tables = {
     0x80027F94: 0x7,
 }
 
+inventory_options = {}
+
+def read_inventory_options(bodyprog: memoryview):
+    txt_table_ptr = 0x80027E34
+    pos_table_ptr = 0x80027DD8
+    data = {}
+    for i in range(8):
+        posval = read_uint32_le(bodyprog, pos_table_ptr + (i*4) - _offset)
+        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
+        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        x = (posval>>0 ) & 0xFFFF
+        y = (posval>>16) & 0xFFFF
+        data[i] = {
+            "txt": txt,
+            "x": ctypes.c_int16(x).value,
+            "y": ctypes.c_int16(y).value,
+        }
+    return data
+
+# Read some values before we patch anything
+def init_patcher(bodyprog: memoryview):
+    global inventory_options
+    inventory_options = read_inventory_options(bodyprog)
+    print(inventory_options)
+
 def find_room_for_blob(blob):
     blen = len(blob)
     for bank in data_banks:
@@ -48,7 +71,6 @@ def find_room_for_blob(blob):
 def patch_code_pointer(bodyprog: memoryview, code_ptr, new_ptr):
     code1 = 0x3C020000 | (new_ptr >>16 & 0xFFFF) # lui     $v0, %hi(ptr)
     code2 = 0x24420000 | (new_ptr >>0  & 0xFFFF) # addiu   $v0, $v0, %lo(ptr)
-    print(f"{code1:x} -- {code2:x} -- {code_ptr:x} -- {new_ptr:x}")
     patch_pointer(bodyprog, code1, ((code_ptr+0) - _offset))
     patch_pointer(bodyprog, code2, ((code_ptr+4) - _offset))
 
@@ -63,21 +85,7 @@ code_patches_table = [
 
 
 def dump_inventory_options(bodyprog: memoryview):
-    txt_table_ptr = 0x80027E34
-    pos_table_ptr = 0x80027DD8
-    data = {}
-    for i in range(8):
-        posval = read_uint32_le(bodyprog, pos_table_ptr + (i*4) - _offset)
-        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
-        txt = nice_encode(read_c_string(bodyprog, txtptr))
-        x = (posval>>0 ) & 0xFFFF
-        y = (posval>>16) & 0xFFFF
-        data[i] = {
-            "txt": txt,
-            "x": ctypes.c_int16(x).value,
-            "y": ctypes.c_int16(y).value,
-        }
-
+    data = read_inventory_options(bodyprog)
     with open("./dump/inventory_options_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
 
@@ -88,14 +96,23 @@ def patch_inventory_options(bodyprog: memoryview):
         data = json.load(f)
 
     for i in range(8):
+        oldposval = read_uint32_le(bodyprog, pos_table_ptr + (i*4) - _offset)
+        x = inventory_options[i]["x"]
+        y = inventory_options[i]["y"]
+        oldtxt = game_encode(inventory_options[i]["txt"])
+        oldlen = accumulate_widths(oldtxt)
+
         dataline = data[str(i)]
-        posval = ctypes.c_uint16(dataline["y"]).value << 16 | ctypes.c_uint16(dataline["x"]).value
         news = game_encode(dataline["txt"])
+        newlen = accumulate_widths(news)
+
+        x = int(x + ((oldlen - newlen)/2))
+        posval = ctypes.c_uint16(y).value << 16 | ctypes.c_uint16(x).value
+
         txt_ptr = find_room_for_blob(news)
         patch_pointer(bodyprog, txt_ptr, txt_table_ptr - _offset + (i*4))
         patch_blob(bodyprog, news, txt_ptr - _offset)
-        print(f"{posval:x}, {pos_table_ptr + (i*4)}")
-        patch_pointer(bodyprog, int(posval), pos_table_ptr + (i*4) - _offset)
+        patch_pointer(bodyprog, posval, pos_table_ptr + (i*4) - _offset)
 
 
 def dump_small_strings(bodyprog: memoryview):
@@ -268,11 +285,12 @@ def dump_bodyprog(silent: memoryview):
 
 def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
+    init_patcher(bodyprog)
+    patch_inventory_options(bodyprog)
     patch_inventory(bodyprog)
     patch_font_width(bodyprog)
     patch_left_quote(bodyprog)
     patch_inventory_misc(bodyprog)
     patch_small_strings(bodyprog)
-    patch_inventory_options(bodyprog)
     xorBodyprog(silent)
 

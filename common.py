@@ -32,7 +32,6 @@ def read_c_string(data: memoryview, offset: int) -> str:
 
 def patch_blob(dstblob, srcblob, offset):
     bloblen = len(srcblob)
-    print(f"{offset}: {offset + bloblen}")
     dstblob[offset: offset + bloblen] = srcblob
 
 def patch_pointer(dstblob, pointer, offset):
@@ -55,16 +54,24 @@ def read_font_widths():
         #    k = '^'
         font_widths[k] = v
 
+    print(font_widths)
 
-def accumulate_widths(line):
+
+def accumulate_widths(line, decode=True):
     i = 0
     total = 0
     last_line = 0
-    text = line.decode("ascii")
+    if decode:
+        text = line.decode("ascii")
+    else:
+        text = line
+
     while i < len(text):
         ch = text[i]
 
         if ch == '\x00':
+            break
+        if ch == '\n':
             break
 
         if ch == ' ' or ch == '\t':

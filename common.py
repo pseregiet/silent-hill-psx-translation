@@ -23,6 +23,9 @@ def extract_overlay(silent: memoryview, ovi: OverlayInfo):
 def read_uint32_le(buf, offset):
     return struct.unpack_from('<I', buf, offset)[0]
 
+def read_u8(buf, offset):
+    return struct.unpack_from('<B', buf, offset)[0]
+
 def read_c_string(data: memoryview, offset: int) -> str:
     end = offset
     while end < len(data) and data[end] != 0:
@@ -36,6 +39,10 @@ def patch_blob(dstblob, srcblob, offset):
 
 def patch_pointer(dstblob, pointer, offset):
     srcblob = struct.pack('<I', pointer)
+    patch_blob(dstblob, srcblob, offset)
+
+def patch_u8(dstblob, val, offset):
+    srcblob = struct.pack('<B', val)
     patch_blob(dstblob, srcblob, offset)
 
 def encode_local_text(line):

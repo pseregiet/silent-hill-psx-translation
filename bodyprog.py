@@ -31,6 +31,35 @@ misc_ptr_tables = {
 
 inventory_options = {}
 
+main_menu = {
+    "main_pos": 0x800254EC,
+    "main_txt": 0x800A9A8C,
+    "diff_pos": 0x8002551C,
+    "diff_txt": 0x800A9AA0,
+}
+
+def read_main_menu(bodyprog: memoryview):
+    pos_table_ptr = main_menu["main_pos"]
+    txt_table_ptr = main_menu["main_txt"]
+    main_menu_entries = {}
+    for i in range(4):
+        posval = read_u8(bodyprog, pos_table_ptr + (i*1) - _offset)
+        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
+        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        main_menu_entries[i] = { "txt": txt, "x": posval }
+    main_menu["main_menu_entries"] = main_menu_entries
+
+    pos_table_ptr = main_menu["diff_pos"]
+    txt_table_ptr = main_menu["diff_txt"]
+    diff_menu_entries = {}
+    for i in range(3):
+        posval = read_u8(bodyprog, pos_table_ptr + (i*1) - _offset)
+        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
+        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        diff_menu_entries[i] = { "txt": txt, "x": posval }
+    main_menu["diff_menu_entries"] = diff_menu_entries
+
+
 def read_inventory_options(bodyprog: memoryview):
     txt_table_ptr = 0x80027E34
     pos_table_ptr = 0x80027DD8
@@ -48,11 +77,39 @@ def read_inventory_options(bodyprog: memoryview):
         }
     return data
 
+
+def patch_main_menu(bodyprog: memoryview):
+    def work(count, pos_table_ptr, txt_table_ptr, new_data, old_data):
+        for i in range(count):
+            x = old_data[i]["x"]
+            oldtxt = game_encode(old_data[i]["txt"])
+            oldlen = accumulate_widths(oldtxt)
+
+            dataline = new_data[str(i)]
+            print(dataline["txt"])
+            news = game_encode(dataline["txt"])
+            newlen = accumulate_widths(news)
+
+            x = int(x - ((oldlen - newlen)/2))
+
+            txt_ptr = find_room_for_blob(news)
+            patch_pointer(bodyprog, txt_ptr, txt_table_ptr - _offset + (i*4))
+            patch_blob(bodyprog, news, txt_ptr - _offset)
+            patch_u8(bodyprog, ctypes.c_uint8(x).value, pos_table_ptr + (i*1) - _offset)
+
+    with open("./dump/main_menu_strings.json", 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    print(data)
+    work(4, main_menu["main_pos"], main_menu["main_txt"], data["main_menu"], main_menu["main_menu_entries"])
+    work(3, main_menu["diff_pos"], main_menu["diff_txt"], data["diff_menu"], main_menu["diff_menu_entries"])
+
+
 # Read some values before we patch anything
 def init_patcher(bodyprog: memoryview):
     global inventory_options
     inventory_options = read_inventory_options(bodyprog)
-    print(inventory_options)
+    read_main_menu(bodyprog)
 
 def find_room_for_blob(blob):
     blen = len(blob)
@@ -88,6 +145,15 @@ def dump_inventory_options(bodyprog: memoryview):
     data = read_inventory_options(bodyprog)
     with open("./dump/inventory_options_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
+
+def dump_main_menu():
+    data = {
+        "main_menu":main_menu["main_menu_entries"],
+        "diff_menu":main_menu["diff_menu_entries"],
+    }
+    with open("./dump/main_menu_strings.json", 'w') as f:
+        json.dump(data, f, indent=4)
+
 
 def patch_inventory_options(bodyprog: memoryview):
     txt_table_ptr = 0x80027E34
@@ -276,17 +342,20 @@ def patch_inventory(bodyprog: memoryview):
 
 def dump_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
+    init_patcher(bodyprog)
     extract_font_width(bodyprog)
     extract_inventory_messages(bodyprog)
     dump_small_strings(bodyprog)
     dump_misc_strings(bodyprog)
     dump_inventory_options(bodyprog)
+    dump_main_menu()
 
 
 def patch_bodyprog(silent: memoryview):
     bodyprog = xorBodyprog(silent)
     init_patcher(bodyprog)
     patch_inventory_options(bodyprog)
+    patch_main_menu(bodyprog)
     patch_inventory(bodyprog)
     patch_font_width(bodyprog)
     patch_left_quote(bodyprog)

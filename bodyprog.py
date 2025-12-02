@@ -38,6 +38,13 @@ main_menu = {
     "diff_txt": 0x800A9AA0,
 }
 
+def patch_item_name_pos(bodyprog: memoryview, val):
+    code_ptr = [0x80051E64, 0x80051E78, 0x80051ED8]
+    code_base = 0x24040000 # addiu $a0, $zero, val
+    code = code_base | val
+    for ptr in code_ptr:
+        patch_u32(bodyprog, code, ptr - _offset)
+
 def read_main_menu(bodyprog: memoryview):
     pos_table_ptr = main_menu["main_pos"]
     txt_table_ptr = main_menu["main_txt"]
@@ -361,5 +368,6 @@ def patch_bodyprog(silent: memoryview):
     patch_left_quote(bodyprog)
     patch_inventory_misc(bodyprog)
     patch_small_strings(bodyprog)
+    patch_item_name_pos(bodyprog, 16)
     xorBodyprog(silent)
 

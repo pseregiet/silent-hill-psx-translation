@@ -45,6 +45,10 @@ def patch_u8(dstblob, val, offset):
     srcblob = struct.pack('<B', val)
     patch_blob(dstblob, srcblob, offset)
 
+def patch_u32(dstblob, val, offset):
+    srcblob = struct.pack('<I', val)
+    patch_blob(dstblob, srcblob, offset)
+
 def encode_local_text(line):
     line = line.replace('ą', '\'').replace('ż', '*').replace('ć', '+').replace('ę', '/')
     line = line.replace('ł', ';').replace('ń', '<').replace('ó', '>').replace('ś', '[').replace('ź', '&')

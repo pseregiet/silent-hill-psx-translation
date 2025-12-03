@@ -11,7 +11,7 @@ from collections import Counter
 
 from common import *
 
-Font = OverlayInfo(0x00287, 33, "font16.tim")
+Font = OverlayInfo(0x00287, 33, "font16.tim", None, None)
 
 def encode_tim(tim: memoryview, png: Image.Image):
     data = tim#.tobytes()
@@ -183,7 +183,7 @@ def dump_font(silent: memoryview):
     fonttim = extract_overlay(silent, Font)
     pngimg = decode_tim(fonttim)
     pngimg = flat_to_atlas(pngimg)
-    pngimg.save("./dump/font16.png", "PNG")
+    pngimg.save("./dump-new/font16.png", "PNG")
 
 def patch_font(silent: memoryview):
     fonttim = extract_overlay(silent, Font)

@@ -7,20 +7,8 @@ import re
 import ctypes
 from collections import namedtuple
 from common import *
+from ov_bodyprog import *
 
-_offset = 0x80024B60
-BodyProg = OverlayInfo(0x000cf, 2635, "bodyprog")
-
-# Memory occupied by the strings. We can place our strings anywhere in these
-# regions as we will patch out the pointers.
-data_banks = [
-    # pointer     size
-    [ 0x800261E0, 0x34   ],
-    [ 0x80027DF8, 0x3A   ],
-    [ 0x800262AC, 0x4A   ],
-    [ 0x80027F14, 0x7E   ],
-    [ 0x8002667C, 0x175C ],
-]
 
 misc_ptr_tables = {
     # pointer  count
@@ -38,21 +26,32 @@ main_menu = {
     "diff_txt": 0x800A9AA0,
 }
 
-def patch_item_name_pos(bodyprog: memoryview, val):
+#based on https://github.com/Vatuu/silent-hill-decomp/blob/master/tools/silentassets/extract.py
+def xorBodyProg(silent: memoryview):
+    outArray = BodyProg.memory.cast("I") # uint32_t
+    seed = 0
+
+    for i, value in enumerate(outArray):
+        seed = (seed + 0x01309125) & 0xffffffff
+        seed = (seed * 0x03a452f7) & 0xffffffff
+        outArray[i] ^= seed
+
+
+def patch_item_name_pos(val):
     code_ptr = [0x80051E64, 0x80051E78, 0x80051ED8]
     code_base = 0x24040000 # addiu $a0, $zero, val
     code = code_base | val
     for ptr in code_ptr:
-        patch_u32(bodyprog, code, ptr - _offset)
+        w_u32(BodyProg, code, ptr)
 
-def read_main_menu(bodyprog: memoryview):
+def read_main_menu():
     pos_table_ptr = main_menu["main_pos"]
     txt_table_ptr = main_menu["main_txt"]
     main_menu_entries = {}
     for i in range(4):
-        posval = read_u8(bodyprog, pos_table_ptr + (i*1) - _offset)
-        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
-        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        posval = r_u8(BodyProg, pos_table_ptr + (i*1))
+        txtptr = r_u32(BodyProg, txt_table_ptr + (i*4))
+        txt = nice_encode(read_c_string2(BodyProg, txtptr))
         main_menu_entries[i] = { "txt": txt, "x": posval }
     main_menu["main_menu_entries"] = main_menu_entries
 
@@ -60,21 +59,21 @@ def read_main_menu(bodyprog: memoryview):
     txt_table_ptr = main_menu["diff_txt"]
     diff_menu_entries = {}
     for i in range(3):
-        posval = read_u8(bodyprog, pos_table_ptr + (i*1) - _offset)
-        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
-        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        posval = r_u8(BodyProg, pos_table_ptr + (i*1))
+        txtptr = r_u32(BodyProg, txt_table_ptr + (i*4))
+        txt = nice_encode(read_c_string2(BodyProg, txtptr))
         diff_menu_entries[i] = { "txt": txt, "x": posval }
     main_menu["diff_menu_entries"] = diff_menu_entries
 
 
-def read_inventory_options(bodyprog: memoryview):
+def read_inventory_options():
     txt_table_ptr = 0x80027E34
     pos_table_ptr = 0x80027DD8
     data = {}
     for i in range(8):
-        posval = read_uint32_le(bodyprog, pos_table_ptr + (i*4) - _offset)
-        txtptr = read_uint32_le(bodyprog, txt_table_ptr + (i*4) - _offset) - _offset
-        txt = nice_encode(read_c_string(bodyprog, txtptr))
+        posval = r_u32(BodyProg, pos_table_ptr + (i*4))
+        txtptr = r_u32(BodyProg, txt_table_ptr + (i*4))
+        txt = nice_encode(read_c_string2(BodyProg, txtptr))
         x = (posval>>0 ) & 0xFFFF
         y = (posval>>16) & 0xFFFF
         data[i] = {
@@ -84,8 +83,7 @@ def read_inventory_options(bodyprog: memoryview):
         }
     return data
 
-
-def patch_main_menu(bodyprog: memoryview):
+def patch_main_menu():
     def work(count, pos_table_ptr, txt_table_ptr, new_data, old_data):
         for i in range(count):
             x = old_data[i]["x"]
@@ -99,10 +97,9 @@ def patch_main_menu(bodyprog: memoryview):
 
             x = int(x - ((oldlen - newlen)/2))
 
-            txt_ptr = find_room_for_blob(news)
-            patch_pointer(bodyprog, txt_ptr, txt_table_ptr - _offset + (i*4))
-            patch_blob(bodyprog, news, txt_ptr - _offset)
-            patch_u8(bodyprog, ctypes.c_uint8(x).value, pos_table_ptr + (i*1) - _offset)
+            txt_ptr = get_new_blob_ptr(news, BodyProg)
+            w_u32(BodyProg, txt_ptr, txt_table_ptr + (i*4))
+            w_u8(BodyProg, ctypes.c_uint8(x).value, pos_table_ptr + (i*1))
 
     with open("./dump/main_menu_strings.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -113,30 +110,21 @@ def patch_main_menu(bodyprog: memoryview):
 
 
 # Read some values before we patch anything
-def init_patcher(bodyprog: memoryview):
+def init_patcher(silent: memoryview):
+    extract_overlay2(silent, BodyProg)
+    xorBodyProg(silent)
     global inventory_options
-    inventory_options = read_inventory_options(bodyprog)
-    read_main_menu(bodyprog)
-
-def find_room_for_blob(blob):
-    blen = len(blob)
-    for bank in data_banks:
-        if bank[1] >= blen:
-            bank[1] -= blen
-            ret = bank[0]
-            bank[0] += blen
-            return ret
-    raise MemoryError(f"No more memory for blob: {blob}")
-
+    inventory_options = read_inventory_options()
+    read_main_menu()
 
 # These are small strings that do not use a pointer table.
 # Instead they use a direct pointer in the code, which requires patching
 # The specific instructions.
-def patch_code_pointer(bodyprog: memoryview, code_ptr, new_ptr):
+def patch_code_pointer(code_ptr, new_ptr):
     code1 = 0x3C020000 | (new_ptr >>16 & 0xFFFF) # lui     $v0, %hi(ptr)
     code2 = 0x24420000 | (new_ptr >>0  & 0xFFFF) # addiu   $v0, $v0, %lo(ptr)
-    patch_pointer(bodyprog, code1, ((code_ptr+0) - _offset))
-    patch_pointer(bodyprog, code2, ((code_ptr+4) - _offset))
+    w_u32(BodyProg, code1, (code_ptr+0))
+    w_u32(BodyProg, code2, (code_ptr+4))
 
 
 code_patches_table = [
@@ -148,9 +136,9 @@ code_patches_table = [
 ]
 
 
-def dump_inventory_options(bodyprog: memoryview):
-    data = read_inventory_options(bodyprog)
-    with open("./dump/inventory_options_strings.json", 'w') as f:
+def dump_inventory_options():
+    data = read_inventory_options()
+    with open("./dump-new/inventory_options_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 def dump_main_menu():
@@ -158,18 +146,18 @@ def dump_main_menu():
         "main_menu":main_menu["main_menu_entries"],
         "diff_menu":main_menu["diff_menu_entries"],
     }
-    with open("./dump/main_menu_strings.json", 'w') as f:
+    with open("./dump-new/main_menu_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 
-def patch_inventory_options(bodyprog: memoryview):
+def patch_inventory_options():
     txt_table_ptr = 0x80027E34
     pos_table_ptr = 0x80027DD8
     with open("./dump/inventory_options_strings.json", 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     for i in range(8):
-        oldposval = read_uint32_le(bodyprog, pos_table_ptr + (i*4) - _offset)
+        oldposval = r_u32(BodyProg, pos_table_ptr + (i*4))
         x = inventory_options[i]["x"]
         y = inventory_options[i]["y"]
         oldtxt = game_encode(inventory_options[i]["txt"])
@@ -182,111 +170,84 @@ def patch_inventory_options(bodyprog: memoryview):
         x = int(x + ((oldlen - newlen)/2))
         posval = ctypes.c_uint16(y).value << 16 | ctypes.c_uint16(x).value
 
-        txt_ptr = find_room_for_blob(news)
-        patch_pointer(bodyprog, txt_ptr, txt_table_ptr - _offset + (i*4))
-        patch_blob(bodyprog, news, txt_ptr - _offset)
-        patch_pointer(bodyprog, posval, pos_table_ptr + (i*4) - _offset)
+        txt_ptr = get_new_blob_ptr(news, BodyProg)
+        w_u32(BodyProg, txt_ptr, txt_table_ptr + (i*4))
+        w_u32(BodyProg, posval, pos_table_ptr + (i*4))
 
 
-def dump_small_strings(bodyprog: memoryview):
+def dump_small_strings():
     data = {}
     for smallstr in code_patches_table:
-        data[f"{smallstr[0]:x}"] = nice_encode(read_c_string(bodyprog, smallstr[1] - _offset))
+        data[f"{smallstr[0]:x}"] = nice_encode(read_c_string2(BodyProg, smallstr[1]))
 
-    with open("./dump/small_strings.json", 'w') as f:
+    with open("./dump-new/small_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 
-def dump_misc_strings(bodyprog: memoryview):
+def dump_misc_strings():
     data = {}
     for k, v in misc_ptr_tables.items():
         table = []
         for i in range(v):
-            strptr = read_uint32_le(bodyprog, k + (4*i) - _offset)
-            strptr -= _offset
-            table.append(nice_encode(read_c_string(bodyprog, strptr)))
+            strptr = w_u32(BodyProg, k + (4*i))
+            table.append(nice_encode(read_c_string2(BodyProg, strptr)))
         data[f"{k:x}"] = table
 
-    with open("./dump/misc_strings.json", 'w') as f:
+    with open("./dump-new/misc_strings.json", 'w') as f:
         json.dump(data, f, indent=4)
 
 
-def patch_inventory_misc(bodyprog: memoryview):
+def patch_inventory_misc():
     with open("./dump/misc_strings.json", 'r', encoding="utf-8") as f:
         data = json.load(f)
 
     for tableptr, tablestr in data.items():
-        tableptr = int(tableptr, 16) - _offset
+        tableptr = int(tableptr, 16)
         for s in tablestr:
             news = game_encode(s)
-            txt_pointer = find_room_for_blob(news)
-            patch_pointer(bodyprog, txt_pointer, tableptr)
-            patch_blob(bodyprog, news, txt_pointer - _offset)
+            txt_pointer = get_new_blob_ptr(news, BodyProg)
+            w_u32(BodyProg, txt_pointer, tableptr)
             tableptr = tableptr + 4
 
 
-def patch_small_strings(bodyprog: memoryview):
+def patch_small_strings():
     with open("./dump/small_strings.json", 'r', encoding="utf-8") as f:
         data = json.load(f)
 
     for codeptr, text in data.items():
         news = game_encode(text)
-        txt_pointer = find_room_for_blob(news)
-        patch_blob(bodyprog, news, txt_pointer - _offset)
-        patch_code_pointer(bodyprog, int(codeptr, 16), txt_pointer)
+        txt_pointer = get_new_blob_ptr(news, BodyProg)
+        patch_code_pointer(int(codeptr, 16), txt_pointer)
 
 
 
-#based on https://github.com/Vatuu/silent-hill-decomp/blob/master/tools/silentassets/extract.py
-def xorBodyprog(silent: memoryview):
-    bodyprog = extract_overlay(silent, BodyProg)
-    outArray = bodyprog.cast("I") # uint32_t
-    seed = 0
-
-    for i, value in enumerate(outArray):
-        seed = (seed + 0x01309125) & 0xffffffff
-        seed = (seed * 0x03a452f7) & 0xffffffff
-        outArray[i] ^= seed
-
-    return bodyprog
-
-def nice_encode(line):
-    return line.replace('\t', '').replace('\n', '{~N}').replace('_', ' ')
-
-def game_encode(line):
-    line = line.replace(' ', '_').replace('{~N}', '\n')
-    line = encode_local_text(line)
-    return line.encode('ascii') + b'\x00'
-
-def extract_inventory_messages(bodyprog: memoryview):
-    item_names_ptr = 0x800ADB60 - _offset
-    item_descs_ptr = 0x800ADE6C - _offset
+def extract_inventory_messages():
+    item_names_ptr = 0x800ADB60
+    item_descs_ptr = 0x800ADE6C
     data = {}
     for i in range(200):
         try:
-            in_ptr = read_uint32_le(bodyprog, item_names_ptr)
-            id_ptr = read_uint32_le(bodyprog, item_descs_ptr)
+            in_ptr = r_u32(BodyProg, item_names_ptr)
+            id_ptr = r_u32(BodyProg, item_descs_ptr)
             item_names_ptr += 4
             item_descs_ptr += 4
             if (in_ptr == 0 or id_ptr == 0):
                 continue
-            in_ptr -= _offset
-            id_ptr -= _offset
 
             data[i] = {
-                "name": nice_encode(read_c_string(bodyprog, in_ptr)),
-                "desc": nice_encode(read_c_string(bodyprog, id_ptr))
+                "name": nice_encode(read_c_string2(BodyProg, in_ptr)),
+                "desc": nice_encode(read_c_string2(BodyProg, id_ptr))
             }
         except Exception as e:
             print(e)
             pass
 
-    with open("./dump/inventory.json", 'w') as f:
+    with open("./dump-new/inventory.json", 'w') as f:
         json.dump(data, f, indent=4)
 
-def extract_font_width(bodyprog: memoryview):
-    font_widths_offset = 0x80025D6C - _offset
-    table = bodyprog[font_widths_offset: font_widths_offset + 84].cast('B')
+def extract_font_width():
+    font_widths_offset = 0x80025D6C - BodyProg.offset
+    table = BodyProg.memory[font_widths_offset: font_widths_offset + 84].cast('B')
     data = {}
     for i in range(84):
         char = chr(i+0x27)
@@ -296,12 +257,12 @@ def extract_font_width(bodyprog: memoryview):
             char = '&'
         data[char] = table[i]
 
-    with open("./dump/font_info.json", 'w') as f:
+    with open("./dump-new/font_info.json", 'w') as f:
         json.dump(data, f, indent=4)
 
-def patch_font_width(bodyprog: memoryview):
-    font_widths_offset = 0x80025D6C - _offset
-    table = bodyprog[font_widths_offset: font_widths_offset + 84].cast('B')
+def patch_font_width():
+    font_widths_offset = 0x80025D6C - BodyProg.offset
+    table = BodyProg.memory[font_widths_offset: font_widths_offset + 84].cast('B')
     with open("./dump/font_info.json", 'r') as f:
         data = json.load(f)
 
@@ -314,17 +275,18 @@ def patch_font_width(bodyprog: memoryview):
         table[k] = v
 
 
-def patch_left_quote(bodyprog: memoryview):
+def patch_left_quote():
     # If we use the left quote (") for another localized glyph
     # we have to patch out few hardcoded uses of it from bodyprog
-    mainmenu_left_quote = 0x800254F4 - _offset
-    bodyprog[mainmenu_left_quote] = ord(']')
+    mainmenu_left_quote = 0x800254F4# - _offset
+    w_u8(BodyProg, ord(']'), 0x800254F4)
+    #BodyProg.memory[mainmenu_left_quote] = ord(']')
 
 
 
-def patch_inventory(bodyprog: memoryview):
-    item_names_ptr = 0x800ADB60 - _offset
-    item_descs_ptr = 0x800ADE6C - _offset
+def patch_inventory():
+    item_names_ptr = 0x800ADB60
+    item_descs_ptr = 0x800ADE6C
 
     with open("./dump/inventory.json", 'r', encoding="utf-8") as f:
         data = json.load(f)
@@ -335,21 +297,18 @@ def patch_inventory(bodyprog: memoryview):
         name = game_encode(v['name'])
         desc = game_encode(v['desc'])
 
-        txt_pointer = find_room_for_blob(name)
-        patch_pointer(bodyprog, txt_pointer, itemn_ptr)
-        patch_blob(bodyprog, name, txt_pointer - _offset)
+        txt_pointer = get_new_blob_ptr(name, BodyProg)
+        w_u32(BodyProg, txt_pointer, itemn_ptr)
 
 
-        txt_pointer = find_room_for_blob(desc)
-        patch_pointer(bodyprog, txt_pointer, itemd_ptr)
-        patch_blob(bodyprog, desc, txt_pointer - _offset)
+        txt_pointer = get_new_blob_ptr(desc, BodyProg)
+        w_u32(BodyProg, txt_pointer, itemd_ptr)
 
 
 
 
 def dump_bodyprog(silent: memoryview):
-    bodyprog = xorBodyprog(silent)
-    init_patcher(bodyprog)
+    init_patcher(silent)
     extract_font_width(bodyprog)
     extract_inventory_messages(bodyprog)
     dump_small_strings(bodyprog)
@@ -359,15 +318,14 @@ def dump_bodyprog(silent: memoryview):
 
 
 def patch_bodyprog(silent: memoryview):
-    bodyprog = xorBodyprog(silent)
-    init_patcher(bodyprog)
-    patch_inventory_options(bodyprog)
-    patch_main_menu(bodyprog)
-    patch_inventory(bodyprog)
-    patch_font_width(bodyprog)
-    patch_left_quote(bodyprog)
-    patch_inventory_misc(bodyprog)
-    patch_small_strings(bodyprog)
-    patch_item_name_pos(bodyprog, 16)
-    xorBodyprog(silent)
+    init_patcher(silent)
+    patch_inventory_options()
+    patch_main_menu()
+    patch_inventory()
+    patch_font_width()
+    patch_left_quote()
+    patch_inventory_misc()
+    patch_small_strings()
+    patch_item_name_pos(16)
+    #xorBodyProg(silent)
 

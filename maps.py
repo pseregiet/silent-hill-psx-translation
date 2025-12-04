@@ -61,10 +61,24 @@ def nice_encode(line):
     line = pattern.sub(r'{\1}', line)
     return jpattern.sub(r'{\1}', line).strip()
 
+
 def game_encode(line):
     line = line.replace(' ', '_').replace('{', ' ').replace('}', ' ')
     line = encode_local_text(line)
     return line.encode('ascii') + b'\x00'
+
+
+def patch_text_tab(ovi: FileInfo, tableptr, text):
+    def iter_values(x):
+        if isinstance(x, dict):
+            return x.values()
+        return x
+
+    for i, val in enumerate(iter_values(text)):
+        news = game_encode(val)
+        txt_ptr = get_new_blob_ptr(news, ovi)
+        w_u32(ovi, txt_ptr, tableptr + (i*4))
+
 
 def dump_map_messages(ovi: FileInfo, outdir: str):
     ptroffset = r_u32(ovi, 0x800C95AC)
@@ -103,22 +117,12 @@ def dump_map_messages(ovi: FileInfo, outdir: str):
     with open(f"{outdir}/{ovi.filename}.json", 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=4, ensure_ascii=False)
 
+
 def dump_maps(silent: memoryview, outdir: str):
     for ovi in FileInfos:
         extract_overlay2(silent, ovi)
         dump_map_messages(ovi, outdir)
 
-
-def patch_text_tab(ovi: FileInfo, tableptr, text):
-    def iter_values(x):
-        if isinstance(x, dict):
-            return x.values()
-        return x
-
-    for i, val in enumerate(iter_values(text)):
-        news = game_encode(val)
-        txt_ptr = get_new_blob_ptr(news, ovi)
-        w_u32(ovi, txt_ptr, tableptr + (i*4))
 
 def patch_map(ovi: FileInfo, indir: str):
     with open(f"{indir}/{ovi.filename}.json", 'r', encoding='utf-8') as f:

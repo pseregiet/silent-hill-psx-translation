@@ -46,6 +46,9 @@ def read_c_string(data: memoryview, offset: int) -> str:
 def r_u32(ovi: FileInfo, offset):
     return struct.unpack_from('<I', ovi.memory, offset - ovi.offset)[0]
 
+def r_s16(ovi: FileInfo, offset):
+    return struct.unpack_from('<h', ovi.memory, offset - ovi.offset)[0]
+
 def r_u8(ovi: FileInfo, offset):
     return struct.unpack_from('<B', ovi.memory, offset - ovi.offset)[0]
 
@@ -63,6 +66,15 @@ def w_s16(ovi: FileInfo, val, offset):
     srcblob = struct.pack('<h', val)
     offset = offset - ovi.offset
     ovi.memory[offset: offset + 2] = srcblob
+
+def w_u16(ovi: FileInfo, val, offset):
+    srcblob = struct.pack('<H', val)
+    offset = offset - ovi.offset
+    ovi.memory[offset: offset + 2] = srcblob
+
+def add_s16(ovi: FileInfo, val, offset):
+    org = r_s16(ovi, offset)
+    w_s16(ovi, org+val, offset)
 
 
 def w_blob(ovi: FileInfo, val, offset):
@@ -134,7 +146,8 @@ def read_font_widths():
 
 def text_width(line):
     total = 0
-    line = line.decode("ascii")
+    if type(line) != str:
+        line = line.decode("ascii")
     for c in line:
         if c == '_' or c == '\t':
             total += 6
@@ -143,7 +156,6 @@ def text_width(line):
             total += font_widths[c]
         except:
             pass
-    print(f"'{line}', {total}")
     return total
 
 def accumulate_widths(line, decode=True):
@@ -231,7 +243,6 @@ def patch_text_table(ovi: FileInfo, tableptr, tablecount, text):
     for i in range(tablecount):
         news = game_encode(text[str(i)])
         txt_ptr = get_new_blob_ptr(news, ovi)
-        print(f"{txt_ptr}, {ovi}")
         w_u32(ovi, txt_ptr, tableptr + (i*4))
 
 

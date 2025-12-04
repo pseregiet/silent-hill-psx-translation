@@ -11,40 +11,52 @@ from bodyprog import *
 from textures import *
 from maps import *
 
-from saveload import dump as saveload_dump, patch as saveload_patch
-from options import dump as options_dump, patch as options_patch
+from saveload import saveload_dump, saveload_patch
+from options import options_dump, options_patch
+
+def print_help():
+    print("Silent Hill (PSX) Translation tool")
+    print("(c) Patryk Seregiet 2025")
+    print("Shout out to decomp team https://github.com/Vatuu/silent-hill-decomp")
+    print("To dump:  shtt.py dump original-SILENT dump-output-dir")
+    print("To patch: shtt.py patch original-SILENT dump-input-dir patched-SILENT")
+
 
 def main():
-    silent_path = sys.argv[1]
+    if sys.argc != 4:
+        print_help()
+        return
+
+    silent_path = sys.argv[2]
     with open(silent_path, 'rb') as f:
         data = bytearray(f.read())
         silent = memoryview(data)
 
-    mode = sys.argv[2]
+    mode = sys.argv[1]
     if (mode == "dump"):
-        dump_data(silent)
+        dump_data(silent, sys.argv[3])
     else:
-        output = sys.argv[3]
-        patch_data(silent)
-        with open(output, 'wb') as f:
+        patch_data(silent, sys.argv[3])
+        with open(sys.argv[4], 'wb') as f:
             f.write(silent)
 
 
-def dump_data(silent: memoryview):
-    Path("./dump-new").mkdir(parents=True, exist_ok=True)
-    dump_font(silent)
-    dump_maps(silent)
-    dump_bodyprog(silent)
-    options_dump(silent)
-    saveload_dump(silent)
+def dump_data(silent: memoryview, outdir):
+    Path(outdir).mkdir(parents=True, exist_ok=True)
+    dump_bodyprog(silent, outdir)
+    options_dump(silent, outdir)
+    saveload_dump(silent, outdir)
+    dump_font(silent, outdir)
+    dump_maps(silent, outdir)
 
-def patch_data(silent: memoryview):
-    read_font_widths()
-    patch_font(silent)
-    patch_maps(silent)
-    patch_bodyprog(silent)
-    options_patch(silent)
-    saveload_patch(silent)
+
+def patch_data(silent: memoryview, indir):
+    read_font_widths(indir)
+    patch_bodyprog(silent, indir)
+    options_patch(silent, indir)
+    saveload_patch(silent, indir)
+    patch_font(silent, indir)
+    patch_maps(silent, indir)
     xorBodyProg(silent)
 
 

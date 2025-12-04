@@ -131,9 +131,10 @@ def encode_local_text(line):
     line = line.replace('ł', ';').replace('ń', '<').replace('ó', '>').replace('ś', '[').replace('ź', '&')
     return line
 
-def read_font_widths():
-    with open("./dump/font_info.json", 'r') as f:
+def read_font_widths(indir: str):
+    with open(f"{indir}/bodyprog.json", 'r') as f:
         data = json.load(f)
+    data = data["font_width"]
 
     for k, v in data.items():
         #if k == '!':
@@ -158,70 +159,28 @@ def text_width(line):
             pass
     return total
 
-def accumulate_widths(line, decode=True):
-    i = 0
-    total = 0
-    last_line = 0
-    if decode:
-        text = line.decode("ascii")
-    else:
-        text = line
-
-    while i < len(text):
-        ch = text[i]
-
-        if ch == '\x00':
-            break
-
-        if ch == '\n':
-            i += 1
+def text_w(line):
+    line = encode_local_text(line)
+    line = line.replace(' ', '_').replace('{~N}', '\n')
+    line = re.sub(r'\{~.*?\}', '', line)
+    current = 0
+    maxlen = 0
+    for c in line:
+        if c == '_' or c == '\t':
+            current += 6
             continue
-
-        if ch == ' ' or ch == '\t':
-            total += 6
-            i += 1
+        if c == '\n':
+            maxlen = max(maxlen, current)
+            current = 0
             continue
+        try:
+            current += font_widths[c]
+        except:
+            pass
+    print(f"{line}, {maxlen}, {current}")
+    return max(maxlen, current)
 
-        if ch == "~":
-            if i + 1 < len(text):
-                nxt = text[i + 1]
-                # case 1: ~N, ~E, ~H, ~D, ~M → ignore both
-                if nxt in "EHDM":
-                    i += 2
-                    continue
-                if nxt in "N":
-                    # new line, reset counter
-                    i += 2
-                    if total > last_line:
-                        last_line = total
-                    total = 0
-                    continue
 
-                # case 2: ~Sx, ~Lx, ~Cx (where x is a digit) → ignore all three
-                if nxt in "SLC" and i + 2 < len(text) and text[i + 2].isdigit():
-                    i += 3
-                    continue
-
-                # case 3: ~JNN.N\t
-                if nxt == "J":
-                    j = i + 2
-                    # read number (could be like 12.3)
-                    num = []
-                    while j < len(text) and (text[j].isdigit() or text[j] == "."):
-                        num.append(text[j])
-                        j += 1
-                    # expect a tab
-                    if j < len(text) and text[j] == "\t":
-                        j += 1
-                    i = j
-                    continue
-
-        total += font_widths[ch]
-        i += 1
-
-    if total > last_line:
-        last_line = total
-    return last_line
 
 def nice_encode(line):
     return line.replace('\t', '').replace('\n', '{~N}').replace('_', ' ').replace('\x01', '')
@@ -239,9 +198,14 @@ def load_text_table(ovi: FileInfo, tableptr, tablecount):
         data[i] = nice_encode(read_c_string2(ovi, txtptr))
     return data
 
-def patch_text_table(ovi: FileInfo, tableptr, tablecount, text):
-    for i in range(tablecount):
-        news = game_encode(text[str(i)])
+def patch_text_table(ovi: FileInfo, tableptr, text):
+    def iter_values(x):
+        if isinstance(x, dict):
+            return x.values()
+        return x
+
+    for i, val in enumerate(iter_values(text)):
+        news = game_encode(val)
         txt_ptr = get_new_blob_ptr(news, ovi)
         w_u32(ovi, txt_ptr, tableptr + (i*4))
 

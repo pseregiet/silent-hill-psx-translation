@@ -11,8 +11,8 @@ from bodyprog import *
 from textures import *
 from maps import *
 
-from saveload import saveload_dump, saveload_patch
-from options import options_dump, options_patch
+from saveload import dump_saveload, patch_saveload
+from options import dump_options, patch_options
 
 def print_help():
     print("Silent Hill (PSX) Translation tool")
@@ -23,7 +23,7 @@ def print_help():
 
 
 def main():
-    if sys.argc != 4:
+    if len(sys.argv) < 4:
         print_help()
         return
 
@@ -43,18 +43,18 @@ def main():
 
 def dump_data(silent: memoryview, outdir):
     Path(outdir).mkdir(parents=True, exist_ok=True)
-    dump_bodyprog(silent, outdir)
-    options_dump(silent, outdir)
-    saveload_dump(silent, outdir)
-    dump_font(silent, outdir)
+    #dump_bodyprog(silent, outdir)
+    #dump_options(silent, outdir)
+    #dump_saveload(silent, outdir)
+    #dump_font(silent, outdir)
     dump_maps(silent, outdir)
 
 
 def patch_data(silent: memoryview, indir):
     read_font_widths(indir)
     patch_bodyprog(silent, indir)
-    options_patch(silent, indir)
-    saveload_patch(silent, indir)
+    patch_options(silent, indir)
+    patch_saveload(silent, indir)
     patch_font(silent, indir)
     patch_maps(silent, indir)
     xorBodyProg(silent)

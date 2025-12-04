@@ -179,15 +179,15 @@ def atlas_to_flat(img: Image.Image) -> Image.Image:
 
     return out
 
-def dump_font(silent: memoryview):
+def dump_font(silent: memoryview, outdir: str):
     fonttim = extract_overlay(silent, Font)
     pngimg = decode_tim(fonttim)
     pngimg = flat_to_atlas(pngimg)
-    pngimg.save("./dump-new/font16.png", "PNG")
+    pngimg.save(f"{outdir}/font16.png", "PNG")
 
-def patch_font(silent: memoryview):
+def patch_font(silent: memoryview, indir: str):
     fonttim = extract_overlay(silent, Font)
-    newimg = Image.open("./dump/font16.png")
+    newimg = Image.open(f"{indir}/font16.png")
     newimg = atlas_to_flat(newimg)
     encode_tim(fonttim, newimg)
 

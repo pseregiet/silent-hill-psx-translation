@@ -92,8 +92,8 @@ def dump_bodyprog(silent: memoryview, outdir: str):
     for i in range(4):
         data["small_strings"][i] = nice_encode(read_c_string2(BodyProg, bodyprog_info["small_strings"][i][1]))
     
-    with open(f"{outdir}/bodyprog.json", 'w') as f:
-        json.dump(data, f, indent=4)
+    with open(f"{outdir}/bodyprog.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
 
 
@@ -112,6 +112,18 @@ def patch_item_name_pos():
         w_u16(BodyProg, 16, ptr)
 
 
+def patch_small_strings(data):
+    print(data)
+    for i in range(4):
+        news = game_encode(data[str(i)])
+        ptr = get_new_blob_ptr(news, BodyProg)
+        hi = (ptr >> 16) & 0xFFFF
+        lo = (ptr >> 0 ) & 0xFFFF
+        sstab = bodyprog_info["small_strings"][i][0]
+        w_u16(BodyProg, hi, sstab + 0)
+        w_u16(BodyProg, lo, sstab + 4)
+
+
 def patch_font_width(data):
     font_widths_offset = 0x80025D6C - BodyProg.offset
     table = BodyProg.memory[font_widths_offset: font_widths_offset + 84].cast('B')
@@ -125,19 +137,19 @@ def patch_font_width(data):
         table[k] = v
 
 
-def patch_main_menu(main_menu, diff_menu):
-    def work(data, name):
+def patch_main_menu(data):
+    def work(name):
         txttab = bodyprog_info[name][0]
         postab = bodyprog_info[name][2]
-        for k, v in data:
+        for k, v in data[name].items():
             news = game_encode(v)
-            newx = (text_width(news) / 2)
+            newx = (text_width(news) // 2)
             txt_ptr = get_new_blob_ptr(news, BodyProg)
-            w_u32(BodyProg, newtxt, txttab + int(k)*4)
+            w_u32(BodyProg, txt_ptr, txttab + int(k)*4)
             w_u8(BodyProg, newx, postab + int(k))
 
-    work(main_menu, "main_menu_table")
-    work(diff_menu, "diff_menu_table")
+    work("main_menu_table")
+    work("diff_menu_table")
 
 
 def patch_inventory_options(data):
@@ -153,21 +165,37 @@ def patch_inventory_options(data):
         w_s16(BodyProg, txtpos, postab + (i*4))
 
 
+def patch_items(data):
+    nameptr = bodyprog_info["inventory_items"][0]
+    descptr = bodyprog_info["inventory_items"][1]
+    for k, v in data.items():
+        k = int(k)
+        news = game_encode(v["name"])
+        ptr = get_new_blob_ptr(news, BodyProg)
+        w_u32(BodyProg, ptr, nameptr + (k*4))
+
+        news = game_encode(v["desc"])
+        ptr = get_new_blob_ptr(news, BodyProg)
+        w_u32(BodyProg, ptr, descptr + (k*4))
+
+
 def patch_bodyprog(silent: memoryview, indir: str):
     def patch_table(name):
-        patch_text_table(BodyProg, bodyprog_info[name][0], bodyprog_info[name][1], data[name])
+        patch_text_table(BodyProg, bodyprog_info[name][0], data[name])
 
-    with open(f"{indir}/bodyprog.json", 'r', encoding="utf-8") as f:
+    with open(f"{indir}/bodyprog.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     extract_overlay2(silent, BodyProg)
     xorBodyProg(silent)
 
+    patch_main_menu(data)
     patch_table("inventory_options_table0")
     patch_table("inventory_options_table1")
-    patch_main_menu(data["main_menu"], data["diff_menu"])
     patch_inventory_options(data["inventory_options_table2"])
-    patch_font_width(data["font_width"]
+    patch_items(data["inventory_items"])
+    patch_small_strings(data["small_strings"])
+    patch_font_width(data["font_width"])
     if data["patch_left_quote"] == True:
         patch_left_quote()
     if data["patch_inventory_item_name"] == True:

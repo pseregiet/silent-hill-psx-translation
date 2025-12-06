@@ -53,6 +53,15 @@ FileInfos = [
     FileInfo(0x09924,  698,  "map7_s03", 0x800C9578, None, None),
 ]
 
+# US version doesn't set the flag when you read the newspaper which leads to some missing content.
+# The missing flag was figured out by emoose.
+def patch_missing_newspaper_memo():
+    for ovi in FileInfos:
+        if "map5_s03" == ovi.filename:
+            w_u32(ovi, 0x018900CB, 0x800D39FC)
+            w_u32(ovi, 0x0000212A, 0x800D3A04)
+            return
+
 def nice_encode(line):
     pattern = re.compile(r'(~[CLS]\d|~[MDHETN])')
     jpattern= re.compile(r'(~J\d\(\d+\.\d+\))')
@@ -144,3 +153,4 @@ def patch_maps(silent: memoryview, indir: str):
     for ovi in FileInfos:
         extract_overlay2(silent, ovi)
         patch_map(ovi, indir)
+    patch_missing_newspaper_memo()

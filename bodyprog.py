@@ -21,6 +21,7 @@ def xorBodyProg(silent: memoryview):
 
 
 bodyprog_info = {
+    "game_result_table":        [ 0x8002B4C0, 34],
     "inventory_options_table0": [ 0x80026214, 8 ],
     "inventory_options_table1": [ 0x80027F94, 7 ],
     "inventory_options_table2": [ 0x80027E34, 8, 0x80027DD8 ],
@@ -87,6 +88,7 @@ def dump_bodyprog(silent: memoryview, outdir: str):
     dump_table("inventory_options_table2")
     dump_table("main_menu_table")
     dump_table("diff_menu_table")
+    dump_table("game_result_table")
 
     data["small_strings"] = {}
     for i in range(4):
@@ -190,6 +192,7 @@ def patch_bodyprog(silent: memoryview, indir: str):
     xorBodyProg(silent)
 
     patch_main_menu(data)
+    patch_table("game_result_table")
     patch_table("inventory_options_table0")
     patch_table("inventory_options_table1")
     patch_inventory_options(data["inventory_options_table2"])

@@ -48,11 +48,11 @@ def patch_saveload(silent: memoryview, indir: str):
 
     extract_overlay2(silent, SaveLoad)
 
-    #patch_table("memcard0_table")
-    #patch_table("memcard1_table")
-    #patch_table("locations_table")
-    #patch_table("misc_table")
+    patch_table("memcard0_table")
+    patch_table("memcard1_table")
+    patch_table("locations_table")
+    patch_table("misc_table")
 
-    #for k,v in data["locations_table"].items():
-    #    w_u8(SaveLoad, text_width(game_encode(v)), 0x801E2728 + int(k))
+    for k,v in data["locations_table"].items():
+        w_u8(SaveLoad, text_width(game_encode(v)), 0x801E2728 + int(k))
 

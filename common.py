@@ -127,7 +127,7 @@ def patch_u32(dstblob, val, offset):
     patch_blob(dstblob, srcblob, offset)
 
 def encode_local_text(line):
-    line = line.replace('ą', '\'').replace('ż', '*').replace('ć', '+').replace('ę', '/')
+    line = line.replace('ą', '\'').replace('ż', '*').replace('ć', 'Q').replace('ę', '/').replace('Ł', '\'')
     line = line.replace('ł', ';').replace('ń', '<').replace('ó', '>').replace('ś', '[').replace('ź', '&')
     return line
 
@@ -188,6 +188,7 @@ def nice_encode(line):
 def game_encode(line):
     line = line.replace(' ', '_').replace('{~N}', '\n')
     line = encode_local_text(line)
+    print(line)
     return line.encode('ascii') + b'\x00'
 
 def load_text_table(ovi: FileInfo, tableptr, tablecount):

@@ -10,8 +10,11 @@ import struct
 from collections import Counter
 
 from common import *
+from fileinfo import *
 
 Font = OverlayInfo(0x00287, 33, "font16.tim", None, None)
+IntroCredits =  FileInfo(0x002ea, 151, "intro-credits.tim", 0, None, None)
+NoMCD =         FileInfo(0x002c4, 151, "no-mcd.tim",        0, None, None)
 
 def encode_tim(tim: memoryview, png: Image.Image):
     data = tim#.tobytes()
@@ -191,3 +194,14 @@ def patch_font(silent: memoryview, indir: str):
     newimg = atlas_to_flat(newimg)
     encode_tim(fonttim, newimg)
 
+
+def patch_intro_texture(silent: memoryview, indir: str):
+    extract_overlay2(silent, IntroCredits)
+    newimg = Image.open(f"{indir}/intro-credits.png")
+    encode_tim(IntroCredits.memory, newimg)
+
+
+def patch_no_mcd(silent: memoryview, indir: str):
+    extract_overlay2(silent, NoMCD)
+    newimg = Image.open(f"{indir}/no-mcd.png")
+    encode_tim(NoMCD.memory, newimg)

@@ -10,6 +10,7 @@ from pathlib import Path
 from bodyprog import *
 from textures import *
 from maps import *
+from konami_b import patch_konami_b
 
 from saveload import dump_saveload, patch_saveload
 from options import dump_options, patch_options
@@ -43,10 +44,10 @@ def main():
 
 def dump_data(silent: memoryview, outdir):
     Path(outdir).mkdir(parents=True, exist_ok=True)
-    #dump_bodyprog(silent, outdir)
-    #dump_options(silent, outdir)
-    #dump_saveload(silent, outdir)
-    #dump_font(silent, outdir)
+    dump_bodyprog(silent, outdir)
+    dump_options(silent, outdir)
+    dump_saveload(silent, outdir)
+    dump_font(silent, outdir)
     dump_maps(silent, outdir)
 
 
@@ -56,6 +57,9 @@ def patch_data(silent: memoryview, indir):
     patch_options(silent, indir)
     patch_saveload(silent, indir)
     patch_font(silent, indir)
+    patch_intro_texture(silent, indir)
+    patch_no_mcd(silent, indir)
+    patch_konami_b(silent)
     patch_maps(silent, indir)
     xorBodyProg(silent)
 

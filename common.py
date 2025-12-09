@@ -79,7 +79,6 @@ def add_s16(ovi: FileInfo, val, offset):
 
 def w_blob(ovi: FileInfo, val, offset):
     blen = len(val)
-    print(f"{offset:x}, {offset-ovi.offset:x}, {ovi.offset:x}")
     offset = offset - ovi.offset
     ovi.memory[offset: offset + blen] = val
 
@@ -127,8 +126,9 @@ def patch_u32(dstblob, val, offset):
     patch_blob(dstblob, srcblob, offset)
 
 def encode_local_text(line):
-    line = line.replace('ą', '\'').replace('ż', '*').replace('ć', 'Q').replace('ę', '/').replace('Ł', '\'')
+    line = line.replace('ą', '\'').replace('ż', '*').replace('ć', 'Q').replace('ę', '/').replace('Ł', '`')
     line = line.replace('ł', ';').replace('ń', '<').replace('ó', '>').replace('ś', '[').replace('ź', '&')
+    line = line.replace('Ś', 'X')
     return line
 
 def read_font_widths(indir: str):
@@ -143,7 +143,6 @@ def read_font_widths(indir: str):
         #    k = '^'
         font_widths[k] = v
 
-    print(font_widths)
 
 def text_width(line):
     total = 0
@@ -177,7 +176,6 @@ def text_w(line):
             current += font_widths[c]
         except:
             pass
-    print(f"{line}, {maxlen}, {current}")
     return max(maxlen, current)
 
 
@@ -188,14 +186,12 @@ def nice_encode(line):
 def game_encode(line):
     line = line.replace(' ', '_').replace('{~N}', '\n')
     line = encode_local_text(line)
-    print(line)
     return line.encode('ascii') + b'\x00'
 
 def load_text_table(ovi: FileInfo, tableptr, tablecount):
     data = {}
     for i in range(tablecount):
         txtptr = r_u32(ovi, tableptr + (i*4))
-        print(type(txtptr))
         data[i] = nice_encode(read_c_string2(ovi, txtptr))
     return data
 
@@ -211,3 +207,9 @@ def patch_text_table(ovi: FileInfo, tableptr, text):
         w_u32(ovi, txt_ptr, tableptr + (i*4))
 
 
+def split_mips_addr(addr):
+    hi = (addr>>16) & 0xffff
+    lo = addr & 0xffff
+    if lo & 0x8000:
+        hi = (hi + 1) & 0xffff
+    return hi, lo

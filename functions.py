@@ -49,6 +49,7 @@ def dump_data(silent: memoryview, outdir):
     dump_saveload(silent, outdir)
     dump_font(silent, outdir)
     dump_maps(silent, outdir)
+    dump_textures(silent, outdir)
 
 
 def patch_data(silent: memoryview, indir):
@@ -57,8 +58,7 @@ def patch_data(silent: memoryview, indir):
     patch_options(silent, indir)
     patch_saveload(silent, indir)
     patch_font(silent, indir)
-    patch_intro_texture(silent, indir)
-    patch_no_mcd(silent, indir)
+    patch_textures(silent, indir)
     patch_konami_b(silent)
     patch_maps(silent, indir)
     xorBodyProg(silent)

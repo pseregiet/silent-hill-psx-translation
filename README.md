@@ -1,4 +1,29 @@
-This code was used to produce the polish translation of Silent Hill for Playstation 1. A brief explanation of the tech:
+# Silent Hill (PSX) Translation Patch
+
+This tool was made for the purpose of translating Silent Hill to the Polish language. It is released to support translation into other languages.
+
+It handles:
+* Text of arbitrary length (total length of the text still must fit within the constrains)
+* Ability to patch the font to make use of more font glyphs
+* Correct positioning on the screen
+* Moving around the screen interface in the options screen to make room for longer text
+
+And more
+
+Note: Currently only the NTSC version is supported.
+
+# Usage
+```
+# first extract the SILENT file from your bin/cue/cd.
+# dump text and textures from SILENT to output-dir
+python3 shtp.py dump SILENT output-dir
+
+# apply patches from input-dir and create new SILENT
+python3 shtp.py patch SILENT input-dir NEW-SILENT
+# now replace SILENT with NEW-SILENT on the disk 
+```
+
+# Brief explanation of the tech:
 
 There are 4 files on the SH1 disk:
 * SYSTEM.CNF
@@ -6,36 +31,23 @@ There are 4 files on the SH1 disk:
 * SILENT
 * HILL
 
-SILENT is a container file, it contains all the textures and so called "overlays" which are part of the code. Because PS1 has so little memory the game's code
-is split into several binaries. Roughly, every level is it's own small binary. Each of those binaries has dialog strings. They are just string literals in C.
-There is also a pointer table to these strings.
+We only care about `SILENT`. It's a container file containg most of the game textures and binaries called `overlays`. Each level has an overlay which contains
+the dialog lines for that level. There are also strings in `bodyprog` (the main engine), `options`, `saveload` and `credits`. For this project we left `credits` unpached, but given the foundations here you can easily extend the translation to the `credits` if you want to.
 
-All dialog strings are next to each other in memory with additional 1-3 padding bytes to align them to 4 bytes. Also these strings contain a lot of extra characters
-that are ignored by the game engine and do not affect the way the text is displayed. For example, a lot of the strings contain the \n and \t characters (new line and tab).
-This is most likely because they were writen in the source code in this way:
-```
-const char *notepad_dialog = "Someday,_someone_may_experience ~N
-                              these_bizarre_events._Hopefully, ~N
-                              they_will_find_my_notes_useful. ~E ";
-```
-Because of this we have extra bytes of spare room for new text.
-We can treat the entire block of memory that is ocuppied by these strings as one buffer to which we will write our new text. Then we have to update the pointer table
-to point to our new strings. This way we can have dialog lines of arbitrary length, as long as their total size does not exceed the original block size.
+Most of the text is stored in big tables, but some of it is hardcoded and used by the code directly. In either case, we declare all memory that is occupied by the text and stuff the new text there, fixing all the pointers on the way. We also patch the string position based on its length (it's hardcoded in all of the game).
 
-Some strings are duplicated in each overlay. In the original code they were probably included like.
-```
-#include "common_strings.h"
-```
-For simplicity this code does not do the same, all strings are as is in each overlay file. This is benefitial in case you need more room for long text. The long string "Someday, someone may experience..." is in every overlay, but is displayed only once in the entire game, when you use the notepad for the first time. In a desparate situation this string can be overwriten since the possiblity of it being used in late game is extremely low.
+The original font is made out of 84 glyphs and is stored in one 1024x16 texture. However, this texture had some gaps (for technical reasons) so for the ease of use
+this tool will convert this texture into a 21x4 glyphs atlas and convert it back to the game's format. There's also a table of width for each glyph. If you patch in new
+characters, this table will have to also be updated.
 
-These strings are encoded in a specific way. Thankfuly it's all based on ASCII:
-* ~N is a line break (\n is ignored).
-* ~E waits for a button press.
-* ~Cn changes color. Default white seems to be ~C7.
-* ~S4 is the "Yes/No" selection. (not sure if other Sn are possible)
-* ~Jn(n.n)\t Seems to be related to cutscene timing. This control sequence requires a tab character after it (\t).
-* ~Ln Position or size (not tested).
-*_ (underscore) is a visible space.
-* (space) seems to be only used to separate control characters from the text, but is not required.
+Few more minor patches added are:
+* You can remove the usage of a dedicated left quote in the main menu to only use the right quote for both sides of the text. That gives you one free glyph to patch.
+* In the inventory screen you can move the name of the item string to the left, replacing the "Name: " label. Giving you more room for a long name.
+* You can add your splash screen after the Konami and KCET logo.
+* You can patch out the buggy memo (this was already fixed in European and Japanese release, only NTSF was affected). Thanks @emoose for figuring out the easy binary
+patch for this bug.
 
-Text writen in the mapN_NN.asciz.tr.txt is in "plain text" format. New lines will be replaced by ~N, normal spaces will be replaced with underscores. This code will also replace polish accented characters like ąężźćńś with spare ASCII characters that are not otherwise used by the game but were defined in the font file. You can replace them if your language requires additional characters. This is done in "fix_encoding" function in translate_silent.py
+Code by Patryk Seregiet (c) 2025. Licensed under MIT. 
+
+Shoutout to the sillent hill decomp team. It wouldn't be as complete without it. https://github.com/Vatuu/silent-hill-decomp
+

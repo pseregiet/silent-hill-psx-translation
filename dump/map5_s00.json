@@ -1,0 +1,29 @@
+{
+    "txt-offset": "0x1670",
+    "ptr-offset": "0x11294",
+    "txt-size": "0x3FB",
+    "ptr-size": "0x15",
+    "messages": [
+        "Tak",
+        "Nie",
+        "Kiedyś ktoś może znaleźć się{~N}w tych dziwnych okolicznościach.{~N}Oby przydały się mu moje notatki.{~E}",
+        "{~D}Nie mam mapy{~N}tego miejsca.{~E}",
+        "{~D}Jest za ciemno, żeby{~N}odczytać mapę.{~E}",
+        "Znalazłem {~C2}Apteczkę{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Napój leczniczy{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Ampułkę{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Naboje do pistoletu{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Amunicję do broni{~N}łowieckiej{~C7}. Zabrać?{~S4}",
+        "Znalazłem {~C2}Naboje do strzelby{~C7}.{~N}Zabrać?{~S4}",
+        "Zamek się zaciął.{~N}Drzwi nie da się otworzyć.{~E}",
+        "Zamknięte.{~E}",
+        "Otworzyłem drzwi.{~E}",
+        "{~E}",
+        "Użyłem {~C2}Klucza do Kanalizacji{~C7}.{~E}",
+        "Użyłem {~C2}Klucza do wyjścia{~N}z Kanalizacji{~C7}.{~E}",
+        "Znalazłem {~C2}Klucz do Kanalizacji{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Klucz do wyjścia z{~N}Kanalizacji{~C7} w wodzie. Zabrać?{~S4}",
+        "Muszę znaleźć Cheryl.{~N}Nie ma czasu, żeby wracać.{~E}",
+        "{~H}Znalazłem {~C5}Mapę Kanalizacji{~N}(połączenie z Strefą Resortową){~C7}.{~N}Zabrać?{~S4}"
+    ]
+}

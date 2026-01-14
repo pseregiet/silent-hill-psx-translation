@@ -1,0 +1,314 @@
+{
+    "0": {
+        "name": "Napój leczniczy",
+        "desc": "Dostarcza wartości odżywczych{~N}i odzyskuje małą ilość{~N}wytrzymałości."
+    },
+    "1": {
+        "name": "Apteczka",
+        "desc": "Leczy rany, aby dać{~N}umiarkowaną regenerację{~N}wytrzymałości."
+    },
+    "2": {
+        "name": "Ampułka",
+        "desc": "Uśmierza ból, aby dać{~N}wysoką wytrzymałość.{~N}Efekty utrzymują się jakiś czas."
+    },
+    "32": {
+        "name": "unused",
+        "desc": "unused"
+    },
+    "33": {
+        "name": "Klucz do domu",
+        "desc": "Klucz do domu, który był{~N}schowany w budzie dla psa."
+    },
+    "34": {
+        "name": "Klucz ]Lew]",
+        "desc": "Klucz do ogródka domowego.{~N}Znaleziony w bagażniku{~N}radiowozu."
+    },
+    "35": {
+        "name": "Klucz ]Drwal]",
+        "desc": "Klucz do ogródka domowego.{~N}Znaleziony na{~N}boisku do koszykówki."
+    },
+    "36": {
+        "name": "Klucz ]Strach na wróble]",
+        "desc": "Klucz do ogródka domowego.{~N}Znaleziony w skrzynce pocztowej{~N}obok zwalonego drzewa."
+    },
+    "37": {
+        "name": "Klucz do magazynu biblioteki",
+        "desc": "Klucz do magazynu szkolnej{~N}biblioteki na drugim piętrze.{~N}Znaleziony w szatni."
+    },
+    "38": {
+        "name": "Klucz do klasy",
+        "desc": "Oznaczony klucz do klasy{~N}znaleziony wiszący w odpływie{~N}na dachu."
+    },
+    "39": {
+        "name": "Klucz K. Gordon",
+        "desc": "Na breloczku widnieje ]K. Gordon],{~N}znaleziony w szkolnej{~N}kotłowni."
+    },
+    "40": {
+        "name": "Klucz do mostu zwodzonego",
+        "desc": "Klucz do obsługi mostu.{~N}Znaleziony w kościele."
+    },
+    "41": {
+        "name": "Klucz do piwnicy",
+        "desc": "Klucz do piwnicy szpitala,{~N}znaleziony na stole w{~N}pokoju konferencyjnym na 1 piętrze."
+    },
+    "42": {
+        "name": "Klucz do magazynu w piwnicy",
+        "desc": "Klucz do magazyny w piwnicy{~N}szpitala znaleziony na{~N}sali operacyjnej."
+    },
+    "43": {
+        "name": "Klucz do pokoju badań",
+        "desc": "Znaleziony w pokoju pacjenta{~N}na drugim poziomie piwnicy."
+    },
+    "44": {
+        "name": "Klucz do Antykwariatu",
+        "desc": "Oznakowany klucz z nazwą{~N}sklepu, który Dahlia zostawiła{~N}w szpitalu."
+    },
+    "45": {
+        "name": "Klucz do kanalizacji",
+        "desc": "Klucz do drzwi wejśćiowych kanalizacji."
+    },
+    "46": {
+        "name": "Klucz ]Ophiel]",
+        "desc": "Słowo ]Ophiel] jest{~N}wygrawerowane na kluczu."
+    },
+    "47": {
+        "name": "Klucz ]Hagith]",
+        "desc": "Słowo ]Hagith] jest{~N}wygrawerowane na kluczu."
+    },
+    "48": {
+        "name": "Klucz ]Phaleg]",
+        "desc": "Słowo ]Phaleg] jest{~N}wygrawerowane na kluczu."
+    },
+    "49": {
+        "name": "Klucz ]Bethor]",
+        "desc": "Słowo ]Bethor] jest{~N}wygrawerowane na kluczu."
+    },
+    "50": {
+        "name": "Klucz ]Aratron]",
+        "desc": "Słowo ]Aratron] jest{~N}wygrawerowane na kluczu."
+    },
+    "51": {
+        "name": "Notatka ]Do szkoły]",
+        "desc": "]Do szkoły] jest napisane{~N}odręcznym pismem Cheryl."
+    },
+    "52": {
+        "name": "Notatka ]Buda dla psa]",
+        "desc": "]Buda dla psa] i ]ul. Levina]{~N}jest napisane{~N}odręcznym pismem Cheryl."
+    },
+    "53": {
+        "name": "Karta z obrazkiem",
+        "desc": "Prostokątna karta z obrazkiem{~N}klucza. Znaleziona na{~N}biurku w klasie."
+    },
+    "54": {
+        "name": " ",
+        "desc": " "
+    },
+    "55": {
+        "name": "Klucz do wyjścia z kanalizacji",
+        "desc": "Klucz do wyjścia z kanalizacji{~N}do strefy resortowej, który był{~N}wrzucony do wody."
+    },
+    "56": {
+        "name": "Kamień komunikacyjny",
+        "desc": "Mistyczny kamień posiadający{~N}moc. Gdy zostanie użyty,{~N}w rezultacie stanie się...?"
+    },
+    "64": {
+        "name": "Odczynnik",
+        "desc": "Na etykiecie widnieje ]Stężony{~N}kwas chlorowodorowy]. Znaleziony{~N}w magazynku laboratorium."
+    },
+    "65": {
+        "name": "Złoty medalion",
+        "desc": "Obrazek wieży zegarowej jest{~N}wygrawerowany na powierzchni.{~N}Znaleziony w laboratorium."
+    },
+    "66": {
+        "name": "Srebrny medalion",
+        "desc": "Obrazek wieży zegarowej jest{~N}wygrawerowany na powierzchni.{~N}Znaleziony w pokoju muzycznym."
+    },
+    "67": {
+        "name": "Gumowa piłeczka",
+        "desc": "Jaskraworóżowa gumowa piłka{~N}używana przez dzieci."
+    },
+    "68": {
+        "name": "]Flauros]",
+        "desc": "Obiekt w kształcie piramidy{~N}znaleziony w kościele.{~N}Cel i zastosowanie nieznane."
+    },
+    "69": {
+        "name": "Plastikowa butelka",
+        "desc": "Pusta butelka znaleziona{~N}w kuchni szpitala."
+    },
+    "70": {
+        "name": "Nieznana ciecz",
+        "desc": "Czerwona ciecz znaleziona{~N}w rozbitej fiolce w{~N}gabinecie dyrektora szpitala."
+    },
+    "71": {
+        "name": "Tabliczka ]żółw]",
+        "desc": "Kwadratowa, niebieska tabliczka{~N}z ilustracją{~N} ]Fałszywego żółwia.]"
+    },
+    "72": {
+        "name": "Tabliczka ]Kapelusznik]",
+        "desc": "Kwadratowa, zielona tabliczka{~N}z ilustracją{~N} ]Szalonego Kapelusznika.]"
+    },
+    "73": {
+        "name": "Tabliczka ]Kot]",
+        "desc": "Kwadratowa, żółta tabliczka{~N}z ilustracją {~N} ]Kota z Cheshire.]"
+    },
+    "74": {
+        "name": "Tabliczka ]Królowa]",
+        "desc": "Kwadratowa, czerwona tabliczka{~N}z ilustracją {~N}]Królowej Kier.]"
+    },
+    "75": {
+        "name": "Jednostka krwi",
+        "desc": "Jednostka krwi o objętości 200ml.{~N}Znaleziona w magazynie szpitala."
+    },
+    "76": {
+        "name": "Alkohol do dezynfekcji",
+        "desc": "Butelka alkoholu izopropylowego,{~N}znaleziona w OIOM szpitala."
+    },
+    "77": {
+        "name": "Zapalniczka",
+        "desc": "Zapalniczka benzynowa{~N}znaleziona w pokoju 201."
+    },
+    "78": {
+        "name": "Kaseta wideo",
+        "desc": "Etykieta jest pusta.{~N}Znaleziona na drugim poziomie{~N}piwnicy szpitala."
+    },
+    "79": {
+        "name": " ",
+        "desc": " "
+    },
+    "80": {
+        "name": "Klucz Kaufmanna",
+        "desc": "Na breloku widnieje ]3].{~N}Klucz prawdopodobnie{~N}upuścił Kaufmann."
+    },
+    "81": {
+        "name": "Paragon",
+        "desc": "Paragon z sklepu wielobranżowego,{~N}który prawdopodobnie{~N}upuścił Kaufmann."
+    },
+    "82": {
+        "name": "Klucz do sejfu",
+        "desc": "Klucz do sejfu, znaleziony w{~N}sklepie wielobranżowym{~N}Indian Runner."
+    },
+    "83": {
+        "name": "Magnes",
+        "desc": "Długi, cienki, magnetyczny{~N}pręt z przywiązanym sznurkiem{~N}z biura motelu."
+    },
+    "84": {
+        "name": "Klucz do motocykla",
+        "desc": "Klucz do starego motocykla,{~N}który został wrzucony między {~N}panele podłogowe pokoju motelu."
+    },
+    "85": {
+        "name": "Klucz do klatki dla ptaków",
+        "desc": "Klucz do klatki dla ptaków{~N}z grawerowanym uchwytem."
+    },
+    "86": {
+        "name": "Kombinerki",
+        "desc": "Narzędzie do pracy przy{~N}metalu i drutach.{~N}Zardzewiałe, ale działające."
+    },
+    "87": {
+        "name": "śrubokręt",
+        "desc": "Narzędzie do wkręcania śrub.{~N}Zardzewiałe, ale działające."
+    },
+    "88": {
+        "name": "Aparat",
+        "desc": "Aparat fotograficzny{~N}z lampą błyskową."
+    },
+    "89": {
+        "name": "Pierścień kontraktu",
+        "desc": "Rustykalny, solidnie wyglądający{~N}pierścień z nieznanego materiału."
+    },
+    "90": {
+        "name": "Kamień czasu",
+        "desc": "Duży kamień z wzorem tarczy{~N}zegara. Z kolumny z wiszącymi{~N}wzorami astrologicznymi."
+    },
+    "91": {
+        "name": "Amulet Solomona",
+        "desc": "Amulet w kształcie gwiazdy{~N}sześcioramiennej nazwanej{~N}imieniem prawdawnego magika."
+    },
+    "92": {
+        "name": "Herb Mercurego",
+        "desc": "Wąż w symbolu merkurego{~N}symbolizuje alchemię."
+    },
+    "93": {
+        "name": "Ankh",
+        "desc": "Eliptyczny talizman{~N}z krzyżem w środku."
+    },
+    "94": {
+        "name": "Sztylet Melchiora",
+        "desc": "Pradawny sztylet{~N}nazwany imieniem mędrca."
+    },
+    "95": {
+        "name": "Dysk Ouroborosa",
+        "desc": "Pierścień w kształcie węża{~N}zjadającego własny ogon."
+    },
+    "96": {
+        "name": "Nóż kuchenny",
+        "desc": "Trudny w użyciu,{~N}ale lepszy niż nic."
+    },
+    "97": {
+        "name": "Stalowa rura",
+        "desc": "Stalowa rura długości 1 metra.{~N}Długi zasięg, ale ograniczone{~N}zastosowanie."
+    },
+    "98": {
+        "name": "Młot pneumatyczny",
+        "desc": "Narzędzie używane podczas budowy{~N}dróg do wiercenia dziur w ziemi{~N}pod filary."
+    },
+    "99": {
+        "name": " ",
+        "desc": " "
+    },
+    "100": {
+        "name": "Młot",
+        "desc": "Młot awaryjny.{~N}Wysoce niszczycielski,{~N}ale trudny w użyciu."
+    },
+    "101": {
+        "name": "Piła lańcuchowa",
+        "desc": "Narzędzie spalinowe do wycinki{~N}drzew itp.,{~N}śmiertelnie niebezpieczna."
+    },
+    "102": {
+        "name": "Katana",
+        "desc": "Tradycyjne japońskie ostrze{~N}z pojedynczym brzegiem."
+    },
+    "103": {
+        "name": "Siekiera",
+        "desc": "Mała, jednoręczna siekiera.{~N}Umiarkowanie skuteczna{~N}jako broń."
+    },
+    "128": {
+        "name": "Pistolet",
+        "desc": "Pistolet otrzymany od Cybil.{~N}Mieści do 15 nabojów."
+    },
+    "129": {
+        "name": "Broń łowiecka",
+        "desc": "Mieści do 6 nabojów."
+    },
+    "130": {
+        "name": "Strzelba",
+        "desc": "Strzela na szeroki obszar.{~N}Mieści do 6 nabojów."
+    },
+    "131": {
+        "name": "Hiperblaster",
+        "desc": "Pistolet o dużej mocy{~N}z celowaniem na podczerwień{~N}i nieskończoną amunicją."
+    },
+    "160": {
+        "name": "Amunicja",
+        "desc": "Amunicja do pistoletu."
+    },
+    "161": {
+        "name": "Amunicja",
+        "desc": "Naboje do strzelby łowieckiej."
+    },
+    "162": {
+        "name": "Amunicja",
+        "desc": "Amunicja do strzelby."
+    },
+    "192": {
+        "name": "Latarka",
+        "desc": "Dotykowy włącznik i wyłącznik.{~N}W kieszeni piersiowej."
+    },
+    "193": {
+        "name": "Przenośne radio",
+        "desc": "Kieszonkowe radio, które{~N}emituje szum, gdy{~N}potwory są w pobliżu."
+    },
+    "194": {
+        "name": "Kanister paliwa",
+        "desc": "Paliwo do pił łańcuchowych{~N}oraz wiertarek do skał."
+    }
+}

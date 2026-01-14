@@ -1,0 +1,30 @@
+{
+    "txt-offset": "0x12C8",
+    "ptr-offset": "0x67C0",
+    "txt-size": "0x407",
+    "ptr-size": "0x16",
+    "messages": [
+        "Tak",
+        "Nie",
+        "Kiedyś ktoś może znaleźć się{~N}w tych dziwnych okolicznościach.{~N}Oby przydały się mu moje notatki.{~E}",
+        "{~D}Nie mam mapy{~N}tego miejsca.{~E}",
+        "{~D}Jest za ciemno, żeby{~N}odczytać mapę.{~E}",
+        "Znalazłem {~C2}Apteczkę{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Napój leczniczy{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Ampułkę{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Naboje do pistoletu{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Amunicję do broni{~N}łowieckiej{~C7}. Zabrać?{~S4}",
+        "Znalazłem {~C2}Naboje do strzelby{~C7}.{~N}Zabrać?{~S4}",
+        "Zamek się zaciął.{~N}Drzwi nie da się otworzyć.{~E}",
+        "Zamknięte.{~E}",
+        "Otworzyłem drzwi.{~E}",
+        "{~E}",
+        "Znalazłem {~C2}Piłę łańcuchową{~C7}.{~N}Zabrać?{~S4}",
+        "Na półce jest kilka{~N}puszek ze smarem.{~E}",
+        "Silnik samochodowy.{~N}Nie widzę problemu.{~E}",
+        "Stoi tu telewizor.{~N}Nie włącza się.{~E}",
+        "Znalazłem {~C2}Kanister z paliwem{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Katanę{~C7}.{~N}Zabrać?{~S4}",
+        "Znalazłem {~C2}Kamień komunikacyjny{~C7}.{~N}Zabrać?{~S4}"
+    ]
+}
